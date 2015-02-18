@@ -15,12 +15,17 @@
     line-height: 56px;
     letter-spacing: -1px;
     margin-bottom: 0;
-    float: left;
+    display: block;
+    text-align: center;
 
     &,
     &:visited {
         color: $grey-color-dark;
     }
+}
+
+.logo {
+    max-width: 6em;
 }
 
 .site-nav {
