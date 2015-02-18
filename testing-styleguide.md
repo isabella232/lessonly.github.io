@@ -17,7 +17,7 @@ Write tests for your code, please.
         describe "#instance_method" do # ...
       end
 
-- When stubbing methods, use a block instead of `and_return`, because `expect().and_return()` sounds like you're expecting the method to return something, when in fact you're *forcing* it to. E.g.
+- When stubbing methods, use a block instead of `and_return`, because `expect().and_return()` sounds like you're expecting the method to return something, when in fact you're *forcing* it to. For example:
 
       expect(UserUpdate).to receive(:new).with(anything) { user_update }
 
