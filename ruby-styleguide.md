@@ -17,6 +17,14 @@ These override either Github's or Batsov's styleguide where applicable:
 
 ### Dealing with SQL
 
+- Prefer ActiveRecord methods to raw SQL
+
+      # not so good
+      Model.where("published_at = ? AND title IS NOT NULL", Date.yesterday)
+
+      # so good!
+      Model.where(published_at: Date.yesterday).where.not(title: nil)
+
 - Use the symbol syntax (rather than question marks) when interpolating SQL. It helps readability and avoids duplicate arguments:
 
       # not so good
