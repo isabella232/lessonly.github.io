@@ -17,6 +17,14 @@ These override either Github's or Batsov's styleguide where applicable:
 
 ### Dealing with SQL
 
+- Prefer ActiveRecord methods to raw SQL
+
+      # not so good
+      Model.where("published_at = ? AND title IS NOT NULL", Date.yesterday)
+
+      # so good!
+      Model.where(published_at: Date.yesterday).where.not(title: nil)
+
 - Use the symbol syntax (rather than question marks) when interpolating SQL. It helps readability and avoids duplicate arguments:
 
       # not so good
@@ -31,4 +39,4 @@ These override either Github's or Batsov's styleguide where applicable:
       Model.joins("left join things on thing_id = things.id and another_id = things.another_id")
 
       # so good!
-      Model.joins("LEFT JOIN things on thing_id = things.id AND another_id = things.another_id")
+      Model.joins("LEFT JOIN things ON thing_id = things.id AND another_id = things.another_id")
