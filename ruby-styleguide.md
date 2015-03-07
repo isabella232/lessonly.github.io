@@ -39,4 +39,4 @@ These override either Github's or Batsov's styleguide where applicable:
       Model.joins("left join things on thing_id = things.id and another_id = things.another_id")
 
       # so good!
-      Model.joins("LEFT JOIN things on thing_id = things.id AND another_id = things.another_id")
+      Model.joins("LEFT JOIN things ON thing_id = things.id AND another_id = things.another_id")
