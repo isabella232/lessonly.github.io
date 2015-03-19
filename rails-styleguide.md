@@ -4,6 +4,8 @@ title: Rails Style Guide
 permalink: /rails/
 ---
 
+While we don’t follow it explicitly, the [community Rails Styleguide](https://github.com/bbatsov/rails-style-guide) (also edited by Bozhidar Batsov) is a solid refrence when in doubt.
+
 ### Dealing with SQL
 
 - Prefer ActiveRecord methods to raw SQL
