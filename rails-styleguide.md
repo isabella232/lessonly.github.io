@@ -31,3 +31,16 @@ While we don’t follow it explicitly, the [community Rails Styleguide](https://
 
       # so good!
       Model.joins("LEFT JOIN things ON thing_id = things.id AND another_id = things.another_id")
+
+### ActiveRecord shortcuts
+
+- Use `?` methods only for boolean values
+
+      # do not do this
+      progress.score?
+
+      # do this
+      progress.score.present?
+
+      # booleans are okay
+      company.assignment_notifications_disabled?
