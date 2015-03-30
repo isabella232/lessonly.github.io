@@ -46,4 +46,4 @@ While we don’t follow it explicitly, the [community Rails Styleguide](https://
       progress.score.present?   # returns true
 
       # booleans are okay
-      company.assignment_notifications_disabled?  #returns the actual value
+      company.assignment_notifications_disabled?  # returns the actual value
