@@ -31,3 +31,19 @@ While we don’t follow it explicitly, the [community Rails Styleguide](https://
 
       # so good!
       Model.joins("LEFT JOIN things ON thing_id = things.id AND another_id = things.another_id")
+
+### ActiveRecord shortcuts
+
+- Use `?` methods only for boolean values to avoid unexpected behavior. For example, ActiveRecord treats `0` as `false`, while Ruby treats `0` as a `true` value.
+
+      # Let's say we have a Progress object with a score of zero:
+      progress = Progress.create! lesson: a_lesson, user: a_user, score: 0.0
+
+      # do not do this to determine if the object has a value for score
+      progress.score?           # returns false
+
+      # do this
+      progress.score.present?   # returns true
+
+      # booleans are okay
+      company.assignment_notifications_disabled?  # returns the actual value
