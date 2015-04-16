@@ -6,6 +6,10 @@ permalink: /release-notes/
 
 Look here for recent updates to the Lesson.ly platform.
 
+### Coming Soon
+
+- Stuff
+
 ### Thursday, April 16, 2015, 12:58PM EST
 
 - Fixes a bug with triggers where a trigger would not be deleted when any of its releated users, groups, lessons, or courses were deleted
