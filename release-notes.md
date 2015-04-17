@@ -8,7 +8,12 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming Soon
 
+- Nothing yet!
+
+### Friday, April 17, 2015, 5:15PM EST
+
 - Localized time - Completed time on report cards now shown in current time-zone.
+- See all answers to free response questions by clicking the link on the Lesson Overview page
 
 ### Thursday, April 16, 2015, 12:58PM EST
 
