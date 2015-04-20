@@ -8,7 +8,7 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming Soon
 
-- Nothing yet!
+- Bug fixes
 
 ### Friday, April 17, 2015, 5:15PM EST
 
