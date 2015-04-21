@@ -4,6 +4,10 @@ title: JavaScript Style Guide
 permalink: /javascript/
 ---
 
+## General Guidelines
+
+- Put all JavaScript within `.js` or `.js.coffee` files (not `<script>` tags unless you have a good reason).
+
 ## Use lowerCamelCase
 
 For variable and function names in Javascript, use lowerCamelCase.
@@ -29,3 +33,5 @@ Use this:
 
     <input data-behavior="do_something">
     $('[data-behavior~=do_something]').doSomething();
+
+We've settled on lowercase with underscores (i.e. "snake_case") for `data-behavior` attributes.
