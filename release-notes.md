@@ -9,6 +9,7 @@ Look here for recent updates to the Lesson.ly platform.
 ### Coming Soon
 
 - Fixes a bug which caused the browser to slow down when answering many questions on a single page.
+- Fixes a bug where some unassigned lessons continued to appear in the Gradebook. 
 
 ### Monday, April 20, 2015, 1:55PM EST
 
