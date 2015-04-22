@@ -14,6 +14,7 @@ These override either Github’s or Batsov’s styleguide where applicable:
 
 - Use the Ruby 1.9-style hash syntax (`key: 'value'`) with symbol keys wherever possible. Only use `"hash" => "rocket"` syntax when hash keys are required to be strings.
 - Use a single newline above and below "private" and "protected" in classes
+- Use a single space within ERB tags, e.g. `<%= "foo" %>`, not `<%="foo"%>`
 
 ## Gemfile
 
