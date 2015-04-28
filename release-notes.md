@@ -8,7 +8,7 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming Soon
 
-- New Feature that now allows Admins to use your customized colors.
+- New Feature that now allows Admins to use their customized colors.
 - More good stuff!
 
 ### Tuesday, April 21, 2015, 12:13PM EST
