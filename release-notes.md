@@ -8,6 +8,10 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming Soon
 
+- Nothing yet!
+
+### Wednesday, April 29, 2015, 3:30PM EST
+
 - New Feature that now allows Admins to specify a custom branding color ([see blog post](http://www.lesson.ly/blog/the-colors-announcing-enhanced-branding)).
 - If a learner is assigned a course where they've already completed all of the lessons, they will now be required to retake them.
 
