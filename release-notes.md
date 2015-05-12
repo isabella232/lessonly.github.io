@@ -8,7 +8,12 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming Soon
 
+- Nothing yet!
+
+### Tuesday, May 12, 2015, 1:15 PM
+
 - New, easier to use table layout for assignments
+- Various bug fixes
 
 ### Wednesday, April 29, 2015, 3:30PM EST
 
