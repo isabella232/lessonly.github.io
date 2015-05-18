@@ -8,7 +8,7 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming Soon
 
-- Nothing yet!
+- External IDs (e.g. `ext_uid` values) used for anonymous login may now contain hyphens and underscores in addition to alphanumeric characters
 
 ### Tuesday, May 12, 2015, 1:15 PM
 
