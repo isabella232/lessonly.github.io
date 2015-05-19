@@ -8,6 +8,10 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming Soon
 
+- More good stuff!
+
+### Tuesday, May 19, 2015, 11:10 AM EST
+
 - External IDs (e.g. `ext_uid` values) used for anonymous login may now contain hyphens and underscores in addition to alphanumeric characters
 - Aggregate data for multiple choice questions now takes into account all attempts by each learner
 
