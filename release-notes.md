@@ -8,6 +8,7 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming Soon
 
+- Updated gradebook CSV export to include time for completion date column
 - More good stuff!
 
 ### Wednesday, May 20, 2015, 11:26 AM EST
