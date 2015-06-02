@@ -8,6 +8,7 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming Soon
 
+- Updated simpler registration process
 - More good stuff!
 
 ### Wednesday, May 27, 2015, 9:04 AM EST
