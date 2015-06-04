@@ -9,6 +9,10 @@ Look here for recent updates to the Lesson.ly platform.
 ### Coming Soon
 
 - Updated simpler registration process
+- Fixed a bug in the lesson editor where lines ending with ".jpg" or ".gif" would mysteriously disappear
+- When a learner fails a lesson, they are shown the questions they got wrong so that they may focus on those when they retake the lesson
+- Fixed a bug that made the actual title of an untitled lesson "Untitled Lesson"
+- Fixed a bug in the webhook that stripped query strings from the webhook URL
 - More good stuff!
 
 ### Wednesday, May 27, 2015, 9:04 AM EST
