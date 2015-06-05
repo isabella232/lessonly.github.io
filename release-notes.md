@@ -8,7 +8,7 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming Soon
 
-- More good stuff!
+- When building lessons, you can now select which question type to create (e.g. Multiple Choice, Free Response). More coming soon!
 
 ### Friday, June 5, 2015, 2:50 PM EST
 
