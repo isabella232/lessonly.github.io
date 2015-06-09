@@ -22,6 +22,17 @@ These override either Github’s or Batsov’s styleguide where applicable:
       
       # so clear!
       assignee.assignments.map(&:assignable).each { |assignable| ...
+- Avoid mixing inline and multi-line conditionals: they hurt readability.
+      
+      # Easy to miss the second condition at the end
+      if some_condition
+        do_something_with_a_really_long_method_name if some_other_condition
+      end
+      
+      # It's easier to notice both conditions when they're in the same place
+      if some_condition && some_other_condition
+        do_something_with_a_really_long_method_name
+      end
 
 ## Gemfile
 
