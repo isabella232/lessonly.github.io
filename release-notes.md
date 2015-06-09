@@ -8,7 +8,7 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming Soon
 
-- More good things!
+- All questions are now on the report card, in order, regardless of whether or not they were actually answered.
 
 ### Monday, June 8, 2015, 2:22 PM EST
 
