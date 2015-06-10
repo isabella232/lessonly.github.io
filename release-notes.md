@@ -9,6 +9,8 @@ Look here for recent updates to the Lesson.ly platform.
 ### Coming Soon
 
 - All questions are now on the report card, in order, regardless of whether or not they were actually answered.
+- Upgraded custom report card header editor for formatting options.
+- More good things!
 
 ### Monday, June 8, 2015, 2:22 PM EST
 
