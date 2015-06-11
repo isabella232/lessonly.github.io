@@ -8,11 +8,14 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming Soon
 
+- More good things!
+
+### Thursday, June 11, 2015, 1:30 PM EST
+
 - All questions are now on the report card, in order, regardless of whether or not they were actually answered, and now in the correct order.
 - Upgraded custom report card header editor for formatting options.
 - Disabled changing a question's type after creating the question to avoid confusion and complexity.
 - Bug fixes.
-- More good things!
 
 ### Monday, June 8, 2015, 2:22 PM EST
 
