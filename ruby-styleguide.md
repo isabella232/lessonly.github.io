@@ -34,6 +34,50 @@ These override either Github’s or Batsov’s styleguide where applicable:
         do_something_with_a_really_long_method_name
       end
 
+## Service Objects
+
+We use the service object pattern to encapsulate complex logic within self-contained objects. Instead of a 20-line controller action, we’ll call `DoSomethingComplicated.perform(args)` in the controller and move all of the complex logic into the `DoSomethingComplicated` class. This not only helps organize and isolate complex code, but also makes it easier to test.
+
+Service objects are called with `ServiceName.perform()`. They should be named imperatively after the actions they perform (e.g. `AssignUser`, `CreateGroup`).
+
+Simple service objects can remain as class methods internally:
+
+    class DoSomething
+      def self.perform(thing)
+        thing.perform_action
+        SomethingMailer.notify(thing.owner).deliver_later
+      end
+    end
+
+but after more than a few lines of code, it will make sense to instantiate an object and extract instance methods for clarity:
+
+    class DoSomething
+      def self.perform(thing)
+        new(thing).perform
+      end
+
+      def initialize(thing)
+        @thing = thing
+      end
+
+      def perform
+        do_the_action
+        notify
+      end
+
+      private
+
+      def do_the_action
+        @thing.perform_action
+      end
+
+      def notify
+        SomethingMailer.notify(@thing.owner).deliver_later
+      end
+    end
+
+While perhaps overkill in this simple case, it's valuable to be able to scan a service object's `#perform` method and see, on each line, all of its responsibilities.
+
 ## Gemfile
 
 We try to use [pessimistic version constraints](http://guides.rubygems.org/patterns/#pessimistic-version-constraint) for all gems in the Gemfile. These use the `~>` operator followed by at least a major and minor gem version (e.g. `"~> 4.2"`). This prevents a gem from being accidentally upgraded by more than a minor version, and Gems following [Semantic Versioning](http://semver.org/) promise to introduce non-backwards-compatible changes only in major versions.
