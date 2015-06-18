@@ -8,7 +8,7 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming Soon
 
-- More good things!
+- Questions can now be marked as "Required". Learners will not be able to complete a lesson without answering all required questions.
 
 ### Thursday, June 11, 2015, 1:30 PM EST
 
