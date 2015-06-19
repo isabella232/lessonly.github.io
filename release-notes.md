@@ -8,6 +8,7 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming Soon
 
+- Multiple Select Questions now possible, for Mulitple Choice Questions with more than one answer. 
 - Questions can now be marked as "Required". Learners will not be able to complete a lesson without answering all required questions.
 
 ### Thursday, June 11, 2015, 1:30 PM EST
