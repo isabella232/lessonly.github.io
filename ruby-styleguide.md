@@ -38,7 +38,7 @@ These override either Github’s or Batsov’s styleguide where applicable:
 
 We use the service object pattern to encapsulate complex logic within self-contained objects. Instead of a 20-line controller action, we’ll call `DoSomethingComplicated.perform(args)` in the controller and move all of the complex logic into the `DoSomethingComplicated` class. This not only helps organize and isolate complex code, but also makes it easier to test.
 
-Service objects are called with `ServiceName.perform()`. They should be named imperatively after the actions they perform (e.g. `AssignUser`, `CreateGroup`).
+Service objects are called with `ServiceName.perform`. They should be named imperatively after the actions they perform (e.g. `AssignUser`, `CreateGroup`).
 
 Simple service objects can remain as class methods internally:
 
