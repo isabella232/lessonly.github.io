@@ -8,7 +8,7 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming Soon
 
-- More good things!
+- Users can now opt out of receiving daily digest emails through the user settings page.
 
 ### Friday, June 19, 2015, 3:52 PM EST
 
