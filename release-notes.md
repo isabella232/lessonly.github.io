@@ -8,7 +8,12 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming Soon
 
+- More good stuff!
+
+### Wednesday, June 24, 2015, 9:40 AM EST
+
 - Users can now opt out of receiving daily digest emails through the user settings page.
+- Add the ability to export lessons as a PDF
 
 ### Friday, June 19, 2015, 3:52 PM EST
 
