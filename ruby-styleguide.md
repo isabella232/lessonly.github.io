@@ -33,6 +33,17 @@ These override either Github’s or Batsov’s styleguide where applicable:
       if some_condition && some_other_condition
         do_something_with_a_really_long_method_name
       end
+- Try to use boolean values in conditionals rather than relying on `nil` to be `false` and "anything else" to be `true`. It adds clarity to the purpose of the conditional.
+
+      # Uses the presence of an object as a boolean
+      if current_user
+        # Do something
+      end
+      
+      # Explicitly gets a boolean value representing the presence of a user
+      if current_user.present?
+        # Do something
+      end
 
 ## Service Objects
 
