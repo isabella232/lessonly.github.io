@@ -8,6 +8,8 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming Soon
 
+- Add the ability to use unicode characters in email addresses
+- Add Survey questions to ask multiple choice questions that should not be graded
 - More good stuff!
 
 ### Wednesday, June 24, 2015, 9:40 AM EST
@@ -17,7 +19,7 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Friday, June 19, 2015, 3:52 PM EST
 
-- Multiple Select Questions now possible, for Mulitple Choice Questions with more than one answer. 
+- Multiple Select Questions now possible, for Multiple Choice Questions with more than one answer. 
 - Questions can now be marked as "Required". Learners will not be able to complete a lesson without answering all required questions.
 
 ### Thursday, June 11, 2015, 1:30 PM EST
