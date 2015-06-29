@@ -8,9 +8,12 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming Soon
 
-- Add the ability to use unicode characters in email addresses
-- Add Survey questions to ask multiple choice questions that should not be graded
 - More good stuff!
+ 
+### Monday, June 29, 2015, 11:30 AM ET
+
+- Add Survey questions to ask multiple choice questions that should not be graded
+- Fixed a bug with providing custom fields when signing up to take a lesson
 
 ### Wednesday, June 24, 2015, 9:40 AM EST
 
