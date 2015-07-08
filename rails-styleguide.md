@@ -47,3 +47,27 @@ While we don’t follow it explicitly, the [community Rails Styleguide](https://
 
       # booleans are okay
       company.assignment_notifications_disabled?  # returns the actual value
+
+### ActiveRecord bang! methods
+
+ActiveRecord provides "bang" versions of methods like `create`, `update`, and `save` which raise an error if they fail instead of returning false. Prefer these in all cases where you're not explicitly handling the failure, so we find out when they fail.
+
+    # Not so good
+    def update_reports!
+      uptime_report.update(viewer: user) # you'll never know if I fail
+      tps_report.update(viewer: user)
+    end
+
+    # So good!
+    def update_reports!
+      uptime_report.update!(viewer: user)
+      tps_report.update!(viewer: user)
+    end
+
+    # Also good! (Because we handle the failure case)
+    if @user.update(receive_emails: user_params)
+      redirect_to @user, notice: "Your preference has been updated."
+    else
+      flash.now.error "There was a problem updating your preference."
+      render :edit
+    end
