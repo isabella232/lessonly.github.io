@@ -71,3 +71,7 @@ ActiveRecord provides "bang" versions of methods like `create`, `update`, and `s
       flash.now.error "There was a problem updating your preference."
       render :edit
     end
+    
+### Time Zones
+
+Prefer `Time.current` and `Date.current` in place of `Time.now` and `Date.today`. The `.current` methods will properly take the `Time.zone` into account if set, which `.now` and `.today` do not, leading to inconsistent behavior.
