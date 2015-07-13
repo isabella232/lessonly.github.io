@@ -8,6 +8,7 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming Soon
 
+- Update the lesson editor plugin to fix some bugs
 - More good stuff!
 
 ### Monday, July 6, 2015, 9:41 AM EDT
