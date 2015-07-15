@@ -8,7 +8,7 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming Soon
 
-- More good stuff!
+- Questions are required by default
 
 ### Monday, July 13, 2015, 11:11 AM EDT
 
