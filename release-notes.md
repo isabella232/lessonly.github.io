@@ -8,7 +8,8 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming Soon
 
-- Questions are required by default
+- Mark new questions as required by default
+- Fix the course API endpoint to take "lessons" out of a string and into a JSON object array
 
 ### Monday, July 13, 2015, 11:11 AM EDT
 
