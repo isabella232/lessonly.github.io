@@ -8,8 +8,12 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming Soon
 
-- Mark new questions as required by default
-- Fix the course API endpoint to take "lessons" out of a string and into a JSON object array
+- Nothing yet!
+
+### Thursday, July 16, 2015, 11:09 AM EDT
+
+- New questions will now be required by default.
+- The course API endpoint now returns an array of lessons instead of a JSON string.
 
 ### Monday, July 13, 2015, 11:11 AM EDT
 
