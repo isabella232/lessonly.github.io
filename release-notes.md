@@ -10,6 +10,11 @@ Look here for recent updates to the Lesson.ly platform.
 
 - Nothing yet!
 
+### Thursday, July 23, 2015, 3:36 PM EDT
+
+- We'll no longer retry attempts to deliver overdue assignment reminders if you've completed the assignment since we last tried.
+- We fixed a bug where deleting a user via the API failed to also delete their assignments.
+
 ### Thursday, July 16, 2015, 11:09 AM EDT
 
 - New questions will now be required by default.
