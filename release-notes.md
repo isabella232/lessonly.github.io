@@ -7,8 +7,14 @@ permalink: /release-notes/
 Look here for recent updates to the Lesson.ly platform.
 
 ### Coming Soon
--  The Lesson title is now on top of the report card when you finish a lesson.
 
+- Nothing yet!
+
+### Friday, July 24, 2015, 3:14 PM EDT
+
+- We fixed a bug where viewing free response question details would sometimes result in an error.
+- We added Lesson Performance metrics for survey and multiple select questions.
+- We improved the performance for calculating Lesson Performance metrics.
 
 ### Thursday, July 23, 2015, 3:36 PM EDT
 
