@@ -7,8 +7,8 @@ permalink: /release-notes/
 Look here for recent updates to the Lesson.ly platform.
 
 ### Coming Soon
+-  The Lesson title is now on top of the report card when you finish a lesson.
 
-- Nothing yet!
 
 ### Thursday, July 23, 2015, 3:36 PM EDT
 
