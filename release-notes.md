@@ -8,6 +8,10 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming Soon
 
+- More good stuff!
+
+### Monday, July 27, 2015, 12:01 PM EDT
+
 - We fixed a bug when assigning multiple lessons through the Assign dialog.
 
 ### Monday, July 27, 2015, 10:45 AM EDT
