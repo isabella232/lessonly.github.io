@@ -10,6 +10,12 @@ Look here for recent updates to the Lesson.ly platform.
 
 - Nothing yet!
 
+### Monday, July 27, 2015, 10:45 AM EDT
+
+- We fixed a bug where you could accidentally reassign a lesson to a user via the Assign dialog.
+- New feature: when on a user's, group's, lesson's, or course's page, the Assign dialog will automatically fill that field in when opened!
+- New feature: when on a user's overview page, there is a new button that allows you to send that user an email to sign up or reset their password!
+
 ### Friday, July 24, 2015, 3:14 PM EDT
 
 - We fixed a bug where viewing free response question details would sometimes result in an error.
