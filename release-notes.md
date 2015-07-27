@@ -15,6 +15,7 @@ Look here for recent updates to the Lesson.ly platform.
 - We fixed a bug where viewing free response question details would sometimes result in an error.
 - We added Lesson Performance metrics for survey and multiple select questions.
 - We improved the performance for calculating Lesson Performance metrics.
+- We improved the Assign modal on Lesson/Course/Group/User pages so that they auto populate
 
 ### Thursday, July 23, 2015, 3:36 PM EDT
 
