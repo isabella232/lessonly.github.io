@@ -25,6 +25,11 @@ Write tests for your code, please.
 
       expect(progress).to receive(:restart!).once
 
+## Guidelines
+
+- [Don't stub methods on the class being tested.](https://robots.thoughtbot.com/don-t-stub-the-system-under-test)
+- Avoid stubbing and mocking in integration tests. For example, if a feature must be enabled, call `company.enable_feature!` instead of stubbing `allow(company).to receive(:has_feature?) { true }`. The isolation enabled by stubs and mocks is great in unit tests, but runs counter to the purpose of integration tests, which is to test the entire system end-to-end.
+
 ## RSpec Syntax
 
 - Include a blank line around `describe`/`feature` blocks, `it`/`scenario` blocks, `before`/`background` blocks, and `context` blocks.
