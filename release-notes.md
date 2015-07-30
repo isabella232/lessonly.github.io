@@ -12,7 +12,7 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Wednesday, July 29, 2015, 2:11 PM EDT
 
-- Graded free response questions: a new feature! When adding free response questions to a lesson, you can now mark them as “Graded”, requiring admins and managers to mark responses as either correct or incorrect in order to provide learners with feedback. Graded free response questions also contribute to a learner's score for a lesson.
+- Graded free response questions: a new feature! When adding free response questions to a lesson, you can now mark them as “Graded”, requiring admins and managers to mark responses as either correct or incorrect in order to provide learners with feedback. Graded free response questions also contribute to a learner's score for a lesson. Learn more [on our blog](http://www.lesson.ly/blog/gradable-free-response/).
 
 ### Monday, July 27, 2015, 12:01 PM EDT
 
