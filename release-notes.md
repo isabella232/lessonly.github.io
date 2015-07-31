@@ -9,6 +9,12 @@ Look here for recent updates to the Lesson.ly platform.
 ### Coming Soon
 
 - More good stuff!
+ 
+### Friday, July 31, 2015, 1:22 PM EDT
+
+- We fixed an issue where more than just free response questions could be marked as "Graded". Currently, only free response questions can be graded manually. Multiple choice and multiple select are graded automatically, and surveys should not be graded.
+- We fixed an error which sometimes occurred when visiting Lesson.ly with too many subdomains in the URL, e.g. `www.mycompany.lesson.ly`. This now redirects to `mycompany.lesson.ly`.
+- When copying a lesson, you'll now be made an owner of the lesson. This fixes an issue where a user could copy a lesson but then not have permission to view the copy.
 
 ### Wednesday, July 29, 2015, 2:11 PM EDT
 
