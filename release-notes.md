@@ -8,8 +8,12 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming Soon
 
-- We fixed an issue where if you exited the Assign modal on a user's, group's, lesson's, or course's page when you re-open it's still populated. 
-- More good stuff!
+- Nothing yet!
+
+### Wednesday, August 5, 2015, 11:23 PM
+
+- We fixed an issue where if you exited the Assign modal on a user's, group's, lesson's, or course's page when you re-open it's still populated.
+- New feature: bulk create and update users with a CSV file!
  
 ### Friday, July 31, 2015, 1:22 PM EDT
 
