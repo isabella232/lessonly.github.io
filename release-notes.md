@@ -8,7 +8,7 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming Soon
 
-- Nothing yet!
+- We fixed a bug when reassigning where after choosing a due date, the due date would appear hidden until you clicked "Reassign".
 
 ### Wednesday, August 5, 2015, 11:23 PM
 
