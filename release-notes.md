@@ -9,6 +9,8 @@ Look here for recent updates to the Lesson.ly platform.
 ### Coming Soon
 
 - We fixed a bug when reassigning where after choosing a due date, the due date would appear hidden until you clicked "Reassign".
+- We fixed a bug which showed an error when attempting to grade lessons containing multiple-select questions.
+- We fixed an issue with Bulk User Import when uploading a CSV with CRLF-style line breaks.
 
 ### Wednesday, August 5, 2015, 11:23 PM
 
