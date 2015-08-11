@@ -6,13 +6,22 @@ permalink: /release-notes/
 
 Look here for recent updates to the Lesson.ly platform.
 
-### Coming Soon
+### Coming soon
+
+- Nothing yet!
+
+### Tuesday, August 11, 1:41 PM EDT
+
+- We fixed a bug where CSV files with certain newline formats wouldn't work when importing users.
+- New feature: after creating an assignment, you will see a new dialog to confirm that the assignment was successful.
+
+### Friday, August 7, 2015, 1:51 PM EDT
 
 - We fixed a bug when reassigning where after choosing a due date, the due date would appear hidden until you clicked "Reassign".
 - We fixed a bug which showed an error when attempting to grade lessons containing multiple-select questions.
 - We fixed an issue with Bulk User Import when uploading a CSV with CRLF-style line breaks.
 
-### Wednesday, August 5, 2015, 11:23 PM
+### Wednesday, August 5, 2015, 11:23 PM EDT
 
 - We fixed an issue where if you exited the Assign modal on a user's, group's, lesson's, or course's page when you re-open it's still populated.
 - New feature: bulk create and update users with a CSV file!
