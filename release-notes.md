@@ -8,6 +8,10 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming soon
 
+- More good stuff!
+
+### Tuesday, August 18, 2015, 4:12 PM EDT
+
 - Assignment emails now included a button directly in the subject line (on supported clients like Gmail and Yahoo) to take you directly to the lesson, course, or dashboard.
 - Lessons can now each have their own minimum score below which learners will be automatically reassigned. This defaults to the retake score on the Company Settings page if one is set.
 - When viewing lists of assignments, they can now be selected in order to reassign, unassign, or change the due dates of more than one at a time.
