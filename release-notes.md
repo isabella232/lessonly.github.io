@@ -8,6 +8,10 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming soon
 
+- More good stuff!
+
+### Thursday, August 20, 2015, 2:43 PM EDT
+
 - We fixed a bug where sometimes a learner could be assigned the same lesson twice, causing the lesson to appear twice on their dashboard.
 
 ### Tuesday, August 18, 2015, 4:12 PM EDT
