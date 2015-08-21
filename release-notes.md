@@ -10,6 +10,11 @@ Look here for recent updates to the Lesson.ly platform.
 
 - More good stuff!
 
+### Friday, August 21, 2015, 4:23 PM EDT
+
+- On lesson overview pages, the number of “Completed” and “Incomplete” assignments now includes lessons assigned via courses as well as those that were assigned directly. Clicking one of those links now shows how the lesson was assigned. 
+- We fixed an error when fetching information about some users via the API.
+
 ### Thursday, August 20, 2015, 2:43 PM EDT
 
 - We fixed a bug where sometimes a learner could be assigned the same lesson twice, causing the lesson to appear twice on their dashboard.
