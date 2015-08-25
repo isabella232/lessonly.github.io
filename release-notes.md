@@ -8,7 +8,7 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming soon
 
-- More good stuff!
+- We fixed an error that occurred when double-clicking the “Create My Account” button.
 
 ### Friday, August 21, 2015, 4:23 PM EDT
 
