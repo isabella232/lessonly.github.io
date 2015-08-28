@@ -8,6 +8,10 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming soon
 
+- Nothing yet!
+
+### Friday, August 28, 2015, 10:15 AM EDT
+
 - We fixed an error that occurred when double-clicking the “Create My Account” button.
 - We fixed a bug on course overview pages where the number of complete/incomplete assignments was limited to 100 even if more assignments were in that state.
 
