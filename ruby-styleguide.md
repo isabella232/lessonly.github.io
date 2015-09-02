@@ -44,6 +44,14 @@ These override either Github’s or Batsov’s styleguide where applicable:
       if current_user.present?
         # Do something
       end
+- `freeze` strings when their values should never change (e.g. in constants). It will make the string immutable, which has two advantages. It optimizes memory usage (because Ruby points to the same `String` object instead of instantiating a new `String` on each reference), and also prevents tempering, because in Ruby, constants aren't.
+      
+      DEFAULT_TITLE = "Untitled"
+      DEFAULT_TITLE << "foo"
+      DEFAULT_TITLE.inspect # => "Untitledfoo"
+      
+      DEFAULT_TITLE = "Untitled".freeze
+      DEFAULT_TITLE << "foo" # => RuntimeError: can't modify frozen string
 
 ## Service Objects
 
