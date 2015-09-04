@@ -20,6 +20,22 @@ For variable and function names in Javascript, use lowerCamelCase.
     var llamasCount = 99;
     function doSomething() {};
 
+## Prefer Single Quotes
+
+Prefer single quotes in JavaScript and CoffeeScript strings, as they're more likely to contain double-quoted substrings like HTML attributes. Double quotes are fine in CoffeeScript when using string interpolation, though.
+
+    # not good (we double-quote HTML attribute values)
+    $("<div class='my-class'/>")
+    
+    # also not good (escaping is harder to read)
+    $("<div class=\"my-class\"/>")
+    
+    # good
+    $('<div class="my-class"/>')
+    
+    # just fine
+    message = "Hello, #{@user.get('name')}!"
+
 ## Use the `data-behavior` pattern
 
 When attaching JavaScript behavior to DOM elements, use a `data-behavior` attribute instead of a class or ID. Classes and IDs can change for reasons unrelated to behavior (e.g. styling, anchoring), which makes JavaScript brittle.
