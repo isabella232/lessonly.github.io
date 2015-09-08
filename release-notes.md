@@ -8,7 +8,7 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming soon
 
-- Nothing yet!
+- We've improved the performance of the Gradebook page, especially when viewing courses.
 
 ### Friday, August 28, 2015, 10:15 AM EDT
 
