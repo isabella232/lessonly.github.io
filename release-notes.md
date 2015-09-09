@@ -8,7 +8,7 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming soon
 
-- More good stuff!
+- We fixed an issue where Report Card pages would get cut off when answers contain really long URLs.
 
 ### Wednesday, September 9, 2015, 11:11 AM EDT
 
