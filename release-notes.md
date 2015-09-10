@@ -9,6 +9,7 @@ Look here for recent updates to the Lesson.ly platform.
 ### Coming soon
 
 - We fixed an issue where Report Card pages would get cut off when answers contain really long URLs.
+- We fixed an edge case where certain assignments you could see in the Gradebook would not appear in the exported CSV file.
 
 ### Wednesday, September 9, 2015, 11:11 AM EDT
 
