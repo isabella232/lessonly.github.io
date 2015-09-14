@@ -8,8 +8,15 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming soon
 
+- Nothing yet!
+
+### Monday, September 14, 2015, 10:35 AM EDT
+
 - We fixed an issue where Report Card pages would get cut off when answers contain really long URLs.
 - We fixed an edge case where certain assignments you could see in the Gradebook would not appear in the exported CSV file.
+- We fixed a bug where a user would show up twice in the gradebook when in two selected groups.
+- We fixed a bug where new creator, manager, and admin users created via bulk user import would not get an invitation email.
+- We fixed an issue where multiple select and graded free response questions were not included in gradebook average scores.
 
 ### Wednesday, September 9, 2015, 11:11 AM EDT
 
