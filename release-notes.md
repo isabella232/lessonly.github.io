@@ -8,7 +8,7 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming soon
 
-- Nothing yet!
+- We've redesigned the Gradebook! New features include easier selection of groups, lessons, and courses; the ability to hide the filters and view the Gradebook data full-screen, and a number of performance improvements.
 
 ### Monday, September 14, 2015, 10:35 AM EDT
 
