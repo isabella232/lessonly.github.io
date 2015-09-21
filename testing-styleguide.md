@@ -29,6 +29,17 @@ Write tests for your code, please.
 
 - [Don't stub methods on the class being tested.](https://robots.thoughtbot.com/don-t-stub-the-system-under-test)
 - Avoid stubbing and mocking in integration tests. For example, if a feature must be enabled, call `company.enable_feature!` instead of stubbing `allow(company).to receive(:has_feature?) { true }`. The isolation enabled by stubs and mocks is great in unit tests, but runs counter to the purpose of integration tests, which is to test the entire system end-to-end.
+- Avoid calling methods in specs that aren't the method currently being tested: use factories instead. If you set up your spec with a method used elsewhere and that method is later changed, your spec may no longer be testing what you intend, and we'll never know.
+
+      # not so good
+      before :each do
+        lesson.assign_to!(user)
+      end
+      
+      # so good!
+      before :each do
+        create(:assignment, assignable: lesson, assignee: user)
+      end
 
 ## RSpec Syntax
 
