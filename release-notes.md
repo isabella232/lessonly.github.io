@@ -8,7 +8,8 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming soon
 
-- More good stuff!
+- We've updated the default Lesson.ly app logo to work with the new header style.
+- We fixed an error which would occur when trying to answer questions where the lesson's creator had left the question text blank.
 
 ### Monday, September 21, 2015, 4:04 PM EDT
 
