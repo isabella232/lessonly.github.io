@@ -8,7 +8,7 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming soon
 
-- More good stuff!
+- We fixed a bug where exporting a single user's Gradebook data would come up empty. 
 
 ### Tuesday, September 22, 2015, 11:05 AM EDT
 
