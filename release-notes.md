@@ -8,7 +8,12 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming soon
 
+- Nothing yet!
+
+### Monday, September 28, 2015, 2:19 PM EDT
+
 - We fixed a bug where exporting a single user's Gradebook data would come up empty. 
+- We fixed a bug where sometimes report cards would be out of order and have incorrect scores.
 
 ### Tuesday, September 22, 2015, 11:05 AM EDT
 
