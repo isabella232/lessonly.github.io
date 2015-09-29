@@ -8,6 +8,10 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming soon
 
+- More good stuff!
+
+### Tuesday, September 29, 2015, 11:59 AM EDT
+
 - You can now filter Gradebook results by assignments completed in the past week, month, quarter, or a custom date range.
 
 ### Monday, September 28, 2015, 2:19 PM EDT
