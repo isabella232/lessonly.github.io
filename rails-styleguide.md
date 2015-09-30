@@ -34,7 +34,7 @@ While we don’t follow it explicitly, the [community Rails Styleguide](https://
 
 ### Views
 
-- Don't reference instance variables in partials. It's alright for `show.html` to reference the `@lesson` declared in `LessonsController#show`, but if it calls out to `render "stats"`, `stats.html` should not know about `@lesson`. Instead pass it in directly: `render "stats", lesson: @lesson`. Eventually, we'll want to use that partial in another context where `@lesson` isn't defined: being explicit now saves us time later.
+- Avoid referencing instance variables in partials. It's alright for `show.html.erb` to reference the `@lesson` declared in `LessonsController#show`, but if it calls out to `render "stats"`, `_stats.html.erb` should not know about `@lesson`. Instead pass it in directly: `render "stats", lesson: @lesson`. Eventually, we'll want to use that partial in another context where `@lesson` isn't defined: being explicit now saves us time later.
 
 ### ActiveRecord shortcuts
 
