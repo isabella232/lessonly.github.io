@@ -32,6 +32,10 @@ While we don’t follow it explicitly, the [community Rails Styleguide](https://
       # so good!
       Model.joins("LEFT JOIN things ON thing_id = things.id AND another_id = things.another_id")
 
+### Views
+
+- Avoid referencing instance variables in partials. It's alright for `show.html.erb` to reference the `@lesson` declared in `LessonsController#show`, but if it calls out to `render "stats"`, `_stats.html.erb` should not know about `@lesson`. Instead pass it in directly: `render "stats", lesson: @lesson`. Eventually, we'll want to use that partial in another context where `@lesson` isn't defined: being explicit now saves us time later.
+
 ### ActiveRecord shortcuts
 
 - Use `?` methods only for boolean values to avoid unexpected behavior. For example, ActiveRecord treats `0` as `false`, while Ruby treats `0` as a `true` value.
