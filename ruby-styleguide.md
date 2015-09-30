@@ -17,7 +17,7 @@ These override either Github’s or Batsov’s styleguide where applicable:
 # bad
   name = 'foo'
 
-  # good
+# good
   name = "foo"
 ```
 - Close your parens when invoking a method.
@@ -41,6 +41,16 @@ These override either Github’s or Batsov’s styleguide where applicable:
   cool_hash = { "lol" => "nope" }
 ```
 - Use a single space within ERB tags, e.g. `<%= "foo" %>`, not `<%="foo"%>`
+```ruby
+# bad
+  <%="foo"%>
+
+# good
+  cool_hash => { lol: "nope" }
+
+# hm okay
+  cool_hash = { "lol" => "nope" }
+```
 - Use full words for variables except where a single letter is conventional (e.g. `f` for Rails form objects, `i` for iterators, etc.).
 
       # not so clear
