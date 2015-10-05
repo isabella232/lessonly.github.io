@@ -10,6 +10,11 @@ Look here for recent updates to the Lesson.ly platform.
 
 - More good stuff!
 
+### Monday, October 5, 2015, 4:58 PM EDT
+
+- We fixed a bug where the gradebook was showing scores for lessons that were previously taken, but had been unassigned.
+- We added a feature that assigns a useful lesson to the new user upon starting a new trial.
+
 ### Tuesday, September 29, 2015, 11:59 AM EDT
 
 - You can now filter Gradebook results by assignments completed in the past week, month, quarter, or a custom date range.
