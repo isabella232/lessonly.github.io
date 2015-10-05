@@ -13,44 +13,37 @@ Regarding coding style, we follow [Github's Ruby Style Guide](https://github.com
 These override either Github’s or Batsov’s styleguide where applicable:
 
 - Use double-quotes whenever possible.
-```ruby
-# bad
-  name = 'foo'
 
-# good
-  name = "foo"
-```
+      # bad
+      name = 'foo'
+
+      # good
+      name = "foo"
 - Close your parens when invoking a method.
-```ruby
-# bad
-  many_things.include? thing
 
-# good
-   many_things.include?(thing)
-```
+      # bad
+      many_things.include? thing
+
+      # good
+      many_things.include?(thing)
 - Use the Ruby 1.9-style hash syntax (`key: 'value'`) with symbol keys wherever possible. Only use `"hash" => "rocket"` syntax when hash keys are required to be strings.
 - Use a single newline above and below "private" and "protected" in classes.
-```ruby
-# bad
-  cool_hash = { :lol => "nope" }
 
-# good
-  cool_hash => { lol: "nope" }
+      # bad
+      cool_hash = { :lol => "nope" }
 
-# hm okay
-  cool_hash = { "lol" => "nope" }
-```
+      # good
+      cool_hash = { lol: "nope" }
+
+      # hm okay
+      cool_hash = { "lol" => "nope" }
 - Use a single space within ERB tags, e.g. `<%= "foo" %>`, not `<%="foo"%>`
-```ruby
-# bad
-  <%="foo"%>
 
-# good
-  cool_hash => { lol: "nope" }
+      # bad
+      <%="foo"%>
 
-# hm okay
-  cool_hash = { "lol" => "nope" }
-```
+      # good
+      <%= "foo" %>
 - Use full words for variables except where a single letter is conventional (e.g. `f` for Rails form objects, `i` for iterators, etc.).
 
       # not so clear
