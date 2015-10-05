@@ -12,23 +12,52 @@ Regarding coding style, we follow [Github's Ruby Style Guide](https://github.com
 
 These override either Github’s or Batsov’s styleguide where applicable:
 
+- Use double-quotes whenever possible.
+
+      # bad
+      name = 'foo'
+
+      # good
+      name = "foo"
+- Close your parens when invoking a method.
+
+      # bad
+      many_things.include? thing
+
+      # good
+      many_things.include?(thing)
 - Use the Ruby 1.9-style hash syntax (`key: 'value'`) with symbol keys wherever possible. Only use `"hash" => "rocket"` syntax when hash keys are required to be strings.
-- Use a single newline above and below "private" and "protected" in classes
+- Use a single newline above and below "private" and "protected" in classes.
+
+      # bad
+      cool_hash = { :lol => "nope" }
+
+      # good
+      cool_hash = { lol: "nope" }
+
+      # hm okay
+      cool_hash = { "lol" => "nope" }
 - Use a single space within ERB tags, e.g. `<%= "foo" %>`, not `<%="foo"%>`
+
+      # bad
+      <%="foo"%>
+
+      # good
+      <%= "foo" %>
 - Use full words for variables except where a single letter is conventional (e.g. `f` for Rails form objects, `i` for iterators, etc.).
-      
+
       # not so clear
       assignee.assignments.map(&:assignable).each { |a| ...
-      
+
       # so clear!
       assignee.assignments.map(&:assignable).each { |assignable| ...
 - Avoid mixing inline and multi-line conditionals: they hurt readability.
-      
+
       # Easy to miss the second condition at the end
       if some_condition
         do_something_with_a_really_long_method_name if some_other_condition
       end
-      
+
       # It's easier to notice both conditions when they're in the same place
       if some_condition && some_other_condition
         do_something_with_a_really_long_method_name
@@ -39,17 +68,17 @@ These override either Github’s or Batsov’s styleguide where applicable:
       if current_user
         # Do something
       end
-      
+
       # Explicitly gets a boolean value representing the presence of a user
       if current_user.present?
         # Do something
       end
 - `freeze` strings when their values should never change (e.g. in constants). It will make the string immutable, which has two advantages. It optimizes memory usage (because Ruby points to the same `String` object instead of instantiating a new `String` on each reference), and also prevents tempering, because in Ruby, constants aren't.
-      
+
       DEFAULT_TITLE = "Untitled"
       DEFAULT_TITLE << "foo"
       DEFAULT_TITLE.inspect # => "Untitledfoo"
-      
+
       DEFAULT_TITLE = "Untitled".freeze
       DEFAULT_TITLE << "foo" # => RuntimeError: can't modify frozen string
 
@@ -111,7 +140,7 @@ Each job should `include Sidekiq::Worker` and define a `perform` method which ei
         thing.update(attributes)
       end
     end
-    
+
 A more complex job would define private methods to keep `perform` simple and easy to read.
 
 ### Jobs that spawn more jobs
@@ -121,16 +150,16 @@ In some cases, it makes sense to run a job that simply runs many smaller jobs. F
     # /jobs/send_assignment_reminder_job.rb
     class SendAssignmentReminderJob
       include Sidekiq::Worker
-        
+
       def perform(assignment_id)
         # Do work
       end
     end
-    
+
     # /jobs/send_all_assignment_reminders_job.rb
     class SendAllAssignmentRemindersJob
       include Sidekiq::Worker
-      
+
       def perform
         get_all_one_day_overdue_assignment_ids.each do |assignment_id|
           SendAssignmentReminderJob.perform_async(assignment_id)
@@ -149,10 +178,10 @@ On occasion, it may be necessary to change a job's name. This can cause some pro
         ...
       end
     end
-    
+
     class OldJob < NewJob
     end
-    
+
 In this case, if `OldJob` is already queued, it will still run as it extends `NewJob`.
 
 ## Gemfile
