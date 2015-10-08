@@ -8,7 +8,9 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming soon
 
-- More good stuff!
+- We added a new feature - Smart Groups. In this release, there will only be one Smart Group: "Everyone". More will come in due time.
+- We fixed a bug that caused an error when deleting the retake score of a lesson.
+- We improved the database performance relating to several lesson-related pages, most notably completion of an assignment.
 
 ### Monday, October 5, 2015, 4:58 PM EDT
 
