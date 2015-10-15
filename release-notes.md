@@ -10,6 +10,15 @@ Look here for recent updates to the Lesson.ly platform.
 
 - Nothing yet!
 
+### Thursday, October 15, 2015, 12:00 PM EDT
+
+- We Fixed a bug where trying to take a lesson with no content would cause an error
+- We added `ext_uid` to certain API responses where users are listed
+- We updated the 404 page to be potentially less offensive
+- We improved the security for anonymous login 
+
+- Nothing yet!
+
 ### Thursday, October 8, 2015, 12:14 PM EDT
 
 - We added a new feature - Smart Groups. In this release, there will only be one Smart Group: "Everyone". More will come in due time.
