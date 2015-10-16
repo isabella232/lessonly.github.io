@@ -10,9 +10,15 @@ Look here for recent updates to the Lesson.ly platform.
 
 - Nothing yet!
 
+### Friday, October 16, 2015, 1:45 PM EDT
+
+- We added the ability to hide username/password login for SSO users
+- We fixed a bug where sometimes deactivated users would still get assignment reminder emails
+- We added a new feature to allow the grader to provide feedback when grading free response answers
+
 ### Thursday, October 15, 2015, 12:00 PM EDT
 
-- We Fixed a bug where trying to take a lesson with no content would cause an error
+- We fixed a bug where trying to take a lesson with no content would cause an error
 - We added `ext_uid` to certain API responses where users are listed
 - We updated the 404 page to be potentially less offensive
 - We improved the security for anonymous login 
