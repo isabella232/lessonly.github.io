@@ -126,6 +126,122 @@ but after more than a few lines of code, it will make sense to instantiate an ob
 
 While perhaps overkill in this simple case, it's valuable to be able to scan a service object's `#perform` method and see, on each line, all of its responsibilities.
 
+## Presenter Objects
+
+Similar to how Service Objects abstract away complex business logic from controller actions, we use Presenter Objects to encapsulate complex data-gathering and displaying. As a general rule, if your controller action or mailer contains more than one instance variable, you may benefit from a presenter. For example, take this action:
+
+    # app/controllers/dashboard_controller.rb
+    def index
+      @overdue_assignments = current_user.assignments.overdue.includes(:assignee, :assignable)
+      @incomplete_assignments = current_user.assignments.incomplete.includes(:assignee, :assignable)
+      @completed_assignments = current_user.assignments.completed.includes(:assignee, :assignable)
+    end
+
+with a presenter object, it might be reduced to the following:
+
+    # app/controllers/dashboard_controller.rb
+    def index
+      # used in views like `@dashboard.incomplete_assignments.each`
+      @dashboard = DashboardPresenter.new(current_user)
+    end
+
+    # app/presenters/dashboard_presenter.rb
+    class DashboardPresenter
+
+      def initialize(user)
+        @user = user
+      end
+
+      def overdue_assignments
+        assignments.overdue
+      end
+
+      def incomplete_assignments
+        assignments.incomplete
+      end
+
+      def completed_assignments
+        assignments.completed
+      end
+
+      private
+
+      def assignments
+        @user.assignments.includes(:assignable, :assignee)
+      end
+    end
+
+Consider how:
+
+- The controller action is now simpler.
+- The presenter is easier (and faster!) to test because it doesn't depend on the controller context of a web request.
+- The presenter allows us more easily to DRY up repeated logic with private methods.
+- The presenter is a great place to extract complex view logic related to collections. For instance, in the view we might have had
+
+      <% if (@overdue_assignments.empty? && @incomplete_assignments.empty? && @completed_assignments.empty?) %>
+        <%= render "blank_slate" %>
+      <% end %>
+  
+  which can now be something like:
+
+      <%= render "blank_slate" if @dashboard.empty? %>
+  
+  with `delegate :empty?, to: :assignments` in our `DashboardPresenter`.
+
+## Decorators
+
+Just as we use Presenter Objects to encapsulate complex logic related to collections, we use Decorator Objects to do the same for single model instances. The goal is to keep presentation-related logic out of models.
+
+Decorator Objects all inherit from Ruby's `SimpleDelegator` class, which is initialized with an object and delegates any methods it doesn't understand to that object. This way, a `UserDecorator` instance behaves exactly like a `User` instance would in a view context, but with additional presentation-related behavior layered on top that we wouldn't want cluttering up our model itself.
+
+    # app/decorators/uer_decorator.rb
+    class UserDecorator < SimpleDelegator
+
+      def formal_address
+        case title
+        when "Pope" then "Your Holiness, Pope #{name}"
+        when "Judge" then "Your Honor, #{name}"
+        when "Court Jester" then "Your Royal Silliness, #{name}"
+        else name
+        end
+      end
+    end
+
+    decorated_user = UserDecorator.new(current_user)
+    decorated_user.name #=> "Francis"
+    decorated_user.title #=> "Pope"
+    decorated_user.formal_address #=> "Your Holiness, Pope Francis"
+    current_user.formal_address #=> NoMethodError
+
+If you find yourself adding methods to models that are only ever called from views, you should probably reach for a Decorator Object. Decorator Objects are great for extracting logic from views as well. Conditionals are a common example:
+
+    <p>
+      <% if current_user.registered? %>
+        <%= t("greetings.registered") %>
+      <% else %>
+        <%= t("greetings.unregistered") %>
+      <% end %>
+    </p>
+
+this could be cleaned up by defining a `greeting` method on our `UserDecorator`:
+
+    class UserDecorator < SimpleDelegator
+
+      def greeting
+        if registered?
+          I18n.t("greetings.registered")
+        else
+          I18n.t("greetings.unregistered")
+        end
+      end
+    end
+
+used like:
+
+    <p><%= decorated_user.greeting %></p>
+
+When deciding whether to use a Decorator or a Presenter, consider whether you're adding behavior to *a single object*. If so use a Decorator, otherwise choose a Presenter.
+
 ## Jobs
 
 We use jobs (found in `/jobs`) to perform actions in the background. We have a simple naming convention: `VerbNoun(s)Job`. For example, a job that sends an assignment notification may be called `SendAssignmentNotificationJob` or a job that creates a set of tags may be called `CreateTagsJob`.
