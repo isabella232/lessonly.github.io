@@ -10,6 +10,14 @@ Look here for recent updates to the Lesson.ly platform.
 
 - Nothing yet!
 
+### Friday, October 23, 2015, 9:30 AM EDT
+
+- We made added some database indexes which should help speed up parts of the application
+- We added the ability to select and deselect all assignments when adding a user to a group with assignments
+- We fixed a usability issues where the due date couldn't be cleared from an assignment after being set when adding a user to a group with assignments
+- The "Assign" modal now keeps its state until it is explicitly canceled
+- We modified the email sent to new users to allow for direct SSO login via the email
+
 ### Friday, October 16, 2015, 1:45 PM EDT
 
 - We added the ability to hide username/password login for SSO users
