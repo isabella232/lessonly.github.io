@@ -10,7 +10,7 @@ The app contains an [`.editorconfig`](https://github.com/rainkingventures/lesson
 
 ## General Guidelines
 
-- **Don't commit commented-out code.** It's a distraction from the actually functional code. If code is obsolete or non-functional, delete it: we'll always have a record of it in Git.
+- **Don't ship commented-out code.** It can be a distraction from the actually functional code. If code is obsolete or non-functional, delete it: we'll always have a record of it in Git.
 
 ## Language-Specific Styles
 
