@@ -8,6 +8,10 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming soon
 
+- More good stuff!
+
+### Monday, November 16, 2015, 2:04 PM EST
+
 - We fixed an error when a manager or creator would attempt to filter their lessons by tag.
 
 ### Friday, October 23, 2015, 9:30 AM EDT
