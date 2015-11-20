@@ -10,6 +10,10 @@ Look here for recent updates to the Lesson.ly platform.
 
 - More good stuff!
 
+### Thursday, November 19, 2015, 1:25 PM EST
+
+- With apologies for some recent slowness in the app, we've made a performance improvement which should help keep things humming along during periods of especially high traffic.
+
 ### Monday, November 16, 2015, 2:04 PM EST
 
 - We fixed an error when a manager or creator would attempt to filter their lessons by tag.
