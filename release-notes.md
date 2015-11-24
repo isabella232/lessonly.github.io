@@ -8,7 +8,7 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming soon
 
-- More good stuff!
+- We fixed a bug where some emails incorrectly had the Lesson.ly logo at the bottom when it should have been your company's logo.
 
 ### Thursday, November 19, 2015, 1:25 PM EST
 
