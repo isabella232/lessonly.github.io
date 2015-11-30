@@ -8,6 +8,10 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming soon
 
+- More good stuff!
+
+### Monday, November 30, 2015, 12:33 PM EST
+
 - We fixed a bug where some emails incorrectly had the Lesson.ly logo at the bottom when it should have been your company's logo.
 - We've added a new feature which allows managers to add and edit users within the groups that they manage. Contact <support@lesson.ly> to have this feature enabled for your account.
 
