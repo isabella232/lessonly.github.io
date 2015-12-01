@@ -10,6 +10,11 @@ Look here for recent updates to the Lesson.ly platform.
 
 - More good stuff!
 
+### Tuesday, Dec 1, 2015, 1:43 PM EST
+
+- We fixed a bug that reported an incorrect number of responses to free response questions on lesson overview pages.
+- We've improved performance while taking an completing lessons.
+
 ### Monday, November 30, 2015, 12:33 PM EST
 
 - We fixed a bug where some emails incorrectly had the Lesson.ly logo at the bottom when it should have been your company's logo.
