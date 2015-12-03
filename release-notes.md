@@ -10,7 +10,11 @@ Look here for recent updates to the Lesson.ly platform.
 
 - More good stuff!
 
-### Tuesday, Dec 1, 2015, 1:43 PM EST
+### Thursday, December 3, 2015, 5:08 PM EST
+
+- We removed the image search feature from the lesson editor, as the Google API it relied on was discontinued. We are considering options for updating this feature in the future.
+
+### Tuesday, December 1, 2015, 1:43 PM EST
 
 - We fixed a bug that reported an incorrect number of responses to free response questions on lesson overview pages.
 - We've improved performance while taking an completing lessons.
