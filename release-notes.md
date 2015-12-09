@@ -10,6 +10,13 @@ Look here for recent updates to the Lesson.ly platform.
 
 - More good stuff!
 
+### Wednesday, December 9, 2015, 4:09 PM EST
+
+- Updating the minimum retake score for lessons just got much faster.
+- When creating and editing users via our [API](http://docs.lesson.ly/), you can now specify an `ext_uid` for the user. This is typically an identifier for a user in another system, and can help with syncing data and integrations.
+- For security, we now limit the number of failed login attempts for your account.
+- We added an experimental feature to allow managers to create the groups (which they then manage). Interested in trying this out? Contact <support@lesson.ly> to have it enabled for your account.
+
 ### Thursday, December 3, 2015, 5:08 PM EST
 
 - We removed the image search feature from the lesson editor, as the Google API it relied on was discontinued. We are considering options for updating this feature in the future.
