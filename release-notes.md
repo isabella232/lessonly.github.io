@@ -10,6 +10,11 @@ Look here for recent updates to the Lesson.ly platform.
 
 - More good stuff!
 
+### Thursday, December 18, 2015, 11:08 AM EST
+
+- We changed the URLs for taking lessons, but old bookmarks will still work.
+- We added the lesson's retake score to both the webhook and API response.
+
 ### Friday, December 11, 2015, 11:28 AM EST
 
 - There was a bug that caused manager users to lose their managed groups when that manager was updated by an admin. No data was lost, but managers who were edited since the last update will need to be assigned to their groups again. This release fixes that bug.
