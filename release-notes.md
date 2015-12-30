@@ -8,6 +8,10 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming soon
 
+- More good stuff!
+
+### Wednesday, December 30, 2015, 2:38 PM EST
+
 - We’ve fixed a bug where customers with a custom domain (e.g. `learn.mycompany.com`) configured had their logo in emails linking to their Lesson.ly subdomain (e.g. `mycompany.lesson.ly`).
 
 ### Tuesday, December 22, 2015, 11:48 AM EST
