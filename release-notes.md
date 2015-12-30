@@ -8,7 +8,11 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming soon
 
-- More good stuff!
+- We’ve fixed a bug where customers with a custom domain (e.g. `learn.mycompany.com`) configured had their logo in emails linking to their Lesson.ly subdomain (e.g. `mycompany.lesson.ly`).
+
+### Tuesday, December 22, 2015, 11:48 AM EST
+
+- We’ve fixed a bug when importing users where double-clicking the submit button could allow some duplicate users to be created.
 
 ### Thursday, December 18, 2015, 11:08 AM EST
 
