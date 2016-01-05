@@ -8,7 +8,7 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming soon
 
-- More good stuff!
+- We've fixed a bug where a user could not be created with an external user id that had already been used, even if the first user had been deleted.
 
 ### Wednesday, December 30, 2015, 2:38 PM EST
 
