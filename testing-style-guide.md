@@ -12,12 +12,10 @@ Write tests for your code, please.
 
 - In RSpec tests, denote instance methods with "#" and class methods with "::", e.g.
   
-```ruby
-describe Thing do
-  describe "::class_method" do # ...
-  describe "#instance_method" do # ...
-end
-```
+    describe Thing do
+      describe "::class_method" do # ...
+      describe "#instance_method" do # ...
+    end
 
 - When stubbing methods, use a block instead of `and_return`, because `expect().and_return()` sounds like you're expecting the method to return something, when in fact you're *forcing* it to. For example:
 
@@ -29,25 +27,24 @@ end
   
 - When writing feature specs, the `feature` description is generally the *thing* under test (a noun). Contexts describe under what circumstances we are testing, and scenarios are individual test cases. Note that scenarios may be testing the whole life-cycle of a request, not just each singular aspect of the feature under test, as feature specs take the longest.
 
-```ruby
-feature "Custom user fields" do
-  context "when the user is able to create/edit new users" do
-    scenario "save when a new user is created and update when said user is updated" do
-      # actual test code here
+
+    feature "Custom user fields" do
+      context "when the user is able to create/edit new users" do
+        scenario "save when a new user is created and update when said user is updated" do
+          # actual test code here
+        end
+      end
     end
-  end
-end
-```
       
   We also have the ability to query the database directly from the feature specs, so a feature test can change something via the UI, but verify it with actual database calls.
   
   Beware, pseudo code ahead!
-```
-  visit edit_user_path(user)
-  fill_in 'Name', with: 'John Doe'
-  click_button 'Save'
-  expect(User.find_by(name: 'John Doe').name).to eq 'John Doe'
-```
+
+    visit edit_user_path(user)
+    fill_in 'Name', with: 'John Doe'
+    click_button 'Save'
+    expect(User.find_by(name: 'John Doe').name).to eq 'John Doe' # This line hits the DB directly
+
 
 ## Guidelines
 
