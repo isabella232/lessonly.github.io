@@ -27,7 +27,7 @@ Write tests for your code, please.
 
       `expect(progress).to receive(:restart!).once`
   
-- When writing feature specs, the `feature` description is generally the *thing* under tst (a noun). Contexts describe under what circumstances we are testing, and scenarios are individual test cases. Note that scenarios may be testing the whole life-cycle of a request, not just each singular aspect of the feature under test, as feature specs take the longest.
+- When writing feature specs, the `feature` description is generally the *thing* under test (a noun). Contexts describe under what circumstances we are testing, and scenarios are individual test cases. Note that scenarios may be testing the whole life-cycle of a request, not just each singular aspect of the feature under test, as feature specs take the longest.
 
       ```
       feature "Custom user fields" do
