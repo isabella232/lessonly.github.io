@@ -8,6 +8,18 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming soon
 
+- More good stuff!
+
+### Wednesday, January 13, 2016, 12:55 PM EST
+
+- Redesigned lesson, course, user, and group overview pages! These updates bring a fresh new design and some additional functionality to make managing things quicker and easier. See [our blog post for the full run-down](http://www.lesson.ly/blog/overhauling-overview-pages/) of updates!
+
+### Tuesday, January 12, 2016, 5:57 PM EST
+
+- You've always been able to assign custom fields for your users to gather additional info when they sign up. Now, we've added an experimental feature for changing that open-ended text box to a drop-down with predefined options. Only want users to select from a list of, for example, existing department names? Contact <support@lesson.ly> if you’d be interested in using this feature.
+
+### January 11, 2016, 11:06 AM EST
+
 - We've fixed a bug where a user could not be created with an external user id that had already been used, even if the first user had been deleted.
 
 ### Wednesday, December 30, 2015, 2:38 PM EST
