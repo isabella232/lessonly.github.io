@@ -10,6 +10,10 @@ Look here for recent updates to the Lesson.ly platform.
 
 - More good stuff!
 
+### Wednesday, January 13, 2016, ??:?? PM EST
+
+- Scheduled assignments is here! This update allows admins and managers to schedule lessons and courses for assigning to groups or users at a future date. Scheduling an assignment is quite similar to assigning a normal assignment except it will of course require your future assign on date. You may optionally set a future due date or a reassign on recurrence, so you can schedule an assignment once and never fuss with it again. You may view and edit existing scheduled assignments from the Scheduled Assignments Queue.
+
 ### Wednesday, January 13, 2016, 12:55 PM EST
 
 - Redesigned lesson, course, user, and group overview pages! These updates bring a fresh new design and some additional functionality to make managing things quicker and easier. See [our blog post for the full run-down](http://www.lesson.ly/blog/overhauling-overview-pages/) of updates!
@@ -87,7 +91,7 @@ Look here for recent updates to the Lesson.ly platform.
 - We fixed a bug where trying to take a lesson with no content would cause an error
 - We added `ext_uid` to certain API responses where users are listed
 - We updated the 404 page to be potentially less offensive
-- We improved the security for anonymous login 
+- We improved the security for anonymous login
 
 - Nothing yet!
 
@@ -108,7 +112,7 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Monday, September 28, 2015, 2:19 PM EDT
 
-- We fixed a bug where exporting a single user's Gradebook data would come up empty. 
+- We fixed a bug where exporting a single user's Gradebook data would come up empty.
 - We fixed a bug where sometimes report cards would be out of order and have incorrect scores.
 
 ### Tuesday, September 22, 2015, 11:05 AM EDT
@@ -139,7 +143,7 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Friday, August 21, 2015, 4:23 PM EDT
 
-- On lesson overview pages, the number of “Completed” and “Incomplete” assignments now includes lessons assigned via courses as well as those that were assigned directly. Clicking one of those links now shows how the lesson was assigned. 
+- On lesson overview pages, the number of “Completed” and “Incomplete” assignments now includes lessons assigned via courses as well as those that were assigned directly. Clicking one of those links now shows how the lesson was assigned.
 - We fixed an error when fetching information about some users via the API.
 
 ### Thursday, August 20, 2015, 2:43 PM EDT
@@ -167,7 +171,7 @@ Look here for recent updates to the Lesson.ly platform.
 
 - We fixed an issue where if you exited the Assign modal on a user's, group's, lesson's, or course's page when you re-open it's still populated.
 - New feature: bulk create and update users with a CSV file!
- 
+
 ### Friday, July 31, 2015, 1:22 PM EDT
 
 - We fixed an issue where more than just free response questions could be marked as "Graded". Currently, only free response questions can be graded manually. Multiple choice and multiple select are graded automatically, and surveys should not be graded.
@@ -213,7 +217,7 @@ Look here for recent updates to the Lesson.ly platform.
 
 - API V1 release
 - Fixed a bug that caused an assignment's latest activity not to update in some circumstances
- 
+
 ### Monday, June 29, 2015, 11:30 AM EDT
 
 - Add Survey questions to ask multiple choice questions that should not be graded
@@ -226,7 +230,7 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Friday, June 19, 2015, 3:52 PM EDT
 
-- Multiple Select Questions now possible, for Multiple Choice Questions with more than one answer. 
+- Multiple Select Questions now possible, for Multiple Choice Questions with more than one answer.
 - Questions can now be marked as "Required". Learners will not be able to complete a lesson without answering all required questions.
 
 ### Thursday, June 11, 2015, 1:30 PM EDT
@@ -254,7 +258,7 @@ Look here for recent updates to the Lesson.ly platform.
 ### Wednesday, May 27, 2015, 9:04 AM EDT
 
 - Updated gradebook CSV export to include time for completion date column
-- Auto Assignment for Lessons and Courses for current users, new users, and anonymous users 
+- Auto Assignment for Lessons and Courses for current users, new users, and anonymous users
 
 ### Wednesday, May 20, 2015, 11:26 AM EDT
 
@@ -279,7 +283,7 @@ Look here for recent updates to the Lesson.ly platform.
 ### Tuesday, April 21, 2015, 12:13PM EDT
 
 - Fixes a bug which caused the browser to slow down when answering many questions on a single page.
-- Fixes a bug where some unassigned lessons continued to appear in the Gradebook. 
+- Fixes a bug where some unassigned lessons continued to appear in the Gradebook.
 
 ### Monday, April 20, 2015, 1:55PM EDT
 
