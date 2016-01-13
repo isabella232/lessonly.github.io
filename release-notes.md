@@ -8,10 +8,6 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming soon
 
-- More good stuff!
-
-### Wednesday, January 13, 2016, ??:?? PM EST
-
 - Scheduled assignments is here! This update allows admins and managers to schedule lessons and courses for assigning to groups or users at a future date. Scheduling an assignment is quite similar to assigning a normal assignment except it will of course require your future assign on date. You may optionally set a future due date or a reassign on recurrence, so you can schedule an assignment once and never fuss with it again. You may view and edit existing scheduled assignments from the Scheduled Assignments Queue.
 
 ### Wednesday, January 13, 2016, 12:55 PM EST
