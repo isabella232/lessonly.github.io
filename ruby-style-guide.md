@@ -81,6 +81,13 @@ These override either Github’s or Batsov’s styleguide where applicable:
 
       DEFAULT_TITLE = "Untitled".freeze
       DEFAULT_TITLE << "foo" # => RuntimeError: can't modify frozen string
+- Use `floor` instead of `to_i` when coercing a float to an integer without rounding. This makes it clear that the intention is specifically to round the number *down*.
+
+      # Unclear: uses to_i to truncate the float
+      (progress.completed_percent * 100).to_i
+
+      # More clear: uses floor to round the float down
+      (progress.completed_percent * 100).floor
 
 ## Service Objects
 
