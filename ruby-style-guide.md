@@ -88,7 +88,7 @@ These override either Github’s or Batsov’s styleguide where applicable:
 
       # More clear: uses floor to round the float down
       (progress.completed_percent * 100).floor
-- Too much method chaining is often a bad code smell of something is responsible for too much at once, but if do you happen to find yourself on the multi-line choo choo method chain train please chain responsibly with *leading* periods. e.g.
+- Too much method chaining is often a bad code smell that something is responsible for too much at once, but if do you happen to find yourself on the multi-line choo choo method chain train please chain responsibly with *leading* periods. e.g.
 
       # bad
       LatestProgress.where(user: manageable_users, lesson: company_lessons).
