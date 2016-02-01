@@ -8,6 +8,14 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming soon
 
+- More good stuff!
+
+### Monday, February 1, 2016, 2:10 PM EST
+
+- We've fixed a bug where automatically-assigned lessons were not being assigned to users when logging in for the first time via Single Sign-On.
+- We've fixed a bug where group overview pages sometimes wouldn't be updated with the latest completion data from the group's users.
+- Some general speed improvements—more to come!
+
 ### Thursday, January 14, 2016, 11:40 PM EST
 
 - Scheduled assignments is here! This update allows admins and managers to schedule lessons and courses for assigning to groups or users at a future date. Scheduling an assignment is quite similar to assigning a normal assignment except it will of course require your future assign on date. You may optionally set a future due date or a reassign on recurrence, so you can schedule an assignment once and never fuss with it again. You may view and edit existing scheduled assignments from the Scheduled Assignments Queue.
