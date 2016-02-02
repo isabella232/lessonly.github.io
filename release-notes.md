@@ -8,7 +8,7 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming soon
 
-- More good stuff!
+- We've fixed a display bug on overview pages with really long group names.
 
 ### Monday, February 1, 2016, 2:10 PM EST
 
