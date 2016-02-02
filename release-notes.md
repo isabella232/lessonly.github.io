@@ -6,8 +6,9 @@ permalink: /release-notes/
 
 Look here for recent updates to the Lesson.ly platform.
 
-### Coming soon
+### Tuesday, February 2, 2016, 6:03 PM EST
 
+- We've fixed a bug where Scheduled Assignment dates were not using time zone to display date..
 - We've fixed a display bug on overview pages with really long group names.
 
 ### Monday, February 1, 2016, 2:10 PM EST
