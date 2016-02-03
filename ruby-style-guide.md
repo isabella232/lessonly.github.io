@@ -91,14 +91,16 @@ These override either Github’s or Batsov’s styleguide where applicable:
 - Too much method chaining is often a bad code smell that something is responsible for too much at once, but if do you happen to find yourself on the multi-line choo choo method chain train please chain responsibly with *leading* periods. e.g.
 
       # bad
-      LatestProgress.where(user: manageable_users, lesson: company_lessons).
+      LatestProgress.
+        where(user: manageable_users, lesson: company_lessons).
         completed_yesterday.
         progresses.
         includes(:lesson, user: [:custom_user_fields, :custom_user_field_values]).
         present?
 
       # good
-      LatestProgress.where(user: manageable_users, lesson: company_lessons)
+      LatestProgress
+        .where(user: manageable_users, lesson: company_lessons)
         .completed_yesterday
         .progresses
         .includes(:lesson, user: [:custom_user_fields, :custom_user_field_values])
