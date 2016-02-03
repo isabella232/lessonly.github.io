@@ -88,6 +88,24 @@ These override either Github’s or Batsov’s styleguide where applicable:
 
       # More clear: uses floor to round the float down
       (progress.completed_percent * 100).floor
+- Too much method chaining is often a bad code smell that something is responsible for too much at once, but if do you happen to find yourself on the multi-line choo choo method chain train please chain responsibly with *leading* periods. e.g.
+
+      # bad
+      LatestProgress.
+        where(user: manageable_users, lesson: company_lessons).
+        completed_yesterday.
+        progresses.
+        includes(:lesson, user: [:custom_user_fields, :custom_user_field_values]).
+        present?
+
+      # good
+      LatestProgress
+        .where(user: manageable_users, lesson: company_lessons)
+        .completed_yesterday
+        .progresses
+        .includes(:lesson, user: [:custom_user_fields, :custom_user_field_values])
+        .present?
+
 
 ## Service Objects
 
@@ -188,11 +206,11 @@ Consider how:
       <% if (@overdue_assignments.empty? && @incomplete_assignments.empty? && @completed_assignments.empty?) %>
         <%= render "blank_slate" %>
       <% end %>
-  
+
   which can now be something like:
 
       <%= render "blank_slate" if @dashboard.empty? %>
-  
+
   with `delegate :empty?, to: :assignments` in our `DashboardPresenter`.
 
 ## Decorators
