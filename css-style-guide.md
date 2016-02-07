@@ -8,35 +8,39 @@ permalink: /css/
 
 Also called "object-oriented CSS", component-based CSS brings a number of benefits to customer and developer happiness (in the form of improved performance and maintainability). Fundamentally, it's about encapsulating styles into self-contained units. For example, here is some traditional CSS:
 
-    // app/stylesheets/lessons.scss
-    #lesson_viewer {
-      background: #eee;
-      h1 {
-        font-size: 2em;
-      }
-      &.past_due {
-        background: #f00;
-      }
-      &.expanded {
-        height: 400px;
-      }
-    }
+```scss
+// app/stylesheets/lessons.scss
+#lesson_viewer {
+  background: #eee;
+  h1 {
+    font-size: 2em;
+  }
+  &.past_due {
+    background: #f00;
+  }
+  &.expanded {
+    height: 400px;
+  }
+}
+```
 
 and here is how it would be written in a component-based way (using [SuitCSS naming conventions](https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md)):
 
-    // app/stylesheets/components/lesson_viewer.scss
-    .LessonViewer {
-      background: #eee;
-    }
-    .LessonViewer-heading {
-      font-size: 2em;
-    }
-    .LessonViewer--pastDue {
-      background: #f00;
-    }
-    .LessonViewer.is-expanded {
-      height: 400px;
-    }
+```scss
+// app/stylesheets/components/lesson_viewer.scss
+.LessonViewer {
+  background: #eee;
+}
+.LessonViewer-heading {
+  font-size: 2em;
+}
+.LessonViewer--pastDue {
+  background: #f00;
+}
+.LessonViewer.is-expanded {
+  height: 400px;
+}
+```
 
 ### The Basics
 
@@ -63,12 +67,14 @@ While these conventions are restrictive, this is intentional in order to keep th
 
 CSS properties already use lower-hyphen-case, so let's be consistent in our Sass.
 
-    // Not so good
-    $borderColor: $fafafa;
-    @mixin error_warning() {
+```scss
+// Not so good
+$borderColor: $fafafa;
+@mixin error_warning() {
 
-    // So good!
-    $border-color: $fafafa;
-    @mixin error-warning() {
+// So good!
+$border-color: $fafafa;
+@mixin error-warning() {
+```
 
 The only exception is if a library (like Bootstrap) includes their own mixins or variables.

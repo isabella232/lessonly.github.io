@@ -11,4 +11,5 @@ twitter_username: lessonly
 github_username:  lessonly
 
 # Build settings
-markdown: kramdown
+kramdown:
+  input: GFM

@@ -7,7 +7,7 @@ Powered by [Jekyll](https://github.com/jekyll/jekyll) and hosted by [Github Page
     $ git clone git@github.com:lessonly/lessonly.github.io.git
     $ cd lessonly.github.io
     $ bundle install
-    $ jekyll serve --watch
+    $ jekyll serve
 
 See your changes reflected at <http://localhost:4000>
 

@@ -12,29 +12,33 @@ permalink: /javascript/
 
 For variable and function names in Javascript, use lowerCamelCase.
 
-    // Not so good
-    var llamas_count = 99;
-    function do_something() {};
+```js
+// Not so good
+var llamas_count = 99;
+function do_something() {};
 
-    // So good!
-    var llamasCount = 99;
-    function doSomething() {};
+// So good!
+var llamasCount = 99;
+function doSomething() {};
+```
 
 ## Prefer Single Quotes
 
 Prefer single quotes in JavaScript and CoffeeScript strings, as they're more likely to contain double-quoted substrings like HTML attributes. Double quotes are fine in CoffeeScript when using string interpolation, though.
 
-    # not good (we double-quote HTML attribute values)
-    $("<div class='my-class'/>")
-    
-    # also not good (escaping is harder to read)
-    $("<div class=\"my-class\"/>")
-    
-    # good
-    $('<div class="my-class"/>')
-    
-    # just fine
-    message = "Hello, #{@user.get('name')}!"
+```js
+// not good (we double-quote HTML attribute values)
+$("<div class='my-class'/>")
+
+// also not good (escaping is harder to read)
+$("<div class=\"my-class\"/>")
+
+// good
+$('<div class="my-class"/>')
+
+// just fine
+message = "Hello, #{@user.get('name')}!"
+```
 
 ## Use the `data-behavior` pattern
 
@@ -42,12 +46,16 @@ When attaching JavaScript behavior to DOM elements, use a `data-behavior` attrib
 
 Instead of this:
 
-    <input class="do_something">
-    $('.do_something').doSomething();
+```js
+// <input class="do_something">
+$('.do_something').doSomething();
+```
 
 Use this:
 
-    <input data-behavior="do_something">
-    $('[data-behavior~=do_something]').doSomething();
+```js
+// <input data-behavior="do_something">
+$('[data-behavior~=do_something]').doSomething();
+```
 
 We've settled on lowercase with underscores (i.e. "snake_case") for `data-behavior` attributes.
