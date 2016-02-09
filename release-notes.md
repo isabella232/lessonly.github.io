@@ -8,9 +8,9 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Tuesday, February 9, 2016, 3:49 PM EST
 
-- API support for [listing assignments on a single user](http://docs.lesson.ly/#user-assignments) and [assigning assignments on a single user](http://docs.lesson.ly/#create-user-assignments).
+- API support for [listing assignments on a single user](http://docs.lesson.ly/#user-assignments) and [assigning lessons and courses on a single user](http://docs.lesson.ly/#create-user-assignments).
 - New lesson description field is now available which you may set via the lesson overview page. Currently, lesson descriptions will show up in assignment notification emails, learning library tiles, and PDF exports of lessons.
-- Cross-domain or cross-origin AJAX requests against our API is now supported.
+- Cross-domain or cross-origin AJAX requests against our API are now supported.
 
 ### Tuesday, February 2, 2016, 6:03 PM EST
 
