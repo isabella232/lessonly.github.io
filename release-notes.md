@@ -6,6 +6,11 @@ permalink: /release-notes/
 
 Look here for recent updates to the Lesson.ly platform.
 
+### Thursday, February 11, 2016, 3:30 PM EST
+
+- Fixed a bug where creating a user and assigning a lesson set to be auto-assigned caused an error.
+- Fixed a bug where users of deactivated accounts would occasionally receive a daily digest email.
+
 ### Tuesday, February 9, 2016, 3:49 PM EST
 
 - API support for [listing assignments on a single user](http://docs.lesson.ly/#user-assignments) and [assigning lessons and courses on a single user](http://docs.lesson.ly/#create-user-assignments).
