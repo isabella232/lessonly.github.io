@@ -6,6 +6,10 @@ permalink: /release-notes/
 
 Look here for recent updates to the Lesson.ly platform.
 
+### Coming Soon!
+
+- Fixed a bug where changing a lesson's title might not display the updated value the next time a User visited their dashboard.
+
 ### Thursday, February 11, 2016, 3:30 PM EST
 
 - Fixed a bug where creating a user and assigning a lesson set to be auto-assigned caused an error.
