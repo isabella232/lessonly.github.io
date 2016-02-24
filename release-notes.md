@@ -6,7 +6,11 @@ permalink: /release-notes/
 
 Look here for recent updates to the Lesson.ly platform.
 
-### Coming Soon!
+### Coming Soon
+
+- Nothing yet!
+
+### Wednesday, February 24, 2016, 3:00 PM EST
 
 - Fixed a bug where changing a lesson's title might not display the updated value the next time a User visited their dashboard.
 - In users’ event feeds, we’ll now show events by year, making it easier to tell *which* “Feb 24” they completed an assignment, for example.
