@@ -8,7 +8,12 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming Soon
 
-- Nothing yet!
+- More good stuff!
+
+### Thursday, February 25, 2016, 4:18 PM EST
+
+- An update to our WYSIWYG text editor fixing a number of small issues.
+- We’ve fixed a bug where lessons and courses were still appearing with a yellow border on the dashboard even after they’d been graded, instead of the expected green border.
 
 ### Wednesday, February 24, 2016, 3:00 PM EST
 
