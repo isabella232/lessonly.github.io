@@ -12,6 +12,7 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Thursday, February 25, 2016, 4:18 PM EST
 
+- By popular request, we’re now displaying users’ events feeds by year so it's easier to tell when things happened.
 - An update to our WYSIWYG text editor fixing a number of small issues.
 - We’ve fixed a bug where lessons and courses were still appearing with a yellow border on the dashboard even after they’d been graded, instead of the expected green border.
 
