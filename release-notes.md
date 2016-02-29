@@ -13,6 +13,7 @@ Look here for recent updates to the Lesson.ly platform.
 ### Monday, February 29, 2016, 2:20 PM EST
 
 - Fixed a bug where Free Response questions had overlapping checkboxes for Required and Graded options in the editor.
+- Groups can now be created and deleted from the API.
 
 ### Thursday, February 25, 2016, 4:18 PM EST
 
