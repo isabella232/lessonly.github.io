@@ -10,6 +10,10 @@ Look here for recent updates to the Lesson.ly platform.
 
 - More good stuff!
 
+### Monday, February 29, 2016, 2:20 PM EST
+
+- Fixed a bug where Free Response questions had overlapping checkboxes for Required and Graded options in the editor.
+
 ### Thursday, February 25, 2016, 4:18 PM EST
 
 - By popular request, we’re now displaying users’ events feeds by year so it's easier to tell when things happened.
