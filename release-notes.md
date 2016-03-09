@@ -8,7 +8,7 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming Soon
 
-- More good stuff!
+- An update to the API which allows for finding users by `email` or `ext_uid`
 
 ### Wednesday, March 2, 2016, 9:25 AM EST
 
