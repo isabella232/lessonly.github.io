@@ -8,7 +8,12 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming Soon
 
-- An update to the API which allows for finding users by `email` or `ext_uid`
+- More good stuff!
+
+### Friday, March 11, 2016, 1:39 PM EST
+
+- An update to the API which allows for finding users by `email` or `ext_uid`. See [our API docs](http://docs.lesson.ly/#list-users) for more info.
+- We’ve made lesson overview pages faster, especially for lessons with lots of quiz questions.
 
 ### Wednesday, March 2, 2016, 9:25 AM EST
 
