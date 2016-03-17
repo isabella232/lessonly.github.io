@@ -10,6 +10,11 @@ Look here for recent updates to the Lesson.ly platform.
 
 - More good stuff!
 
+### Thursday, March 17, 2016, 3:19 PM EDT
+
+- For customers using the Learning Library, you can now filter and sort lessons and courses by those most recently added to the Library, so it’s easier than ever to see what’s new to learn!
+- We’ve made big improvements to searching on the Dashboard: not only is it faster, but by popular request you can now search course assignments by content in any of the courses’ lessons.
+
 ### Friday, March 11, 2016, 1:39 PM EST
 
 - An update to the API which allows for finding users by `email` or `ext_uid`. See [our API docs](http://docs.lesson.ly/#list-users) for more info.
