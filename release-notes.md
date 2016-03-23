@@ -10,6 +10,10 @@ Look here for recent updates to the Lesson.ly platform.
 
 - More good stuff!
 
+### Wednesday, March 23, 2016, 4:35 PM EDT
+
+- The Learning Library: a new experience for elective training material! Make training content available on demand for your learners. Read more at our website. http://www.lesson.ly/blog/introducing-the-learning-library/
+
 ### Wednesday, March 23, 2016, 12:15 AM EDT
 
 - New Dashboard Design: We redesigned the Learners' dashboard for a better look and feel, to make it easier to find content, and for a smoother overall experience.
