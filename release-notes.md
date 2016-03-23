@@ -10,6 +10,10 @@ Look here for recent updates to the Lesson.ly platform.
 
 - More good stuff!
 
+### Wednesday, March 23, 2016, 12:15 AM EDT
+
+- New Dashboard Design: We redesigned the Learners' dashboard for a better look and feel, to make it easier to find content, and for a smoother overall experience.
+
 ### Thursday, March 17, 2016, 3:19 PM EDT
 
 - For customers using the Learning Library, you can now filter and sort lessons and courses by those most recently added to the Library, so it’s easier than ever to see what’s new to learn!
