@@ -8,8 +8,11 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming Soon
 
-- We fixed a bug that caused copied lessons to copy their "Last Edited" value to the new lesson, even when that date was in the past.
 - More good stuff!
+
+### Friday, April 1, 2016, 11:54 AM EDT
+
+- We fixed a bug that caused copied lessons to copy their "Last Edited" value to the new lesson, even when that date was in the past.
 
 ### Wednesday, March 23, 2016, 4:35 PM EDT
 
