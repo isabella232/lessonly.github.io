@@ -280,7 +280,7 @@ decorated_user.formal_address #=> "Your Holiness, Pope Francis"
 current_user.formal_address #=> NoMethodError
 ```
 
-If you find yourself adding methods to models that are only ever called from views, you should probably reach for a Presenter Object. Presenter Objects are great for extracting logic from views as well. Conditionals are a great example:
+If you find yourself adding methods to models that are only ever called from views, you should probably reach for a Decorator Object. Decorator Objects are great for extracting logic from views as well. Conditionals are a great example:
 
 ```erb
 <p>
