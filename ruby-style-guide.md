@@ -239,30 +239,19 @@ Consider how:
 - The presenter allows us more easily to DRY up repeated logic with private methods.
 - The presenter is a great place to extract complex view logic related to collections. For instance, in the view we might have had
 
-<<<<<<< 58a67f72b796f14708135c79dfc67016c203ed83
-      <% if (@overdue_assignments.empty? && @incomplete_assignments.empty? && @completed_assignments.empty?) %>
-        <%= render "blank_slate" %>
-      <% end %>
+```erb
+<% if (@overdue_assignments.empty? && @incomplete_assignments.empty? && @completed_assignments.empty?) %>
+  <%= render "blank_slate" %>
+<% end %>
+```
 
-  which can now be something like:
+which can now be something like:
 
-      <%= render "blank_slate" if @dashboard.empty? %>
+```erb
+<%= render "blank_slate" if @dashboard.empty? %>
+```
 
-=======
-  ```erb
-  <% if (@overdue_assignments.empty? && @incomplete_assignments.empty? && @completed_assignments.empty?) %>
-    <%= render "blank_slate" %>
-  <% end %>
-  ```
-  
-  which can now be something like:
-
-  ```erb
-  <%= render "blank_slate" if @dashboard.empty? %>
-  ```
-  
->>>>>>> Jekyll 3
-  with `delegate :empty?, to: :assignments` in our `DashboardPresenter`.
+with `delegate :empty?, to: :assignments` in our `DashboardPresenter`.
 
 ## Decorators
 
