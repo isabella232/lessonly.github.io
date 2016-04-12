@@ -315,6 +315,30 @@ used like:
 
 When deciding whether to use a Decorator or a Presenter, consider whether you're adding behavior to *a single object*. If so use a Decorator, otherwise choose a Presenter.
 
+### Avoid HTML in Decorators
+
+Decorators are great for getting logic out of templates, but some things belong in the templates. HTML is one of those things. While it’s possible to call HTML-generating methods like `link_to` or `content_tag` within decorators by passing in the view context...
+
+```erb
+<%= UserDecorator.new(current_user, self).profile_link %>
+```
+
+```ruby
+class UserDecorator < SimpleDelegator
+
+  def initialize(user, view_context)
+    super(user)
+    @view_context = view_context
+  end
+
+  def profile_link
+    @view_context.link_to("Profile", @view_context.user_path(user))
+  end
+end
+```
+
+...this makes decorator objects more complicated, which makes them harder to test, and blurs the line between Ruby objects and HTML templates. It’s a fine line, though: we routinely use decorators to determine which class names to apply. As a general rule, just avoid anything in decorators that you need to pass in a `view_context` to do.
+
 ## Jobs
 
 We use jobs (found in `/jobs`) to perform actions in the background. We have a simple naming convention: `VerbNoun(s)Job`. For example, a job that sends an assignment notification may be called `SendAssignmentNotificationJob` or a job that creates a set of tags may be called `CreateTagsJob`.
