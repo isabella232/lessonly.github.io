@@ -10,6 +10,10 @@ Look here for recent updates to the Lesson.ly platform.
 
 - More good stuff!
 
+### Thursday, April 14, 2016, 1:44 PM EDT
+
+- We’ve fixed a bug that prevented yesterday's scheduled assignments and overdue reminders from going out. We apologize for the error here, and have sent out those notifications today.
+
 ### Friday, April 1, 2016, 11:54 AM EDT
 
 - We fixed a bug that caused copied lessons to copy their "Last Edited" value to the new lesson, even when that date was in the past.
