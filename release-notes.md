@@ -10,6 +10,11 @@ Look here for recent updates to the Lesson.ly platform.
 
 - More good stuff!
 
+### Friday, April 22, 2016, 2:15 PM EDT
+
+- Contact <support@lesson.ly> for importing Google Docs as Lessons
+- We've fixed a bug where emails may have shown a user completing more lessons than exist in a given course.
+
 ### Thursday, April 14, 2016, 1:44 PM EDT
 
 - We’ve fixed a bug that prevented yesterday's scheduled assignments and overdue reminders from going out. We apologize for the error here, and have sent out those notifications today.
