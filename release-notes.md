@@ -8,7 +8,7 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming Soon
 
-- More good stuff!
+- We've added the ability to upload videos directly in the lesson editor rather than having to embed externally-hosted videos.
 
 ### Friday, April 22, 2016, 2:15 PM EDT
 
