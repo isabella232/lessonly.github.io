@@ -8,7 +8,13 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming Soon
 
+- More good stuff!
+
+### Thursday, April 28, 2016, 1:31 PM EDT
+
 - We've added the ability to upload videos directly in the lesson editor rather than having to embed externally-hosted videos.
+- If you have the ability to edit a lesson, while viewing it you'll now see a pencil icon in the top-right corner so you can quickly jump into the editor.
+- On lesson pages, we now list out all of the courses to which a lesson belongs.
 
 ### Friday, April 22, 2016, 2:15 PM EDT
 
