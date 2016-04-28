@@ -6,7 +6,11 @@ permalink: /release-notes/
 
 Look here for recent updates to the Lesson.ly platform.
 
-### Coming Soon
+### Coming soon!
+
+- More cool things!
+
+### Thursday, April 28, 2016, 5:05 EDT
 
 - Users who have an assigned lesson but no content to manage will now be logged in directly to their dashboard.
 
