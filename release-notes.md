@@ -8,7 +8,7 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming Soon
 
-- More good stuff!
+- Users who have an assigned lesson but no content to manage will now be logged in directly to their dashboard.
 
 ### Thursday, April 28, 2016, 1:31 PM EDT
 
