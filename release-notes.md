@@ -6,12 +6,19 @@ permalink: /release-notes/
 
 Look here for recent updates to the Lesson.ly platform.
 
-### Coming soon!
+### Coming soon
+
+- Nothing yet
+
+### Wednesday, May 4, 2016, 1:37 PM EDT
 
 - We’ve made the Gradebook easier to read at a glance: abbreviations like "IC" have been replaced with full words like "Incomplete" and assignment cell are now color-coded by status.
-- More cool things!
+- We now show the list of users on a group's overview page.
+- We fixed a bug that counted archived users in the size of groups.
+- We now hide the "Learning Library Statistics" module on lesson and course overview pages for creators, because they were only seeing zeroes anyway.
+- May the Fourth be with you!
 
-### Thursday, April 28, 2016, 5:05 EDT
+### Thursday, April 28, 2016, 5:05 PM EDT
 
 - Users who have an assigned lesson but no content to manage will now be logged in directly to their dashboard.
 
