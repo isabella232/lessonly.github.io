@@ -8,6 +8,7 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming soon!
 
+- We’ve made the Gradebook easier to read at a glance: abbreviations like "IC" have been replaced with full words like "Incomplete" and assignment cell are now color-coded by status.
 - More cool things!
 
 ### Thursday, April 28, 2016, 5:05 EDT
