@@ -8,7 +8,11 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming soon
 
-- Nothing yet
+- More good stuff!
+
+### Friday, May 6, 2016, 4:19 PM EDT
+
+- We've fixed a bug where managers who managed a given user via multiple groups would see that user's assignments multiple times.
 
 ### Wednesday, May 4, 2016, 1:37 PM EDT
 
