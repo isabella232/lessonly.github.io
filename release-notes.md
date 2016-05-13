@@ -8,6 +8,10 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming soon
 
+- More cool stuff!
+
+### Friday, May 13, 2016, 3:40 PM EDT
+
 - Course's lessons are now alphabetized in the gradebook.
 - Assignments will now only show as overdue after their due date, not on it.
 
