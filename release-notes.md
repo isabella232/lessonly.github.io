@@ -8,7 +8,8 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming soon
 
-- More cool stuff!
+- Our logo has been updated to a new, sleeker look!
+- By popular request, you can now make assignments to multiple users or groups at a time! After selecting the first assignee, you'll see a new button which allows you to select additional assignees. The lessons and courses assigned, due date, and other options will apply to all assignees.
 
 ### Friday, May 13, 2016, 3:40 PM EDT
 
