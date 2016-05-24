@@ -10,6 +10,11 @@ Look here for recent updates to the Lesson.ly platform.
 
 - More cool stuff!
 
+### Tuesday, May 24, 2016, 4:30 PM EDT
+
+- You can now add tags to every lesson in a course straight from the course overview page!
+- Added lesson-based learner report excel exports!
+
 ### Tuesday, May 17, 2016, 9:50 AM EDT
 
 - Our logo has been updated to a new, sleeker look!
