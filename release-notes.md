@@ -8,6 +8,7 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming soon
 
+- Improved gradebook export to now have the Summary you see on the Lesson.ly gradebook page for your company and the detailed progress report you could previously only get via CSV.
 - More cool stuff!
 
 ### Tuesday, May 24, 2016, 4:30 PM EDT
