@@ -10,6 +10,7 @@ Look here for recent updates to the Lesson.ly platform.
 
 - Improved gradebook export to now have the Summary you see on the Lesson.ly gradebook page for your company and the detailed progress report you could previously only get via CSV.
 - A bug was fixed where emails would sometimes be sent out asking users to finish an assignment on an archived lesson or course.
+- You can now choose whether or not to alert assignees when the lessons in a course are added.
 - More cool stuff!
 
 ### Tuesday, May 24, 2016, 4:30 PM EDT
