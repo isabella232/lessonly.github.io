@@ -24,6 +24,9 @@ $ git checkout -b jmf-visual-indicator
 ## Commits
 * Commit *early and often*. This naturally leads to smaller commits which are both easier to understand and revert if needed.
 * Keep commits to single logical changes. (e.g. Gemfile update should include Gemfile.lock as well)
+* Prefer to use `git commit` instead of `git commit -m "Commit message"`. This is because
+`git commit -m` encourages one line commit messages. Commit messages should read like
+history. See below for message template.
 
 ### Messages
 * Limit the subject line to 50 characters or less. This allows for quick scanning of short concise commits.
@@ -33,11 +36,49 @@ $ git checkout -b jmf-visual-indicator
 * Aim for using imperative mood for subject line (Up for debate). Git's built-in convention for messages are written
 in the imperative. `Merge branch 'some-feature'` so using them in our messages makes them simplier to read.
 * A good rule of thumb for the subject line of your commit is to complete the following sentence: "If applied, this commit will ___your subject line here___"
+* A commit message should answer the following questions
+  * Why is this commit important?
+  * How does this commit address the larger issue at hand?
+  * Are there any side effects to this commit? (optional)
 
 ## Configuration
 * Require local git install to ignore filemode (i.e. chmod) changes
 ```shell
 $ git config core.fileMode false
+```
+
+### Commit message template
+
+Having a standard message template ensures that history reads in the same format
+from developer to developer. It also builds off our already in use ISSUE_TEMPLATE
+and PULL_REQUEST_TEMPLATE for Github.
+
+To setup a message template create a new file called `.gitmessage` in your root
+directory. Add the following script to it.
+
+```shell
+# Subject line (50-characters or less)
+
+# Description (word wrap at 72-characters)
+Why?
+
+*
+
+How does it address the issue?
+
+*
+
+Are there any side effects?
+
+*
+```
+
+Finally, edit your ~/.gitconfig file and add the following section that points
+to the location of the template.
+
+```shell
+[commit]
+        template = ~/.gitmessage
 ```
 
 ### Useful Aliases
