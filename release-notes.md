@@ -8,6 +8,7 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming soon
 
+- An issue was fixed where a manager may see duplicate entries on a user's Latest Activity feed if that user belonged to multiple groups of the manager.
 - More cool stuff!
 
 ### Monday, June 6th, 2016, 9:09 PM EDT
