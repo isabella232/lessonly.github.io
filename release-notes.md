@@ -8,8 +8,16 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming soon
 
-- An issue was fixed where a manager may see duplicate entries on a user's Latest Activity feed if that user belonged to multiple groups of the manager.
 - More cool stuff!
+
+### Sunday, June 12th, 2016, 9:30 PM EDT
+
+- Settings page redesign with custom link colors, logo uploader, and more!
+- Lesson taking redesign
+- An issue was fixed where a manager may see duplicate entries on a user's Latest Activity feed if that user belonged to multiple groups of the manager.
+- Learner report shows Creator as N/A if not set
+- API assignment endpoint now includes assigned at date
+- Allow grading station to be filtered by users and lessons
 
 ### Monday, June 6th, 2016, 9:09 PM EDT
 
