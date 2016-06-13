@@ -374,9 +374,11 @@ end
 
 A more complex job would define private methods to keep `perform` simple and easy to read.
 
+The job will be called via `perform_async`, which will eventually call `perform`. Please note that any arguments passed to `perform_async` will be serialized and, as such, should be simple. Keyword arguments are not available to the `perform` method due to this constraint.
+
 ### Jobs that spawn more jobs
 
-In some cases, it makes sense to run a job that simply runs many smaller jobs. For example, every morning we send assignment notifications to every user who has an incomplete assignment due in one weeek, due in one day, one day overdue, or one week overdue. In these cases, the job that performs an action on a single object should follow the normal naming convention. The job that spawns more jobs should be named `VerbAllNounsJob`. Each job class should be independent of each other; neither should be namespaced by the other. For example:
+In some cases, it makes sense to run a job that simply runs many smaller jobs. For example, every morning we send assignment notifications to every user who has an incomplete assignment due in one week, due in one day, one day overdue, or one week overdue. In these cases, the job that performs an action on a single object should follow the normal naming convention. The job that spawns more jobs should be named `VerbAllNounsJob`. Each job class should be independent of each other; neither should be namespaced by the other. For example:
 
 ```ruby
 # /jobs/send_assignment_reminder_job.rb
