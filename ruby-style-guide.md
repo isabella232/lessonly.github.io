@@ -135,6 +135,22 @@ These override either Github’s or Batsov’s styleguide where applicable:
     .present?
   ```
 
+- Prefer keyword arguments whenever it isn’t abundantly obvious what an argument is.
+
+  ```ruby
+  # The method name makes it clear what the argument is...
+  # no need to name the argument.
+  def assignment_status(assignment)
+
+  # Even with multiple arguments, if the method name makes
+  # the order clear, no need to name the arguments.
+  def add_user_to_groups(user, groups)
+
+  # But when the method name gives little hint of the type of argument,
+  # specify them by name for maximum clarity.
+  def notify_of_new_assignments(user:, new_assignments:)
+  ```
+
 ## Service Objects
 
 We use the service object pattern to encapsulate complex logic within self-contained objects. Instead of a 20-line controller action, we’ll call `DoSomethingComplicated.perform(args)` in the controller and move all of the complex logic into the `DoSomethingComplicated` class. This not only helps organize and isolate complex code, but also makes it easier to test.
