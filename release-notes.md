@@ -10,7 +10,12 @@ Look here for recent updates to the Lesson.ly platform.
 
 - More cool stuff!
 
-### Sunday, June 12th, 2016, 9:30 PM EDT
+### Wednesday, June 22, 2016, 10:30 AM EDT
+
+- We added active user counts back into the settings page so you can keep an eye on your active user limit.
+- We added a link to provide a quick way to undo the archiving action, just in case you clicked the “Archive” button my accident.
+
+### Sunday, June 12, 2016, 9:30 PM EDT
 
 - Settings page redesign with custom link colors, logo uploader, and more!
 - Lesson taking redesign
@@ -19,7 +24,7 @@ Look here for recent updates to the Lesson.ly platform.
 - API assignment endpoint now includes assigned at date
 - Allow grading station to be filtered by users and lessons
 
-### Monday, June 6th, 2016, 9:09 PM EDT
+### Monday, June 6, 2016, 9:09 PM EDT
 
 - Improved gradebook export to now have the Summary you see on the Lesson.ly gradebook page for your company and the detailed progress report you could previously only get via CSV.
 - A bug was fixed where emails would sometimes be sent out asking users to finish an assignment on an archived lesson or course.
