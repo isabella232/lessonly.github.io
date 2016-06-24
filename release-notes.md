@@ -10,6 +10,11 @@ Look here for recent updates to the Lesson.ly platform.
 
 - More cool stuff!
 
+### Friday, June 24, 2016, 1:20 PM EDT
+
+- A new-and-improved version of bulk user imports. It's currently in beta—ask your Lesson.ly rep to try it out!
+- Customers with custom branding will now have the option to upload a custom favicon (the icon used in browser tabs and bookmarks) as well.
+
 ### Wednesday, June 22, 2016, 10:30 AM EDT
 
 - We added active user counts back into the settings page so you can keep an eye on your active user limit.
