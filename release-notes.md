@@ -10,6 +10,11 @@ Look here for recent updates to the Lesson.ly platform.
 
 - More cool stuff!
 
+### Friday, July 1, 2016, 4:52 PM EDT
+
+- Links entered in image and video captions will now open in a new tab.
+- We've fixed a bug where pagination links were hidden when filtering assignments by status (e.g. overdue, completed).
+
 ### Friday, June 24, 2016, 1:20 PM EDT
 
 - A new-and-improved version of bulk user imports. It's currently in beta—ask your Lesson.ly rep to try it out!
