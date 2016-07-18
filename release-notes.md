@@ -9,6 +9,7 @@ Look here for recent updates to the Lesson.ly platform.
 ### Coming soon
 
 - More cool stuff!
+- Our welcome emails have been updated to be consistent with our new naming scheme of 'My Assignments' (formerly 'My Dashboard').
 
 ### Friday, July 1, 2016, 4:52 PM EDT
 
