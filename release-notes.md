@@ -9,6 +9,9 @@ Look here for recent updates to the Lesson.ly platform.
 ### Coming soon
 
 - More cool stuff!
+- Reports will now generate in the background and then display a download link when they are ready. This means that even large exports should not fail and you can continue using the app while it's generating!
+
+### Monday, July 18, 2016, 8:00 PM EST
 - Our welcome emails have been updated to be consistent with our new naming scheme of 'My Assignments' (formerly 'My Dashboard').
 
 ### Friday, July 1, 2016, 4:52 PM EDT
