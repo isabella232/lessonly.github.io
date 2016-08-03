@@ -8,6 +8,7 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming soon
 
+- Companies who use Google Apps for Work can now use their Google accounts to log in to Lesson.ly! Contact customer support via chat in the app if you would like us to set that up!
 - More cool stuff!
 
 ### Wednesday, July 27, 2016, 3:32 PM EST
