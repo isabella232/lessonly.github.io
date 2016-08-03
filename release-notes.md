@@ -6,10 +6,13 @@ permalink: /release-notes/
 
 Look here for recent updates to the Lesson.ly platform.
 
-### Coming soon
+### Coming Soon
+- More cool stuff!
+
+### Wednesday, August 3rd, 2016 12:27 PM EST
 
 - Companies who use Google Apps for Work can now use their Google accounts to log in to Lesson.ly! Contact customer support via chat in the app if you would like us to set that up!
-- More cool stuff!
+- Assignments on the "My Assignments" page are now ordered by the date they are due or when they were completed!
 
 ### Wednesday, July 27, 2016, 3:32 PM EST
 
