@@ -9,6 +9,11 @@ Look here for recent updates to the Lesson.ly platform.
 ### Coming Soon
 - More cool stuff!
 
+### Wednesday, August 17, 2016 11:40 EST
+
+- We fixed a bug where some emails would still list an archived user in the FROM field.
+- We fixed a bug where some lessons were unable to be turned into PDFs.
+
 ### Wednesday, August 3rd, 2016 12:27 PM EST
 
 - Companies who use Google Apps for Work can now use their Google accounts to log in to Lesson.ly! Contact customer support via chat in the app if you would like us to set that up!
