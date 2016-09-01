@@ -9,6 +9,10 @@ Look here for recent updates to the Lesson.ly platform.
 ### Coming Soon
 - More cool stuff!
 
+### Thursday, September 1, 2016 4:26 EST
+
+- Average score is now available for the group section of the people page.
+
 ### Friday, August 19, 2016 2:12 EST
 
 - Add ability to select how many rows per page to display in the Learning Content and People pages. Options include 10, 25, 50 and 100 rows per page.
