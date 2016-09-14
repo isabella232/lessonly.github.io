@@ -7,7 +7,12 @@ permalink: /release-notes/
 Look here for recent updates to the Lesson.ly platform.
 
 ### Coming Soon
-- More cool stuff!
+- Documents will be uploadable via drag and drop or just by providing a URL!
+
+### Wednesday, September 12, 2016 1:30 EST
+
+- Performance of gradebook exports for many large datasets has been improved.
+- Admins can now add managers to the "Everyone" smart group.
 
 ### Thursday, September 1, 2016 4:26 EST
 
