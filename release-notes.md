@@ -7,7 +7,9 @@ permalink: /release-notes/
 Look here for recent updates to the Lesson.ly platform.
 
 ### Coming Soon
+
 - Documents will be uploadable via drag and drop or just by providing a URL!
+- Shared links to lessons will now work when using SAML SSO to log in.
 
 ### Wednesday, September 12, 2016 1:30 EST
 
