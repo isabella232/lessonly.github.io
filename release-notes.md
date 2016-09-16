@@ -8,19 +8,23 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming Soon
 
+- More good stuff!
+
+### Friday, September 16, 2016, 4:32 PM EST
+
 - Documents will be uploadable via drag and drop or just by providing a URL!
 - Shared links to lessons will now work when using SAML SSO to log in.
 
-### Wednesday, September 12, 2016 1:30 EST
+### Wednesday, September 12, 2016 1:30 PM EST
 
 - Performance of gradebook exports for many large datasets has been improved.
 - Admins can now add managers to the "Everyone" smart group.
 
-### Thursday, September 1, 2016 4:26 EST
+### Thursday, September 1, 2016 4:26 PM EST
 
 - Average score is now available for the group section of the people page.
 
-### Friday, August 19, 2016 2:12 EST
+### Friday, August 19, 2016 2:12 PM EST
 
 - Add ability to select how many rows per page to display in the Learning Content and People pages. Options include 10, 25, 50 and 100 rows per page.
 
