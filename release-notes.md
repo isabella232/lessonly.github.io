@@ -10,6 +10,10 @@ Look here for recent updates to the Lesson.ly platform.
 
 - More good stuff!
 
+### Friday, September 23, 216, 3:43 PM EST
+
+- We’ve put back the download link for documents uploaded to lessons. Look for this to become a configurable option soon!
+
 ### Friday, September 16, 2016, 4:32 PM EST
 
 - Documents will be uploadable via drag and drop or just by providing a URL!
