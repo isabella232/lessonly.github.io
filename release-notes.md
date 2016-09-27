@@ -10,6 +10,11 @@ Look here for recent updates to the Lesson.ly platform.
 
 - More good stuff!
 
+### Tuesday, September 27, 2016, 3:12 PM EST
+
+- When attempting to update archived users and groups via the API (which isn’t allowed), you’ll now get a useful error message instead of it just not working.
+- We’ve made a number of small improvements for users of Internet Explorer 10 (the oldest browser we currently support).
+
 ### Friday, September 23, 216, 3:43 PM EST
 
 - We’ve put back the download link for documents uploaded to lessons. Look for this to become a configurable option soon!
