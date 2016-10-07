@@ -9,6 +9,7 @@ Look here for recent updates to the Lesson.ly platform.
 ### Coming Soon
 
 - More good stuff!
+- We fixed a bug in our Namely integration which prevented Departments from coming over to Lessonly as groups.
 
 ### Tuesday, September 27, 2016, 3:12 PM EST
 
