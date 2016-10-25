@@ -10,6 +10,7 @@ Look here for recent updates to the Lesson.ly platform.
 
 - We fixed a bug in our Namely integration which prevented Departments from coming over to Lessonly as groups.
 - A bug was fixed where archived users could still show up in the Daily Digest in very rare situations.
+- We’ve added a new Plus feature to allow granting managers and creators permission to view activity by all users on a particular course or lesson.
 
 ### Tuesday, September 27, 2016, 3:12 PM EST
 
