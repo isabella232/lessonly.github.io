@@ -8,7 +8,7 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming Soon
 
-- more good stuff
+- We’ve fixed a bug where assignments through archived courses would incorrectly be counted on lesson overview pages.
 
 ### Tuesday, October 25, 2016, 4:35 PM EST
 
