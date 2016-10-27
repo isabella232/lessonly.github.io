@@ -8,9 +8,14 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming Soon
 
+- More good stuff!
+
+### Thursday, October 27, 2016, 5:21 PM EST
+
 - We’ve fixed a bug where assignments through archived courses would incorrectly be counted on lesson overview pages.
-- We've fixed a bug where the learning library statistics were incorrectly displaying the completion date.
+- We've fixed a bug where the learning library statistics displayed the completion date in the wrong time zone.
 - An issue was fixed where reassignments would sometimes fail to notify the user.
+- Creators with reporting permissions can now view responses to free-response questions.
 
 ### Tuesday, October 25, 2016, 4:35 PM EST
 
