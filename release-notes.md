@@ -8,7 +8,7 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming Soon
 
-- More good stuff!
+- Group assignments can now be unassigned on the group summary page.
 
 ### Thursday, October 27, 2016, 5:21 PM EST
 
