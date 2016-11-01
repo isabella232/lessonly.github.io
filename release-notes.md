@@ -9,6 +9,7 @@ Look here for recent updates to the Lesson.ly platform.
 ### Coming Soon
 
 - Group assignments can now be unassigned on the group summary page.
+- We just made the Namely integration even better. Soon you'll be able to use your users' job tiers from Namely as groups in Lessonly and keep everyone's job titles up-to-date!
 
 ### Thursday, October 27, 2016, 5:21 PM EST
 
