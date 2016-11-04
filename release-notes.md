@@ -10,7 +10,13 @@ Look here for recent updates to the Lesson.ly platform.
 
 - We've added a new API endpoint for user learning library statistics!
 - Group assignments can now be unassigned on the group summary page.
-- We just made the Namely integration even better. Soon you'll be able to use your users' job tiers from Namely as groups in Lessonly and keep everyone's job titles up-to-date!
+
+### Friday, November 4, 2016, 2:14 PM EST
+
+- We just made the Namely integration even better. Soon you'll be able to use your users’ job tiers from Namely as groups in Lessonly and keep everyone’s job titles up-to-date!
+- We’ve fixed a bug where on a lesson page, if you clicked “View All” pending assignments, it would sometimes take you to the wrong lesson in the Grading Station.
+- People reassigned to something via a scheduled assignment will now properly receive an email notification.
+- On lesson pages, the counts of assignments will no longer include assignments through courses which have been archived.
 
 ### Thursday, October 27, 2016, 5:21 PM EST
 
