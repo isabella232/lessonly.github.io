@@ -10,6 +10,7 @@ Look here for recent updates to the Lesson.ly platform.
 
 - We've added a new API endpoint for user learning library statistics!
 - Group assignments can now be unassigned on the group summary page.
+- Admins, Managers, and Creators can now directly login to the Lessonly University Learning Library.
 
 ### Friday, November 4, 2016, 2:14 PM EST
 
