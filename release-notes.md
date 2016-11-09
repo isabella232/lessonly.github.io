@@ -9,7 +9,10 @@ Look here for recent updates to the Lesson.ly platform.
 ### Coming Soon
 
 - Group assignments can now be unassigned on the group summary page.
-- Admins, Managers, and Creators can now directly login to the Lessonly University Learning Library.
+
+### Wednesday, November 9, 2016, 1:53 PM EDT
+
+- We’ve made some significant performance improvements around Lessonly, especially for our biggest customers.
 
 ### Monday, November 7, 2016, 12:32 AM EDT
 
