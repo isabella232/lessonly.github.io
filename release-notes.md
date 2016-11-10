@@ -9,6 +9,7 @@ Look here for recent updates to the Lesson.ly platform.
 ### Coming Soon
 
 - Group assignments can now be unassigned on the group summary page.
+- Our “Lesson Activity” report now includes the year in the date a lesson was completed.
 
 ### Wednesday, November 9, 2016, 1:53 PM EDT
 
