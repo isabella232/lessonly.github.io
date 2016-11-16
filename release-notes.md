@@ -8,6 +8,13 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming Soon
 
+## Wednesday, November 16, 2016, 3:15 PM EDT
+
+- New Slack Integration for /lessonly slash command that searches user content.
+- We fixed a bug with capitalized image extensions in the lesson editor.
+
+## Monday, November 14, 2016, 4:26 PM EDT
+
 - Group assignments can now be unassigned on the group summary page.
 
 ## Friday, November 11, 2016, 3:30 PM EDT
