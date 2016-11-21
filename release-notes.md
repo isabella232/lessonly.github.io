@@ -8,44 +8,49 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming Soon
 
-## Wednesday, November 16, 2016, 3:15 PM EDT
+## Monday, November 21, 2016, 7:00 AM EST
+
+- We made the Lesson Builder better than ever, with a new design and two new content types: Flipcard and Reveal.
+- You can now choose to add code snippets to your text content by choosing the `</>` formatting option.
+
+## Wednesday, November 16, 2016, 3:15 PM EST
 
 - New Slack Integration for /lessonly slash command that searches user content.
 - We fixed a bug with capitalized image extensions in the lesson editor.
 
-## Monday, November 14, 2016, 4:26 PM EDT
+## Monday, November 14, 2016, 4:26 PM EST
 
 - Group assignments can now be unassigned on the group summary page.
 
-## Friday, November 11, 2016, 3:30 PM EDT
+## Friday, November 11, 2016, 3:30 PM EST
 
 - Our “Lesson Activity” report now includes the year in the date a lesson was completed.
 - We fixed an interface bug that sometimes made it difficult to click on the answers to questions.
 
-### Wednesday, November 9, 2016, 1:53 PM EDT
+### Wednesday, November 9, 2016, 1:53 PM EST
 
 - We’ve made some significant performance improvements around Lessonly, especially for our biggest customers.
 
-### Monday, November 7, 2016, 12:32 AM EDT
+### Monday, November 7, 2016, 12:32 AM EST
 
 - We've added a new API endpoint for user learning library statistics!
 - Creators and above will notice a new "Lessonly University" link in the settings menu. This will take you directly to our online resources for getting the most out of Lessonly!
 
-### Friday, November 4, 2016, 2:14 PM EST
+### Friday, November 4, 2016, 2:14 PM EDT
 
 - We just made the Namely integration even better. Soon you'll be able to use your users’ job tiers from Namely as groups in Lessonly and keep everyone’s job titles up-to-date!
 - We’ve fixed a bug where on a lesson page, if you clicked “View All” pending assignments, it would sometimes take you to the wrong lesson in the Grading Station.
 - People reassigned to something via a scheduled assignment will now properly receive an email notification.
 - On lesson pages, the counts of assignments will no longer include assignments through courses which have been archived.
 
-### Thursday, October 27, 2016, 5:21 PM EST
+### Thursday, October 27, 2016, 5:21 PM EDT
 
 - We’ve fixed a bug where assignments through archived courses would incorrectly be counted on lesson overview pages.
 - We've fixed a bug where the learning library statistics displayed the completion date in the wrong time zone.
 - An issue was fixed where reassignments would sometimes fail to notify the user.
 - Creators with reporting permissions can now view responses to free-response questions.
 
-### Tuesday, October 25, 2016, 4:35 PM EST
+### Tuesday, October 25, 2016, 4:35 PM EDT
 
 - We’ve added a new Plus feature to allow granting managers and creators permission to view activity by all users on a particular course or lesson.
 
