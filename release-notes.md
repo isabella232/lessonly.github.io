@@ -8,6 +8,12 @@ Look here for recent updates to the Lesson.ly platform.
 
 ### Coming Soon
 
+## Tuesday, November 22, 2016, 3:05 PM EST
+
+- We've made a fix to buttons that overlap elements in the lesson viewer
+- The bulk restore action are now available on the archive page!
+- We've fixed some styling on the flipcard/reveal elements
+
 ## Monday, November 21, 2016, 7:00 AM EST
 
 - We made the Lesson Builder better than ever, with a new design and two new content types: Flipcard and Reveal.
