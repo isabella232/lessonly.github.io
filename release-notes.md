@@ -4,7 +4,7 @@ title: Release Notes
 permalink: /release-notes/
 ---
 
-Look here for recent updates to the Lesson.ly platform.
+Look here for recent updates to the Lessonly platform.
 
 ### Coming Soon
 
