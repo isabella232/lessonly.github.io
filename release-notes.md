@@ -8,6 +8,10 @@ Look here for recent updates to the Lessonly platform.
 
 ### Coming Soon
 
+## Wednesday, November 30, 2016, 4:03 PM EST
+
+- We've made a fix for a small visual issue in the Lesson Builder Add Element menu.
+
 ## Tuesday, November 22, 2016, 3:05 PM EST
 
 - We've made a fix to buttons that overlap elements in the lesson viewer
