@@ -8,6 +8,8 @@ Look here for recent updates to the Lessonly platform.
 
 ### Coming Soon
 
+- We've added a new Lesson Builder element, the random question bank. Retakes now can show learners randomly assigned questions pulled from a question bank.
+
 ## Wednesday, November 30, 2016, 4:03 PM EST
 
 - We've made a fix for a small visual issue in the Lesson Builder Add Element menu.
