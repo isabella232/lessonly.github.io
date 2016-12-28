@@ -9,6 +9,7 @@ Look here for recent updates to the Lessonly platform.
 ### Coming Soon
 
 - We've added a new Lesson Builder element, the random question bank. Retakes now can show learners randomly assigned questions pulled from a question bank.
+- Creators have never been able to add content to the Learning Library (only admins and managers can): now we’ll no longer show the interface for doing that to creators.
 
 ## Wednesday, November 30, 2016, 4:03 PM EST
 
