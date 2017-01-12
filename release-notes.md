@@ -12,6 +12,9 @@ Look here for recent updates to the Lessonly platform.
 - Creators have never been able to add content to the Learning Library (only admins and managers can): now we’ll no longer show the interface for doing that to creators.
 - API endpoints for lessons and courses now return the Lessonly URL for managing them.
 
+## Thursday, January 12, 2017, 10:15 AM EST
+- We've updated the style and look to our Sign In and Sign Up pages along with some styling updates on the Add/Edit Person pages.
+
 ## Wednesday, November 30, 2016, 4:03 PM EST
 
 - We've made a fix for a small visual issue in the Lesson Builder Add Element menu.
