@@ -8,6 +8,8 @@ Look here for recent updates to the Lessonly platform.
 
 ### Coming Soon
 
+- Our lesson completed webhook now includes the course id for lessons completed within courses.
+
 ## Thursday, January 12, 2017, 10:15 AM EST
 - We've updated the style and look to our Sign In and Sign Up pages along with some styling updates on the Add/Edit Person pages.
 
