@@ -16,7 +16,7 @@ Look here for recent updates to the Lessonly platform.
 ## Thursday, December 29, 2016, 10:15 AM EST
 - API endpoints for lessons and courses now return the Lessonly URL for managing them.
 
-## Thursday, December 19, 2016, 10:15 AM EST
+## Monday, December 19, 2016, 10:15 AM EST
 - We've added a new Lesson Builder element, the random question bank. Retakes now can show learners randomly assigned questions pulled from a question bank.
 - Creators have never been able to add content to the Learning Library (only admins and managers can): now we’ll no longer show the interface for doing that to creators.
 
