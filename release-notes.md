@@ -11,7 +11,7 @@ Look here for recent updates to the Lessonly platform.
 - Our lesson completed webhook now includes the course id for lessons completed within courses.
 
 ## Thursday, January 26, 2017 10:00 AM EST
-# - January 2017 Release: 
+ - January 2017 Release: 
   - Ask the Expert Additions 
       - Ask the Expert added to the Learning Libary.
       - Ask the Expert icon updated.
