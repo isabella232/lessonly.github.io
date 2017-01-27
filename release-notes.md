@@ -10,6 +10,18 @@ Look here for recent updates to the Lessonly platform.
 
 - Our lesson completed webhook now includes the course id for lessons completed within courses.
 
+## Thursday, January 26, 2017 10:00 AM EST
+- January 2017 Release: 
+  - Ask the Expert Additions 
+      - Ask the Expert added to the Learning Libary.
+      - Ask the Expert icon updated.
+      
+  - Randomized Question Improvements:
+      - Users can now drag and drop questions to and from their Randomized Questions element.
+      - Users can now mark their Randomized Questions as Required or Not Required.
+  
+  - Sign-In/Sign Up Pages Refresh
+  
 ## Friday, January 13, 2017 4:00 PM EST
 - We've updated the max character limit for email addresses to 254 character.
 
