@@ -7,7 +7,10 @@ permalink: /release-notes/
 Look here for recent updates to the Lessonly platform.
 
 ### Coming Soon
+- More cool stuff!
 
+## Friday, February 24, 2017 10:00 AM EST
+- The Gradebook now requires the user to manually click a new 'Update Gradebook' button before the content changes on the right side of the page.
 
 ## Thursday, January 26, 2017 10:00 AM EST
  - January 2017 Release: 
