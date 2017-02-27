@@ -89,3 +89,5 @@ end
 ### Time Zones
 
 Prefer `Time.current` and `Date.current` in place of `Time.now` and `Date.today`. The `.current` methods will properly take the `Time.zone` into account if set, which `.now` and `.today` do not, leading to inconsistent behavior.
+
+Likewise with parsing, avoid `Time.parse` and `Date.parse` (which also don’t account for timezones), and instead prefer `Time.zone.parse` if you need a `Time` object, and calling `to_date` on the result if you need a `Date`.
