@@ -9,6 +9,10 @@ Look here for recent updates to the Lessonly platform.
 ### Coming Soon
 - More cool stuff!
 
+## Wednesday, March 1, 2017 02:00 PM EST
+- Our API now returns "Grade Pending" as an assignment status.
+- Bugfix: API returns score as "null" instead of 0 when there is none.
+
 ## Friday, February 24, 2017 10:00 AM EST
 - The Gradebook now requires the user to manually click a new 'Update Gradebook' button before the content changes on the right side of the page.
 
