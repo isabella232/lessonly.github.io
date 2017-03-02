@@ -14,7 +14,7 @@ Look here for recent updates to the Lessonly platform.
 - Bugfix: API returns score as "null" instead of 0 when there is none.
 
 ## Friday, February 24, 2017 10:00 AM EST
-- The Gradebook now requires the user to manually click a new 'Update Gradebook' button before the content changes on the right side of the page.
+- The Gradebook now requires the user to manually click a new 'Apply Changes' button before the content changes on the right side of the page.
 
 ## Thursday, January 26, 2017 10:00 AM EST
  - January 2017 Release: 
