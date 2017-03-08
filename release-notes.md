@@ -10,7 +10,7 @@ Look here for recent updates to the Lessonly platform.
 - More cool stuff!
 
 ## Wednesday, March 8, 2017 09:00 AM EST
- - March 2017 Release: 
+ - February 2017 Release: 
    - The Lessonly Chrome Extension: 
       - The Lessonly Chrome Extension allows you associate Learning Library content with specific web URL's and display them to Learners as they navigate to that page in their browser. 
       
