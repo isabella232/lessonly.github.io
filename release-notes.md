@@ -9,6 +9,9 @@ Look here for recent updates to the Lessonly platform.
 ### Coming Soon
 - More cool stuff!
 
+## Thursday, March 9, 2017 02:00 PM EST
+- Performance improvement deployed for the Advanced assign Modal.
+
 ## Wednesday, March 8, 2017 09:00 AM EST
  - February 2017 Release: 
    - The Lessonly Chrome Extension: 
