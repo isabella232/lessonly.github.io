@@ -9,6 +9,9 @@ Look here for recent updates to the Lessonly platform.
 ### Coming Soon
 - More cool stuff!
 
+## Friday, March 10, 2017 04:15 PM EST
+- Search results will now auto scroll to the area of the page that the results are in after clicking the link. If the search result is hidden behind a Flipcard or Reveal element, it will auto flip/expand.
+
 ## Thursday, March 9, 2017 02:00 PM EST
 - Performance improvement deployed for the Advanced assign Modal.
 
