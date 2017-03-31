@@ -9,6 +9,9 @@ Look here for recent updates to the Lessonly platform.
 ### Coming Soon
 - More cool stuff!
 
+## Friday, March 31, 2017 12:41 PM EDT
+- We’ve made it clearer when there are still lessons to grade in the Grading Station.
+
 ## Friday, March 10, 2017 04:15 PM EST
 - Search results will now auto scroll to the area of the page that the results are in after clicking the link. If the search result is hidden behind a Flipcard or Reveal element, it will auto flip/expand.
 
