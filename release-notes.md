@@ -9,6 +9,9 @@ Look here for recent updates to the Lessonly platform.
 ### Coming Soon
 - More cool stuff!
 
+## Wednesday, April 5, 2017 4:00 PM EDT
+- We’ve updated the table styles across our application. This includes the Content, People, Archived & Free Response Question pages.
+
 ## Friday, March 31, 2017 12:41 PM EDT
 - We’ve made it clearer when there are still lessons to grade in the Grading Station.
 
