@@ -9,6 +9,9 @@ Look here for recent updates to the Lessonly platform.
 ### Coming Soon
 - More cool stuff!
 
+## Friday, April 12, 2017 12:00 PM EDT
+- We’ve updated the Course page design and display for Learners.
+
 ## Wednesday, April 5, 2017 4:00 PM EDT
 - We’ve updated the table styles across our application. This includes the Content, People, Archived & Free Response Question pages.
 
