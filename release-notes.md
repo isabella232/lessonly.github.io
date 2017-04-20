@@ -9,6 +9,9 @@ Look here for recent updates to the Lessonly platform.
 ### Coming Soon
 - More cool stuff!
 
+## Thursday, April 20, 2017 1:00 PM EDT
+- Users will now have all lessons they are experts on listed in their overview page. A warning and confirmation will appear before attempting to archive an expert user.
+
 ## Friday, April 12, 2017 12:00 PM EDT
 - We’ve updated the Course page design and display for Learners.
 
