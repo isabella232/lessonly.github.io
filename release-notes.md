@@ -9,6 +9,9 @@ Look here for recent updates to the Lessonly platform.
 ### Coming Soon
 - More cool stuff!
 
+## Wednesday, April 26, 2017 8:00 AM EDT
+- We added a feature for your learners to rate and provide feedback on lessons!
+
 ## Thursday, April 20, 2017 1:00 PM EDT
 - Users will now have all lessons they are experts on listed in their overview page. A warning and confirmation will appear before attempting to archive an expert user.
 
