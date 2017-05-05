@@ -9,19 +9,22 @@ Look here for recent updates to the Lessonly platform.
 ### Coming Soon
 - More cool stuff!
 
-## Wednesday, April 26, 2017 8:00 AM EDT
+## Thursday, May 4, 2017 10:00PM EST
+- When reassigning a lesson, or having to re-take it because you did not meet the minimum score, answers to free-response questions will no longer be copied over from the previous completion.
+
+## Wednesday, April 26, 2017 8:00 AM EST
 - We added a feature for your learners to rate and provide feedback on lessons!
 
-## Thursday, April 20, 2017 1:00 PM EDT
+## Thursday, April 20, 2017 1:00 PM EST
 - Users will now have all lessons they are experts on listed in their overview page. A warning and confirmation will appear before attempting to archive an expert user.
 
-## Friday, April 12, 2017 12:00 PM EDT
+## Friday, April 12, 2017 12:00 PM EST
 - We’ve updated the Course page design and display for Learners.
 
-## Wednesday, April 5, 2017 4:00 PM EDT
+## Wednesday, April 5, 2017 4:00 PM EST
 - We’ve updated the table styles across our application. This includes the Content, People, Archived & Free Response Question pages.
 
-## Friday, March 31, 2017 12:41 PM EDT
+## Friday, March 31, 2017 12:41 PM EST
 - We’ve made it clearer when there are still lessons to grade in the Grading Station.
 
 ## Friday, March 10, 2017 04:15 PM EST
