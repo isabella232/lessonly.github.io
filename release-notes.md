@@ -9,6 +9,9 @@ Look here for recent updates to the Lessonly platform.
 ### Coming Soon
 - More cool stuff!
 
+## Monday, May 8, 2017 10:00PM EST
+- We added an option to view individual user assignments in addition to group assignments in the gradebook.
+
 ## Thursday, May 4, 2017 10:00PM EST
 - When reassigning a lesson, or having to re-take it because you did not meet the minimum score, answers to free-response questions will no longer be copied over from the previous completion.
 
