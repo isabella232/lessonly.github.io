@@ -9,6 +9,9 @@ Look here for recent updates to the Lessonly platform.
 ### Coming Soon
 - More cool stuff!
 
+## Wednesday, May 17, 2017 02:15PM EST
+- The Namely Synchronization will now remove characters from user names that are not allowed in Lessonly's system so the synchronization will continue without raising errors or needing human intervention.
+
 ## Monday, May 8, 2017 10:00PM EST
 - We added an option to view individual user assignments in addition to group assignments in the gradebook.
 
