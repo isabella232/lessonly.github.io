@@ -9,6 +9,10 @@ Look here for recent updates to the Lessonly platform.
 ### Coming Soon
 - More cool stuff!
 
+
+## Friday, May 26, 2017 2:35PM EST
+- Updated illustrations for various empty state screens across the application.
+
 ## Wednesday, May 17, 2017 02:15PM EST
 - The Namely Synchronization will now remove characters from user names that are not allowed in Lessonly's system so the synchronization will continue without raising errors or needing human intervention.
 
