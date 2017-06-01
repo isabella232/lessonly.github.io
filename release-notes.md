@@ -9,6 +9,8 @@ Look here for recent updates to the Lessonly platform.
 ### Coming Soon
 - More cool stuff!
 
+## Thursday, June 1, 2017 3:35PM EST
+- The following new attributes are available for users and can be edited via the edit user page: Job Title, Business Unit, Department, Location, Hire Date, and Manager Name. They can also be updated via the Bulk User Import.
 
 ## Friday, May 26, 2017 2:35PM EST
 - Updated illustrations for various empty state screens across the application.
