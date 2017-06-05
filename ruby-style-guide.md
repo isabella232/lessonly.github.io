@@ -151,6 +151,19 @@ These override either Github’s or Batsov’s styleguide where applicable:
   def notify_of_new_assignments(user:, new_assignments:)
   ```
 
+- Explicitly declare modules.
+
+  ```ruby
+  # So good
+  module MyModule
+    class MyClass
+
+  # No good
+  class MyModule::MyClass
+  ```
+
+  The latter introduces load order dependencies (`MyModule` must already be loaded or Ruby will raise a `NameError`) and requires every reference to other `MyModule` constants within `MyClass` to also be fully-qualified.
+
 ## Service Objects
 
 We use the service object pattern to encapsulate complex logic within self-contained objects. Instead of a 20-line controller action, we’ll call `DoSomethingComplicated.perform(args)` in the controller and move all of the complex logic into the `DoSomethingComplicated` class. This not only helps organize and isolate complex code, but also makes it easier to test.
