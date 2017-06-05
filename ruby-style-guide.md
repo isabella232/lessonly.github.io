@@ -212,6 +212,62 @@ end
 
 While perhaps overkill in this simple case, it's valuable to be able to scan a service object's `#perform` method and see, on each line, all of its responsibilities.
 
+## Form Objects
+
+Fulfilling a simliar role as Service Objects, Form Objects encapsulate complex controller actions that affect one atomic unit. If you find yourself performing many create / update / destroy actions across several different models from one action, a Form Object might be beneficial.
+
+Form objects should mimic activerecord calls by using a #save method FormObject.new(some_parameter).save within controller branches. The #save method should return either true or false depending upon if the atomic action is successful.
+
+```ruby
+# app/controllers/paths_controller.rb
+def update
+  load_and_authorize_path
+
+  path_form = LearningPaths::PathForm.new(
+    @path,
+    current_user: current_user,
+    path_params: formatted_path_params_dates,
+    contents_params: contents_params
+  )
+
+  # path_form.save is just like doing Model.save
+  if path_form.save
+    render json: serialized_path, status: :ok
+  else
+    render json: FAILURE_RESPONSE, status: :unprocessable_entity
+  end
+end
+```
+
+```ruby
+# app/forms/learning/path_form.rb
+module Learning
+  class PathForm
+
+    def initialize(your_parameters)
+      @your_paramters = your_parameters
+      @valid = true
+    end
+
+    def save
+      do_the_work
+      valid?
+    end
+
+    private
+
+    def valid?
+      @valid # Start as true
+    end
+
+    def do_the_work
+      # If failing then set @valid to false
+    end
+
+  end
+end
+```
+
 ## Presenter Objects
 
 Similar to how Service Objects abstract away complex business logic from controller actions, we use Presenter Objects to encapsulate complex data-gathering and displaying. As a general rule, if your controller action or mailer contains more than one instance variable, you may benefit from a presenter. For example, take this action:
