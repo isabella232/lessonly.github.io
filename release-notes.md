@@ -9,6 +9,13 @@ Look here for recent updates to the Lessonly platform.
 ### Coming Soon
 - More cool stuff!
 
+## Monday, June 5, 2017 11:00PM EST
+- Triggers & Edit Trigger page reskin 
+- Tooltip styles update.
+- We’ve released API v1.1 and the API documentation has been updated.
+- Performance Improvement for Gradebook Export.
+- On the user new/edit pages, the standard and custom user fields now have headings above them. This should help users discern between the two types of fields. Custom user field labels are also name spaced with "Custom: ".
+
 ## Thursday, June 1, 2017 3:35PM EST
 - The following new attributes are available for users and can be edited via the edit user page: Job Title, Business Unit, Department, Location, Hire Date, and Manager Name. They can also be updated via the Bulk User Import.
 
