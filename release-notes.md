@@ -9,9 +9,12 @@ Look here for recent updates to the Lessonly platform.
 ### Coming Soon
 - More cool stuff!
 
+## Tuesday, June 6, 2017 3:20PM EST
+- Updated styling for the Assign modal.
+
 ## Monday, June 5, 2017 11:00PM EST
 - Triggers & Edit Trigger page reskin 
-- Tooltip styles update.
+- Updated Tooltip styling.
 - We’ve released API v1.1 and the API documentation has been updated.
 - Performance Improvement for Gradebook Export.
 - On the user new/edit pages, the standard and custom user fields now have headings above them. This should help users discern between the two types of fields. Custom user field labels are also name spaced with "Custom: ".
