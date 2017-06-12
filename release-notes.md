@@ -9,6 +9,9 @@ Look here for recent updates to the Lessonly platform.
 ### Coming Soon
 - More cool stuff!
 
+## Monday, June 12, 2017 11:30AM EST
+- Bulk User Import Files with empty headers are now allowed and that there is a cancel button during validation.
+
 ## Tuesday, June 6, 2017 3:20PM EST
 - Updated styling for the Assign modal.
 
