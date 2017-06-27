@@ -8,57 +8,63 @@ While we don’t follow it explicitly, the [community Rails Style Guide](https:/
 
 ### Dealing with SQL
 
-- Prefer ActiveRecord methods to raw SQL
-  
-  ```ruby
-  # not so good
-  Model.where("published_at = ? AND title IS NOT NULL", Date.yesterday)
+#### Prefer ActiveRecord methods to raw SQL
 
-  # so good!
-  Model.where(published_at: Date.yesterday).where.not(title: nil)
-  ```
+```ruby
+# not so good
+Model.where("published_at = ? AND title IS NOT NULL", Date.yesterday)
 
-- Use the symbol syntax (rather than question marks) when interpolating SQL. It helps readability and avoids duplicate arguments:
+# so good!
+Model.where(published_at: Date.yesterday).where.not(title: nil)
+```
 
-  ```ruby
-  # not so good
-  Model.where("title ILIKE ? OR description ILIKE ?", "%#{query}%", "%#{query}%")
+#### Use the symbol syntax (rather than question marks) when interpolating SQL.
 
-  # so good!
-  Model.where("title ILIKE :query OR description ILIKE :query", query: "%#{query}%")
-  ```
+It helps readability and avoids duplicate arguments:
 
-- Uppercase SQL operators to make them visually distinct from table and column names.
+```ruby
+# not so good
+Model.where("title ILIKE ? OR description ILIKE ?", "%#{query}%", "%#{query}%")
 
-  ```ruby
-  # not so good
-  Model.joins("left join things on thing_id = things.id and another_id = things.another_id")
+# so good!
+Model.where("title ILIKE :query OR description ILIKE :query", query: "%#{query}%")
+```
 
-  # so good!
-  Model.joins("LEFT JOIN things ON thing_id = things.id AND another_id = things.another_id")
-  ```
+#### Uppercase SQL operators to make them visually distinct from table and column names.
+
+```ruby
+# not so good
+Model.joins("left join things on thing_id = things.id and another_id = things.another_id")
+
+# so good!
+Model.joins("LEFT JOIN things ON thing_id = things.id AND another_id = things.another_id")
+```
 
 ### Views
 
-- Avoid referencing instance variables in partials. It's alright for `show.html.erb` to reference the `@lesson` declared in `LessonsController#show`, but if it calls out to `render "stats"`, `_stats.html.erb` should not know about `@lesson`. Instead pass it in directly: `render "stats", lesson: @lesson`. Eventually, we'll want to use that partial in another context where `@lesson` isn't defined: being explicit now saves us time later.
+#### Avoid referencing instance variables in partials.
+
+It's alright for `show.html.erb` to reference the `@lesson` declared in `LessonsController#show`, but if it calls out to `render "stats"`, `_stats.html.erb` should not know about `@lesson`. Instead pass it in directly: `render "stats", lesson: @lesson`. Eventually, we'll want to use that partial in another context where `@lesson` isn't defined: being explicit now saves us time later.
 
 ### ActiveRecord shortcuts
 
-- Use `?` methods only for boolean values to avoid unexpected behavior. For example, ActiveRecord treats `0` as `false`, while Ruby treats `0` as a `true` value.
+#### Use `?` methods only for boolean values to avoid unexpected behavior.
 
-  ```ruby
-  # Let's say we have a Progress object with a score of zero:
-  progress = Progress.create! lesson: a_lesson, user: a_user, score: 0.0
+For example, ActiveRecord treats `0` as `false`, while Ruby treats `0` as a `true` value.
 
-  # do not do this to determine if the object has a value for score
-  progress.score?           # returns false
+```ruby
+# Let's say we have a Progress object with a score of zero:
+progress = Progress.create! lesson: a_lesson, user: a_user, score: 0.0
 
-  # do this
-  progress.score.present?   # returns true
+# do not do this to determine if the object has a value for score
+progress.score?           # returns false
 
-  # booleans are okay
-  company.assignment_notifications_disabled?  # returns the actual value
-  ```
+# do this
+progress.score.present?   # returns true
+
+# booleans are okay
+company.assignment_notifications_disabled?  # returns the actual value
+```
 
 ### ActiveRecord bang! methods
 
@@ -88,6 +94,10 @@ end
 
 ### Time Zones
 
-Prefer `Time.current` and `Date.current` in place of `Time.now` and `Date.today`. The `.current` methods will properly take the `Time.zone` into account if set, which `.now` and `.today` do not, leading to inconsistent behavior.
+#### Prefer `Time.current` and `Date.current` in place of `Time.now` and `Date.today`.
 
-Likewise with parsing, avoid `Time.parse` and `Date.parse` (which also don’t account for timezones), and instead prefer `Time.zone.parse` if you need a `Time` object, and calling `to_date` on the result if you need a `Date`.
+The `.current` methods will properly take the `Time.zone` into account if set, which `.now` and `.today` do not, leading to inconsistent behavior.
+
+#### Avoid `Time.parse` and `Date.parse`.
+
+(These also don’t account for timezones), and instead prefer `Time.zone.parse` if you need a `Time` object, and calling `to_date` on the result if you need a `Date`.

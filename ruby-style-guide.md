@@ -12,157 +12,172 @@ Regarding coding style, we follow [Github's Ruby Style Guide](https://github.com
 
 These override either Github’s or Batsov’s styleguide where applicable:
 
-- Use double-quotes whenever possible.
+###  Use double-quotes whenever possible.
 
-  ```ruby
-  # bad
-  name = 'foo'
+```ruby
+# bad
+name = 'foo'
 
-  # good
-  name = "foo"
-  ```
+# good
+name = "foo"
+```
 
-- Close your parens when invoking a method.
+### Close your parens when invoking a method.
 
-  ```ruby
-  # bad
-  many_things.include? thing
+```ruby
+# bad
+many_things.include? thing
 
-  # good
-  many_things.include?(thing)
-  ```
+# good
+many_things.include?(thing)
+```
 
-- Use the Ruby 1.9-style hash syntax (`key: 'value'`) with symbol keys wherever possible. Only use `"hash" => "rocket"` syntax when hash keys are required to be strings.
-- Use a single newline above and below "private" and "protected" in classes.
+### Use the Ruby 1.9-style hash syntax with symbol keys wherever possible.
 
-  ```ruby
-  # bad
-  cool_hash = { :lol => "nope" }
+For example: `key: 'value'`. Only use `"hash" => "rocket"` syntax when hash keys are required to be strings.
 
-  # good
-  cool_hash = { lol: "nope" }
+### Use a single newline above and below "private" and "protected" in classes.
 
-  # hm okay
-  cool_hash = { "lol" => "nope" }
-  ```
+```ruby
+# bad
+cool_hash = { :lol => "nope" }
 
-- Use a single space within ERB tags, e.g. `<%= "foo" %>`, not `<%="foo"%>`
+# good
+cool_hash = { lol: "nope" }
 
-  ```erb
-  <!-- bad -->
-  <%="foo"%>
+# hm okay
+cool_hash = { "lol" => "nope" }
+```
 
-  <!-- good -->
-  <%= "foo" %>
-  ```
+### Use a single space within ERB tags.
 
-- Use full words for variables except where a single letter is conventional (e.g. `f` for Rails form objects, `i` for iterators, etc.).
+e.g. `<%= "foo" %>`, not `<%="foo"%>`
 
-  ```ruby
-  # not so clear
-  assignee.assignments.map(&:assignable).each { |a| ...
+```erb
+<!-- bad -->
+<%="foo"%>
 
-  # so clear!
-  assignee.assignments.map(&:assignable).each { |assignable| ...
-  ```
+<!-- good -->
+<%= "foo" %>
+```
 
-- Avoid mixing inline and multi-line conditionals: they hurt readability.
+### Use full words for variables except where a single letter is conventional.
 
-  ```ruby
-  # Easy to miss the second condition at the end
-  if some_condition
-    do_something_with_a_really_long_method_name if some_other_condition
-  end
+For examples of where a single letter is conventional, consider `f` for Rails form objects, `i` for iterators, etc.
 
-  # It's easier to notice both conditions when they're in the same place
-  if some_condition && some_other_condition
-    do_something_with_a_really_long_method_name
-  end
-  ```
+```ruby
+# not so clear
+assignee.assignments.map(&:assignable).each { |a| ...
 
-- Try to use boolean values in conditionals rather than relying on `nil` to be `false` and "anything else" to be `true`. It adds clarity to the purpose of the conditional.
+# so clear!
+assignee.assignments.map(&:assignable).each { |assignable| ...
+```
 
-  ```ruby
-  # Uses the presence of an object as a boolean
-  if current_user
-    # Do something
-  end
+### Avoid mixing inline and multi-line conditionals: they hurt readability.
 
-  # Explicitly gets a boolean value representing the presence of a user
-  if current_user.present?
-    # Do something
-  end
-  ```
+```ruby
+# Easy to miss the second condition at the end
+if some_condition
+  do_something_with_a_really_long_method_name if some_other_condition
+end
 
-- `freeze` strings when their values should never change (e.g. in constants). It will make the string immutable, which has two advantages. It optimizes memory usage (because Ruby points to the same `String` object instead of instantiating a new `String` on each reference), and also prevents tempering, because in Ruby, constants aren't.
+# It's easier to notice both conditions when they're in the same place
+if some_condition && some_other_condition
+  do_something_with_a_really_long_method_name
+end
+```
 
-  ```ruby
-  DEFAULT_TITLE = "Untitled"
-  DEFAULT_TITLE << "foo"
-  DEFAULT_TITLE.inspect # => "Untitledfoo"
+### Try to use boolean values in conditionals.
 
-  DEFAULT_TITLE = "Untitled".freeze
-  DEFAULT_TITLE << "foo" # => RuntimeError: can't modify frozen string
-  ```
+...rather than relying on `nil` to be `false` and "anything else" to be `true`. It adds clarity to the purpose of the conditional.
 
-- Use `floor` instead of `to_i` when coercing a float to an integer without rounding. This makes it clear that the intention is specifically to round the number *down*.
+```ruby
+# Uses the presence of an object as a boolean
+if current_user
+  # Do something
+end
 
-  ```ruby
-  # Unclear: uses to_i to truncate the float
-  (progress.completed_percent * 100).to_i
+# Explicitly gets a boolean value representing the presence of a user
+if current_user.present?
+  # Do something
+end
+```
 
-  # More clear: uses floor to round the float down
-  (progress.completed_percent * 100).floor
-  ```
+### `freeze` strings when their values should never change.
 
-- Too much method chaining is often a bad code smell that something is responsible for too much at once, but if do you happen to find yourself on the multi-line choo choo method chain train please chain responsibly with *leading* periods. e.g.
+...for example, in constants. It will make the string immutable, which has two advantages. It optimizes memory usage (because Ruby points to the same `String` object instead of instantiating a new `String` on each reference), and also prevents tempering, because in Ruby, constants aren't.
 
-  ```ruby
-  # bad
-  LatestProgress.
-    where(user: manageable_users, lesson: company_lessons).
-    completed_yesterday.
-    progresses.
-    includes(:lesson, user: [:custom_user_fields, :custom_user_field_values]).
-    present?
+```ruby
+DEFAULT_TITLE = "Untitled"
+DEFAULT_TITLE << "foo"
+DEFAULT_TITLE.inspect # => "Untitledfoo"
 
-  # good
-  LatestProgress
-    .where(user: manageable_users, lesson: company_lessons)
-    .completed_yesterday
-    .progresses
-    .includes(:lesson, user: [:custom_user_fields, :custom_user_field_values])
-    .present?
-  ```
+DEFAULT_TITLE = "Untitled".freeze
+DEFAULT_TITLE << "foo" # => RuntimeError: can't modify frozen string
+```
 
-- Prefer keyword arguments whenever it isn’t abundantly obvious what an argument is.
+### Use `floor` instead of `to_i` when coercing a float to an integer without rounding.
 
-  ```ruby
-  # The method name makes it clear what the argument is...
-  # no need to name the argument.
-  def assignment_status(assignment)
+This makes it clear that the intention is specifically to round the number *down*.
 
-  # Even with multiple arguments, if the method name makes
-  # the order clear, no need to name the arguments.
-  def add_user_to_groups(user, groups)
+```ruby
+# Unclear: uses to_i to truncate the float
+(progress.completed_percent * 100).to_i
 
-  # But when the method name gives little hint of the type of argument,
-  # specify them by name for maximum clarity.
-  def notify_of_new_assignments(user:, new_assignments:)
-  ```
+# More clear: uses floor to round the float down
+(progress.completed_percent * 100).floor
+```
 
-- Explicitly declare modules.
+### Use leading periods when chaining methods on multiple lines.
 
-  ```ruby
-  # So good
-  module MyModule
-    class MyClass
+Too much method chaining is often a bad code smell that something is responsible for too much at once, but if do you happen to find yourself on the multi-line choo choo method chain train please chain responsibly with *leading* periods. e.g.
 
-  # No good
-  class MyModule::MyClass
-  ```
+```ruby
+# bad
+LatestProgress.
+  where(user: manageable_users, lesson: company_lessons).
+  completed_yesterday.
+  progresses.
+  includes(:lesson, user: [:custom_user_fields, :custom_user_field_values]).
+  present?
 
-  The latter introduces load order dependencies (`MyModule` must already be loaded or Ruby will raise a `NameError`) and requires every reference to other `MyModule` constants within `MyClass` to also be fully-qualified.
+# good
+LatestProgress
+  .where(user: manageable_users, lesson: company_lessons)
+  .completed_yesterday
+  .progresses
+  .includes(:lesson, user: [:custom_user_fields, :custom_user_field_values])
+  .present?
+```
+
+### Prefer keyword arguments whenever it isn’t abundantly obvious what an argument is.
+
+```ruby
+# The method name makes it clear what the argument is...
+# no need to name the argument.
+def assignment_status(assignment)
+
+# Even with multiple arguments, if the method name makes
+# the order clear, no need to name the arguments.
+def add_user_to_groups(user, groups)
+
+# But when the method name gives little hint of the type of argument,
+# specify them by name for maximum clarity.
+def notify_of_new_assignments(user:, new_assignments:)
+```
+
+### Explicitly declare modules.
+
+```ruby
+# So good
+module MyModule
+  class MyClass
+
+# No good
+class MyModule::MyClass
+```
+
+The latter introduces load order dependencies (`MyModule` must already be loaded or Ruby will raise a `NameError`) and requires every reference to other `MyModule` constants within `MyClass` to also be fully-qualified.
 
 ## Service Objects
 

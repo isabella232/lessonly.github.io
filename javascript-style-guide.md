@@ -6,7 +6,9 @@ permalink: /javascript/
 
 ## General Guidelines
 
-- Put all JavaScript within `.js` or `.js.coffee` files (not `<script>` tags unless you have a good reason).
+### Put all JavaScript within `.js` or `.js.coffee` files.
+
+Not `<script>` tags unless you have a good reason.
 
 ## Use lowerCamelCase
 
