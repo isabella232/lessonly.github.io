@@ -1,5 +1,5 @@
 # Site settings
-title: Lessonly Coding Style
+title: Lessonly Dev Blog
 email: your-email@domain.com
 description: >
   Write an awesome description for your new site here. You can edit this
@@ -13,3 +13,15 @@ github_username:  lessonly
 # Build settings
 kramdown:
   input: GFM
+
+
+paginate: 5
+permalink: /:title/
+
+collections:
+  styleguide:
+    output: true
+    permalink: /styleguide/:path/
+
+gems:
+- jekyll-paginate

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Ruby Style Guide
-permalink: /ruby/
+permalink: /styleguide/ruby/
 ---
 
 It’s highly recommended you use a Ruby version manager like [rbenv](https://github.com/sstephenson/rbenv), [RVM](http://rvm.io/), or [chruby](https://github.com/postmodern/chruby) so you can try out different versions if necessary.

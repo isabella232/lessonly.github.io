@@ -1,7 +1,7 @@
 ---
 layout: page
 title: JSON API Style Guide
-permalink: /json/
+permalink: /styleguide/json/
 ---
 
 Unless otherwise noted, these rules apply only to internal JSON endpoints, not necessarily [our public API](https://docs.lessonly.com).

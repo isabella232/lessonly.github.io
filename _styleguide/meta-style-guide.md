@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Meta Style Guide
-permalink: /meta/
+permalink: /styleguide/meta/
 ---
 
 This is the style guide page about the style guide. Deep, right?

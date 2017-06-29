@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Testing Style Guide
-permalink: /testing/
+permalink: /styleguide/testing/
 ---
 
 ## Rule #1
