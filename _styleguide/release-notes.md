@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Release Notes
-permalink: /styleguide/release-notes/
 ---
 
 Look here for recent updates to the Lessonly platform.

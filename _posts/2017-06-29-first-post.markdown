@@ -7,3 +7,7 @@ layout: post
 # First Post
 
 Let's write some awesome things and share them to the world!
+
+{% highlight ruby %}
+Post.create!
+{% endhighlight %}

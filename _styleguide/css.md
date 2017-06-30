@@ -1,7 +1,6 @@
 ---
 layout: page
 title: CSS Style Guide
-permalink: /styleguide/css/
 ---
 
 ## Structure CSS Around Components

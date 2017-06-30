@@ -140,7 +140,9 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll (~> 3.0)
-  jekyll-paginate
+  jekyll-feed
+  jekyll-paginate (~> 1.1)
+  jekyll-seo-tag (~> 0.1)
   octopress (~> 3.0)
 
 BUNDLED WITH
