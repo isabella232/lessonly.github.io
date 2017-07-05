@@ -13,7 +13,7 @@ kramdown:
   input: GFM
 
 paginate: 5
-permalink: /:year/:title/
+permalink: /:title/
 
 collections:
   styleguide:
