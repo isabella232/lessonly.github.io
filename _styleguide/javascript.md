@@ -1,7 +1,6 @@
 ---
 layout: page
 title: JavaScript Style Guide
-permalink: /javascript/
 ---
 
 ## General Guidelines

@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Testing Style Guide
-permalink: /testing/
 ---
 
 ## Rule #1

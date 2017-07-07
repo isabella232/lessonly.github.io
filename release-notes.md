@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Release Notes
-permalink: /release-notes/
 ---
 
 Look here for recent updates to the Lessonly platform.
@@ -16,7 +15,7 @@ Look here for recent updates to the Lessonly platform.
 - Updated styling for the Assign modal.
 
 ## Monday, June 5, 2017 11:00PM EST
-- Triggers & Edit Trigger page reskin 
+- Triggers & Edit Trigger page reskin
 - Updated Tooltip styling.
 - We’ve released API v1.1 and the API documentation has been updated.
 - Performance Improvement for Gradebook Export.
@@ -59,16 +58,16 @@ Look here for recent updates to the Lessonly platform.
 - Performance improvement deployed for the Advanced assign Modal.
 
 ## Wednesday, March 8, 2017 09:00 AM EST
- - February 2017 Release: 
-   - The Lessonly Chrome Extension: 
-      - The Lessonly Chrome Extension allows you associate Learning Library content with specific web URL's and display them to Learners as they navigate to that page in their browser. 
-      
-   - Advanced Assign Modal: 
+ - February 2017 Release:
+   - The Lessonly Chrome Extension:
+      - The Lessonly Chrome Extension allows you associate Learning Library content with specific web URL's and display them to Learners as they navigate to that page in their browser.
+
+   - Advanced Assign Modal:
       - We have updated the Assign modal to provide a better user experience.
-   
+
    - Ask the Expert Reminders:
       - We've added reminder emails to Ask the Expert in the Learning Library.
-   
+
 ## Wednesday, March 1, 2017 02:00 PM EST
 - Our API now returns "Grade Pending" as an assignment status.
 - Bugfix: API returns score as "null" instead of 0 when there is none.
@@ -77,15 +76,15 @@ Look here for recent updates to the Lessonly platform.
 - The Gradebook now requires the user to manually click a new 'Apply Changes' button before the content changes on the right side of the page.
 
 ## Thursday, January 26, 2017 10:00 AM EST
- - January 2017 Release: 
-   - Ask the Expert Additions 
+ - January 2017 Release:
+   - Ask the Expert Additions
       - Ask the Expert added to the Learning Libary.
       - Ask the Expert icon updated.
-      
+
    - Randomized Question Improvements:
       - Users can now drag and drop questions to and from their Randomized Questions element.
       - Users can now mark their Randomized Questions as Required or Not Required.
-  
+
    - Sign-In/Sign Up Pages Refresh
 
 ## Friday, January 17, 2017 4:00 PM EST

@@ -1,5 +1,6 @@
 ---
 layout: default
+permalink: /styleguide/
 ---
 
 # Lessonly Coding Style
@@ -15,10 +16,10 @@ The app contains an [`.editorconfig`](https://github.com/lessonly/lessonly/blob/
 ## Language-Specific Styles
 
 <ul class="post-list">
-  {% for page in site.pages %}
+  {% for guide in site.styleguide %}
     <li>
       <h2>
-        <a class="post-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+        <a class="post-link" href="{{ guide.url | prepend: site.baseurl }}">{{ guide.title }}</a>
       </h2>
     </li>
   {% endfor %}
