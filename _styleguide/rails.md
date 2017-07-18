@@ -39,6 +39,10 @@ Model.joins("left join things on thing_id = things.id and another_id = things.an
 Model.joins("LEFT JOIN things ON thing_id = things.id AND another_id = things.another_id")
 ```
 
+#### Prefer `size` over `count`
+
+`count` performs a SQL `COUNT` query every time you call it, while `size` does the same only if the relation hasn’t been returned as an array. If it has, `size` is smart enough to return the length of the array without performing any additional queries. ([Read more.](http://work.stevegrossi.com/2015/04/25/how-to-count-with-activerecord/))
+
 ### Views
 
 #### Avoid referencing instance variables in partials.
