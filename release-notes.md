@@ -8,6 +8,9 @@ Look here for recent updates to the Lessonly platform.
 ### Coming Soon
 - More cool stuff!
 
+## Tuesday, July 25, 2017  3:00PM EST
+- Smart Group Mobile Design Enhancements.
+
 ## Monday, June 12, 2017 11:30AM EST
 - Bulk User Import Files with empty headers are now allowed and that there is a cancel button during validation.
 
