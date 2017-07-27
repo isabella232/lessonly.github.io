@@ -11,6 +11,10 @@ Look here for recent updates to the Lessonly platform.
 ## Tuesday, July 25, 2017  3:00PM EST
 - Smart Group Mobile Design Enhancements.
 
+## Thursday, July 13, 2017 1:00PM EST
+- Chrome Extension renamed to Lessonly for Chrome.
+- Lessonly for Chrome updated to version 1.1.
+
 ## Monday, June 12, 2017 11:30AM EST
 - Bulk User Import Files with empty headers are now allowed and that there is a cancel button during validation.
 
