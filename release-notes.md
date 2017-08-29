@@ -8,6 +8,9 @@ Look here for recent updates to the Lessonly platform.
 ### Coming Soon
 - More cool stuff!
 
+## Tuesday, August 29, 2017  3:00PM EST
+- Lessonly for Chrome 2.0.0 released. This version allows an in line lesson taking experience within the extension as well as Ask the Expert functionality.
+
 ## Tuesday, July 25, 2017  3:00PM EST
 - Smart Group Mobile Design Enhancements.
 
