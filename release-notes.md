@@ -8,6 +8,10 @@ Look here for recent updates to the Lessonly platform.
 ### Coming Soon
 - More cool stuff!
 
+## Friday, September 8, 2017 1:00 PM EST
+- Added a 5000 record limit to per_page for api endpoints that support paging.
+- Left sidebar on People page is now able to scroll independently from the rest of the page.
+
 ## Tuesday, August 29, 2017  3:00PM EST
 - Lessonly for Chrome 2.0.0 released. This version allows an in line lesson taking experience within the extension as well as Ask the Expert functionality.
 
