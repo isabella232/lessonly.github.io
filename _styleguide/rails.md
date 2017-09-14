@@ -43,6 +43,23 @@ Model.joins("LEFT JOIN things ON thing_id = things.id AND another_id = things.an
 
 `count` performs a SQL `COUNT` query every time you call it, while `size` does the same only if the relation hasn’t been returned as an array. If it has, `size` is smart enough to return the length of the array without performing any additional queries. ([Read more.](http://work.stevegrossi.com/2015/04/25/how-to-count-with-activerecord/))
 
+#### Avoid `pluck` in intermediate queries
+
+`pluck` prevents the database from optimizing queries composed of subqueries (because it forces the database to treat subqueries as completely separate queries). Furthermore, `pluck` (with ids) adds memory overhead: every `pluck`ed id must be deserialized from the database into a Ruby `Integer` object only to be re-serialized into a SQL string for the outer query. For large customers this overhead can be significant.
+
+```ruby
+# no good - 2 queries and lots of Integer objects
+User.where(id: lesson.progresses.pluck(:user_id))
+
+# so good! - 1 faster query and no Integer objects
+User.where(id: lesson.progresses.select(:user_id))
+
+# also fine if we actually only want names and emails
+emails = company.users.pluck(:name, :email)
+```
+
+Of course, if your *end goal* is an array of simple attributes, that's exactly what `pluck` is for.
+
 ### Views
 
 #### Avoid referencing instance variables in partials.
