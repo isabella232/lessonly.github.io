@@ -63,9 +63,9 @@ expect(User.find_by(name: 'John Doe').name).to eq 'John Doe' # This line hits th
 
 ## Guidelines
 
-### Don't stub methods on the class being tested.
+### Don't stub private methods on the class being tested.
 
-[Read why](https://robots.thoughtbot.com/don-t-stub-the-system-under-test).
+`private` methods are private for a reason. When external callers (even tests) refer to them, it makes it harder to refactor. [Learn more](https://robots.thoughtbot.com/don-t-stub-the-system-under-test). You may, however, consider stubbing a public method on a class when testing another method that depends on it, in order to reduce duplication of logic within tests.
 
 ### Avoid stubbing and mocking in integration tests.
 
