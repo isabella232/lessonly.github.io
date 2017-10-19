@@ -3,11 +3,9 @@ layout: page
 title: Testing Style Guide
 ---
 
-## Rule #1
+### Rule #1
 
 Write tests for your code, please.
-
-## House Rules
 
 ### In RSpec tests, denote instance methods with "#" and class methods with "::"
 
@@ -61,8 +59,6 @@ click_button 'Save'
 expect(User.find_by(name: 'John Doe').name).to eq 'John Doe' # This line hits the DB directly
 ```
 
-## Guidelines
-
 ### Don't stub methods on the class being tested.
 
 [Read why](https://robots.thoughtbot.com/don-t-stub-the-system-under-test).
@@ -86,6 +82,25 @@ before :each do
   create(:assignment, assignable: lesson, assignee: user)
 end
 ```
+
+### Always specify attributes that a test depends on.
+
+If a spec depends on something being `nil` and it's `nil` by default, it should still specify that fact both for obviousness and so if someone changes the default value, the spec will continue testing what it means to.
+
+``` ruby
+# Not so good: breaks unnecessarily if we add a default description
+it "is invalid without a description" do
+  lesson = build(:lesson)
+  expect(lesson.description).to be nil
+end
+
+# So good!
+it "is invalid without a description" do
+  lesson = build(:lesson, description: nil)
+  expect(lesson.description).to be nil
+end
+```
+
 
 ## RSpec Syntax
 
