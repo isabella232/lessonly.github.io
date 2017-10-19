@@ -91,13 +91,13 @@ If a spec depends on something being `nil` and it's `nil` by default, it should 
 # Not so good: breaks unnecessarily if we add a default description
 it "is invalid without a description" do
   lesson = build(:lesson)
-  expect(lesson.description).to be nil
+  expect(lesson).to be_invalid
 end
 
 # So good!
 it "is invalid without a description" do
   lesson = build(:lesson, description: nil)
-  expect(lesson.description).to be nil
+  expect(lesson).to be_invalid
 end
 ```
 
