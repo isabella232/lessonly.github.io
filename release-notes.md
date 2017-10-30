@@ -8,6 +8,10 @@ Look here for recent updates to the Lessonly platform.
 ### Coming Soon
 - More cool stuff!
 
+## Monday, Ocotber 30, 2017 2:00 PM EST
+- Chrome Extension and Web Widget mappings no longer require being in the Learning Library via the Everyone group. Users will only view content in the Chrome Extension or Web Widget they have access to in the Learning Library or they have been assigned.
+- Increased fuzziness of our search functionality to return additional results to better accommodate for typos, etc.
+
 ## Friday, September 8, 2017 1:00 PM EST
 - Added a 5000 record limit to per_page for api endpoints that support paging.
 - Left sidebar on People page is now able to scroll independently from the rest of the page.
