@@ -48,6 +48,26 @@ feature "Custom user fields" do
 end
 ```
 
+### In feature specs, test the UI, not the database.
+
+In the words of Capybara’s creator, “Capybara is written to best support use cases where you only test the UI, not the back-end.” ([source](https://bibwild.wordpress.com/2016/02/18/struggling-towards-reliable-capybara-javascript-testing/)). Calling out to the database in feature specs can cause threading issues. For example:
+
+```ruby
+scenario "Adding a Tag" do
+  visit new_tag_path
+  fill_in "Name", with: "My new Tag"
+  click_button "Submit"
+  
+  # Good
+  within "ul.all_tags" do
+    expect(page).to have_content "My new Tag"
+  end
+
+  # Not so Good: can be flaky
+  expect(Tag.find_by(name: "My new Tag")).to be_present
+end
+```
+
 ### Don't stub methods on the class being tested.
 
 [Read why](https://robots.thoughtbot.com/don-t-stub-the-system-under-test).
