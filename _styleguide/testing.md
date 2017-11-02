@@ -48,17 +48,6 @@ feature "Custom user fields" do
 end
 ```
 
-We also have the ability to query the database directly from the feature specs, so a feature test can change something via the UI, but verify it with actual database calls.
-
-Beware, pseudo code ahead!
-
-```ruby
-visit edit_user_path(user)
-fill_in 'Name', with: 'John Doe'
-click_button 'Save'
-expect(User.find_by(name: 'John Doe').name).to eq 'John Doe' # This line hits the DB directly
-```
-
 ### Don't stub methods on the class being tested.
 
 [Read why](https://robots.thoughtbot.com/don-t-stub-the-system-under-test).
