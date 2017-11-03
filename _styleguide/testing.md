@@ -48,15 +48,24 @@ feature "Custom user fields" do
 end
 ```
 
-We also have the ability to query the database directly from the feature specs, so a feature test can change something via the UI, but verify it with actual database calls.
+### In feature specs, test the UI, not the database.
 
-Beware, pseudo code ahead!
+In the words of Capybara’s creator, “Capybara is written to best support use cases where you only test the UI, not the back-end.” ([source](https://bibwild.wordpress.com/2016/02/18/struggling-towards-reliable-capybara-javascript-testing/)). Calling out to the database in feature specs can cause threading issues. For example:
 
 ```ruby
-visit edit_user_path(user)
-fill_in 'Name', with: 'John Doe'
-click_button 'Save'
-expect(User.find_by(name: 'John Doe').name).to eq 'John Doe' # This line hits the DB directly
+scenario "Adding a Tag" do
+  visit new_tag_path
+  fill_in "Name", with: "My new Tag"
+  click_button "Submit"
+  
+  # Good
+  within "ul.all_tags" do
+    expect(page).to have_content "My new Tag"
+  end
+
+  # Not so Good: can be flaky
+  expect(Tag.find_by(name: "My new Tag")).to be_present
+end
 ```
 
 ### Don't stub methods on the class being tested.
