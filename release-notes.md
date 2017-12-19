@@ -8,7 +8,10 @@ Look here for recent updates to the Lessonly platform.
 ### Coming Soon
 - More cool stuff!
 
-## Monday, Ocotber 30, 2017 2:00 PM EST
+## Tuesday, December 19, 2017 4:30PM EST
+- Lessonly now synchronizes additional information from Namely! Office Location, User Department, Job Title, and Reports To are all now synchronized. Additionally, users can optionally turn off the automatic creation of groups from the Namely import if they wish to create more finely-tuned groups.
+
+## Monday, October 30, 2017 2:00 PM EST
 - Chrome Extension and Web Widget mappings no longer require being in the Learning Library via the Everyone group. Users will only view content in the Chrome Extension or Web Widget they have access to in the Learning Library or they have been assigned.
 - Increased fuzziness of our search functionality to return additional results to better accommodate for typos, etc.
 
