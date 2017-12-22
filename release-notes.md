@@ -8,6 +8,9 @@ Look here for recent updates to the Lessonly platform.
 ### Coming Soon
 - More cool stuff!
 
+##Thursday, December 21, 2017 1:00PM EST
+=Lessonly Chrome Extension updated to v2.0.3 which included some refactoring and enhancement for the Search bar to auto focus when extension opens for learner.
+
 ## Tuesday, December 19, 2017 4:30PM EST
 - Lessonly now synchronizes additional information from Namely! Office Location, User Department, Job Title, and Reports To are all now synchronized. Additionally, users can optionally turn off the automatic creation of groups from the Namely import if they wish to create more finely-tuned groups.
 
