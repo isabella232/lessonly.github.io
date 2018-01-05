@@ -1,6 +1,6 @@
 ---
 layout: page
-title: JavaScript Style Guide
+title: React Style Guide
 ---
 
 ## General Guidelines
