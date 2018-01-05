@@ -131,3 +131,41 @@ The default convention for atomic class names is an abbreviation of the property
   text-align: center;
 }
 ```
+
+## Brand Colors
+
+Lessonly brand colors are found in `app/assets/stylesheets/colors.scss`. If you've been asked to use a different color, check with our Product Designer before going forward.
+
+Here's an example of what you can find in that file.
+
+
+```scss
+$brand-gray:           #c4c4c3;
+$brand-gray-dark:      #a3a2a1;
+$brand-gray-darker:    #70706d;
+
+$brand-night:          #2d2d2d;
+```
+
+## Mixins
+
+Commonly used styles can be "mixed in" to existing classes for styling. These mixins are found in `app/assets/stylesheets/mixins.scss`.
+
+Here's an example of what you can find in that file.
+
+```scss
+@mixin flexbox-display {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@mixin flexbox-direction($value) {
+  -ms-flex-direction: $value;
+  flex-direction: $value;
+}
+
+@mixin transform($transformation) {
+  -webkit-transform: $transformation;
+  transform: $transformation;
+}
+```

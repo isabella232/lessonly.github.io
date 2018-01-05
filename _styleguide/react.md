@@ -52,7 +52,9 @@ export default ElementLibrary;
 
 When choosing names for new components, try to be as descriptive as possible. Ideally, anyone on the team will know the purpose of the component by reading its name.
 
-Note: What happens if there's more than one component defined in a file? First, leave a comment at the top of the file so that others reading the code will easily know that this file does not follow the standard convention. Second, before settling on a name for your file, talk to the team to ensure you've choosen the most descriptive name.
+What happens if there's more than one component defined in a file? First, leave a comment at the top of the file so that others reading the code will easily know that this file does not follow the standard convention. Second, before settling on a name for your file, talk to the team to ensure you've choosen the most descriptive name.
+
+**Note:** Not all files are named according to what the component is named. If you're searching for something, you may want to do a global search rather than just search file names.
 
 ## Imports
 
