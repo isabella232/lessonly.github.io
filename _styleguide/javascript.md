@@ -9,7 +9,7 @@ We primarly follow Airbnb's style guide when writing [JavaScript](https://github
 
 ### Put all JavaScript within `.js` or `.jsx` files.
 
-Not `<script>` tags unless you have a good reason.
+Do not use `<script>` tags unless you have a good reason.
 
 ## Use lowerCamelCase
 
