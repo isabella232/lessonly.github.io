@@ -8,6 +8,9 @@ Look here for recent updates to the Lessonly platform.
 ### Coming Soon
 - More cool stuff!
 
+## Monday, January 8, 2018 11:00AM EST
+- Removed the ability to add Managers to the Everyone group. 
+
 ## Wednesday, January 3, 2018 12:30PM EST
 - The standard fields below have been added to Details tab of the gradebook export report:
      Job Title
