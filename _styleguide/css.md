@@ -77,3 +77,95 @@ $border-color: $fafafa;
 ```
 
 The only exception is if a library (like Bootstrap) includes their own mixins or variables.
+
+## Atomic CSS
+
+We use atomic styles when appropriate. All of our atomic styles are defined in `app/assets/stylesheets/atoms.scss`.
+
+Commonly used atomic styles are listed below.
+
+```scss
+.d-f {
+  @include flexbox-display();
+}
+
+.mt-16 {
+  margin-top: 16px;
+}
+
+.mb-32 {
+  margin-bottom: 32px;
+}
+
+.p-8 {
+  padding: 8px;
+}
+
+.bdrs-2 {
+  border-radius: 2px;
+}
+
+.c-p {
+  cursor: pointer;
+}
+```
+
+To utilize these atomic styles, you'll add the class name to the element you're styling.
+
+```js
+<div className="ElementLibrary-loading d-f jc-c ai-c ta-c">
+  {this.state.error &&
+    <div className="ErrorContainer ElementLibrary-errorMessage lh-24">
+      {this.state.error}
+    </div>
+  }
+</div>
+```
+
+If you don't find a style that is commonly used, define a new atomic style!
+
+The default convention for atomic class names is an abbreviation of the property, followed by a hyphen, followed by an abbreviation of the value. This is just a convention, depart from it when it makes sense.
+
+```scss
+.ta-c {
+  text-align: center;
+}
+```
+
+## Brand Colors
+
+Lessonly brand colors are found in `app/assets/stylesheets/colors.scss`. If you've been asked to use a different color, check with our Product Designer before going forward.
+
+Here's an example of what you can find in that file.
+
+
+```scss
+$brand-gray:           #c4c4c3;
+$brand-gray-dark:      #a3a2a1;
+$brand-gray-darker:    #70706d;
+
+$brand-night:          #2d2d2d;
+```
+
+## Mixins
+
+Commonly used styles can be "mixed in" to existing classes for styling. These mixins are found in `app/assets/stylesheets/mixins.scss`.
+
+Here's an example of what you can find in that file.
+
+```scss
+@mixin flexbox-display {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@mixin flexbox-direction($value) {
+  -ms-flex-direction: $value;
+  flex-direction: $value;
+}
+
+@mixin transform($transformation) {
+  -webkit-transform: $transformation;
+  transform: $transformation;
+}
+```

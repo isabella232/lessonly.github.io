@@ -5,9 +5,11 @@ title: JavaScript Style Guide
 
 ## General Guidelines
 
-### Put all JavaScript within `.js` or `.js.coffee` files.
+We primarly follow Airbnb's style guide when writing [JavaScript](https://github.com/airbnb/javascript). Below we highlight both important guidelines and inconsistencies with Airbnb's style guide.
 
-Not `<script>` tags unless you have a good reason.
+### Put all JavaScript within `.js` or `.jsx` files.
+
+Do not use `<script>` tags unless you have a good reason.
 
 ## Use lowerCamelCase
 
