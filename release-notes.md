@@ -8,6 +8,9 @@ Look here for recent updates to the Lessonly platform.
 ### Coming Soon
 - More cool stuff!
 
+## Wednesday, January 17, 2018 11:30AM EST
+- Users that were created yesterday for the company are now included in the Daily Digest e-mail
+
 ## Monday, January 8, 2018 11:00AM EST
 - Removed the ability to add Managers to the Everyone group. 
 
