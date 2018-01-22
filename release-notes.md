@@ -8,6 +8,9 @@ Look here for recent updates to the Lessonly platform.
 ### Coming Soon
 - More cool stuff!
 
+## Monday, January 22, 2018 12:15PM EST
+- Topic Cards - Images and Descriptions are now available to be added to Tags.
+
 ## Wednesday, January 17, 2018 11:30AM EST
 - Users that were created yesterday for the company are now included in the Daily Digest e-mail
 
