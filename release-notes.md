@@ -11,6 +11,13 @@ Look here for recent updates to the Lessonly platform.
 ## Thursday, February 8, 2018 2:00PM EST
 - Leading and Trailing spaces are now stripped from Group names prior to validating and saving.
 
+## Wednesday, February 7, 2018 9:00AM EST
+- Lessonly for Zendesk Integration: Empower customer service reps to deliver amazing support with Lessonly for Zendesk, our newest integration.
+- Feedback Criteria: Provide a set of criteria to guide a learner’s video response. Use the same criteria to easily evaluate performance and offer feedback.
+- Images on Topic Cards: Guide learners to Learning LIbrary content with redesigned topic cards featuring images.
+- Element Library: Save elements and/or lesson content, then apply it on demand in other lessons. 
+- Also, launched new status page to keep customers updated on the Lessonly app. 
+
 ## Monday, January 22, 2018 12:15PM EST
 - Topic Cards - Images and Descriptions are now available to be added to Tags.
 
