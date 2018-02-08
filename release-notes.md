@@ -8,6 +8,9 @@ Look here for recent updates to the Lessonly platform.
 ### Coming Soon
 - More cool stuff!
 
+## Thursday, February 8, 2018 2:00PM EST
+- Leading and Trailing spaces are now stripped from Group names prior to validating and saving.
+
 ## Monday, January 22, 2018 12:15PM EST
 - Topic Cards - Images and Descriptions are now available to be added to Tags.
 
