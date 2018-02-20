@@ -8,6 +8,16 @@ Look here for recent updates to the Lessonly platform.
 ### Coming Soon
 - More cool stuff!
 
+## Tuesday, February 20, 2018 10:30AM EST
+- Ziggeo is now the default for video recording. 
+- The ability to permanently delete Lessons directly from the application has been removed.
+- API: We added the ability to filter by a customer user field.
+
+## Thursday, February 15, 2018 10:30AM EST
+- The ability to permanently delete Courses directly from the application has been removed.
+- Link to Lessonly status page added to In Maintenance page.
+- Allow same google identifier to be used on multiple companies
+
 ## Thursday, February 8, 2018 2:00PM EST
 - Leading and Trailing spaces are now stripped from Group names prior to validating and saving.
 
