@@ -8,13 +8,17 @@ Look here for recent updates to the Lessonly platform.
 ### Coming Soon
 - More cool stuff!
 
+## Friday, February 23, 2018 10:30AM EST
+- Lessonly application upgraded to Rails 5!
+- The ability to permanently delete Groups directly from the Archives page has been removed.
+
 ## Tuesday, February 20, 2018 10:30AM EST
 - Ziggeo is now the default for video recording. 
-- The ability to permanently delete Lessons directly from the application has been removed.
+- The ability to permanently delete Lessons directly from the Archives page has been removed.
 - API: We added the ability to filter by a customer user field.
 
 ## Thursday, February 15, 2018 10:30AM EST
-- The ability to permanently delete Courses directly from the application has been removed.
+- The ability to permanently delete Courses directly from the Archives page has been removed.
 - Link to Lessonly status page added to In Maintenance page.
 - Allow same google identifier to be used on multiple companies
 
