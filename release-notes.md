@@ -8,6 +8,10 @@ Look here for recent updates to the Lessonly platform.
 ### Coming Soon
 - More cool stuff!
 
+## Thursday, March 1, 2018 11:30AM EST
+- The option to notify learner immediately or upon first assignment was added both the Add User page and the Bulk User Import.
+- Smart Groups are now recalculated when a User is updated via the API.
+
 ## Friday, February 23, 2018 10:30AM EST
 - Lessonly application upgraded to Rails 5!
 - The ability to permanently delete Groups directly from the Archives page has been removed.
