@@ -8,6 +8,9 @@ Look here for recent updates to the Lessonly platform.
 ### Coming Soon
 - More cool stuff!
 
+## Friday, March 2, 2018 10:45AM EST
+- We replaced react-ziggeo with Ziggeo's JS library for better recording quality.
+
 ## Thursday, March 1, 2018 11:30AM EST
 - The option to notify learner immediately or upon first assignment was added both the Add User page and the Bulk User Import.
 - Smart Groups are now recalculated when a User is updated via the API.
