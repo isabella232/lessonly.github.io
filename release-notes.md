@@ -8,6 +8,10 @@ Look here for recent updates to the Lessonly platform.
 ### Coming Soon
 - More cool stuff!
 
+## Monday, March 5, 2:00PM EST
+- Added the ability archive users via the Bulk User Import.
+- Updated instructions for Screen Recording for Learners.
+
 ## Friday, March 2, 2018 10:45AM EST
 - We replaced react-ziggeo with Ziggeo's JS library for better recording quality.
 
