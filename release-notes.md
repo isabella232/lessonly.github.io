@@ -8,6 +8,9 @@ Look here for recent updates to the Lessonly platform.
 ### Coming Soon
 - More cool stuff!
 
+## Wednesday, March 14, 2018 10:45AM EST
+- The option to include learning library content to grade book was added.
+
 ## Monday, March 5, 2018 2:00PM EST
 - Added the ability archive users via the Bulk User Import.
 - Updated instructions for Screen Recording for Learners.
