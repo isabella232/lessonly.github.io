@@ -15,11 +15,6 @@ kramdown:
 paginate: 5
 permalink: /:title/
 
-collections:
-  styleguide:
-    output: true
-    permalink: /styleguide/:path/
-
 gems:
 - jekyll-paginate
 - jekyll-seo-tag

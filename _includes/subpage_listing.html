@@ -1,0 +1,12 @@
+<ul class="post-list">
+  {% for subpage in site.pages %}
+    {% assign current_path = subpage.path | prepend: "/" %}
+    {% if current_path contains page.url %}
+      <li>
+        <h2>
+          <a class="post-link" href="{{ subpage.url | prepend: site.baseurl }}">{{ subpage.title }}</a>
+        </h2>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>

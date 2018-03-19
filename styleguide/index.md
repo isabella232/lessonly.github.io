@@ -1,6 +1,6 @@
 ---
-layout: default
-permalink: /styleguide/
+title: Styleguide
+layout: page
 ---
 
 # Lessonly Coding Style
@@ -16,11 +16,20 @@ The app contains an [`.editorconfig`](https://github.com/lessonly/lessonly/blob/
 ## Language-Specific Styles
 
 <ul class="post-list">
-  {% for guide in site.styleguide %}
-    <li>
-      <h2>
-        <a class="post-link" href="{{ guide.url | prepend: site.baseurl }}">{{ guide.title }}</a>
-      </h2>
-    </li>
+  {% for page in site.pages %}
+    {% assign dir_depth = page.path | split: '/' | size %}
+    {% if page.path contains "styleguide/"
+      and dir_depth == 2
+      and page.path != "styleguide/index.md" %}
+      <li>
+        <h2>
+          <a class="post-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+        </h2>
+      </li>
+    {% endif %}
   {% endfor %}
 </ul>
+
+
+
+
