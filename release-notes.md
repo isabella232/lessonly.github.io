@@ -8,6 +8,9 @@ Look here for recent updates to the Lessonly platform.
 ### Coming Soon
 - More cool stuff!
 
+## Thursday, Marcy 22, 2018 11:00AM EST
+- Written Response Practice Type added for customers using Practice/Video Response. This functions the same as Free Response type but can have feedback criteria attached to it. 
+
 ## Wednesday, March 14, 2018 10:45AM EST
 - The option to include learning library content to grade book was added.
 
