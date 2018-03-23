@@ -8,7 +8,10 @@ Look here for recent updates to the Lessonly platform.
 ### Coming Soon
 - More cool stuff!
 
-## Thursday, Marcy 22, 2018 11:00AM EST
+## Friday, March 23, 2018 10:30AM EST
+- Added an option to the app customization page to override the auto font color setting. This also includes a preview of the buttons for each setting.
+
+## Thursday, March 22, 2018 11:00AM EST
 - Written Response Practice Type added for customers using Practice/Video Response. This functions the same as Free Response type but can have feedback criteria attached to it. Video Response menu now reads as "Practice".
 
 ## Wednesday, March 14, 2018 10:45AM EST
