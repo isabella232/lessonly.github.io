@@ -8,6 +8,17 @@ Look here for recent updates to the Lessonly platform.
 ### Coming Soon
 - More cool stuff!
 
+## Friday, May 18, 02:15PM EST
+- Updated designs for Lesson & Path Cards on Learn page.
+- Added ability to copy & share video recording links.
+- Assign Modal Performance enhancement. 
+
+## Tuesday, May 15, 2018 09:00AM EST
+- Our new Practice offering is now Live!  https://www.lessonly.com/practice/
+
+## Monday, May 14, 2018 11:00AM EST
+- Added logged in user's name next to "Sign Out" in Settings menu.
+
 ## Friday, March 23, 2018 10:30AM EST
 - Added an option to the app customization page to override the auto font color setting. This also includes a preview of the buttons for each setting.
 
