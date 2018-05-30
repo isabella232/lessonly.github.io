@@ -8,7 +8,17 @@ Look here for recent updates to the Lessonly platform.
 ### Coming Soon
 - More cool stuff!
 
-## Friday, May 18, 02:15PM EST
+## Wednesday, May 30,2018 12:00PM EST
+- For larger clients, performance in the Assign modal should be a bit better when loading and searching for Assignees.
+- Combined Learner Experience: Topics section will only show directly-assigned content in this area.
+- Corrected incorrect wording on email when a user's role has been changed.
+
+## Tuesday, May 29, 2018 2:38PM EST
+- Updated to Rails 5.0.7
+- Customers with Inights feature will now be able to download a Search Summary Report under the More Reports section. 
+- Admins can now see due dates given to each Lesson within a Path for each user assigned that Path.
+
+## Friday, May 18, 2018 02:15PM EST
 - Updated designs for Lesson & Path Cards on Learn page.
 - Added ability to copy & share video recording links.
 - Assign Modal Performance enhancement. 
