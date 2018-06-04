@@ -8,6 +8,12 @@ Look here for recent updates to the Lessonly platform.
 ### Coming Soon
 - More cool stuff!
 
+## Monday, June 4, 2018 11:20AM EST
+- The Approximate Completion Time field that was recently added to the Lesson Overview page for content creators will now display its value on the Lesson cards on the /learn page (a.k.a. Combined Learner Experience).
+
+## Thursday, May 31, 2018 11:00AM EST
+- The Lesson Overview page shows an "Approximate Completion Time" field that accepts entries in intervals of 0.5 minutes. At the time this is being released, the value entered here is not yet viewable to Learners.
+
 ## Wednesday, May 30,2018 12:00PM EST
 - For larger clients, performance in the Assign modal should be a bit better when loading and searching for Assignees.
 - Combined Learner Experience: Topics section will only show directly-assigned content in this area.
