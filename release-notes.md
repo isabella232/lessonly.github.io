@@ -8,6 +8,9 @@ Look here for recent updates to the Lessonly platform.
 ### Coming Soon
 - More cool stuff!
 
+## Wednesday, June 6, 2018 11:00AM EST
+- Path Title and ID added to Gradebook Export.
+
 ## Monday, June 4, 2018 11:20AM EST
 - The Approximate Completion Time field that was recently added to the Lesson Overview page for content creators will now display its value on the Lesson cards on the /learn page (a.k.a. Combined Learner Experience).
 
