@@ -8,6 +8,9 @@ Look here for recent updates to the Lessonly platform.
 ### Coming Soon
 - More cool stuff!
 
+## Monday, June 11, 2018 11:00AM EST
+- The Submit Grades button will now be disabled on the Grading Station until at least 1 question has been marked Correct/Incorrect.
+
 ## Wednesday, June 6, 2018 11:00AM EST
 - Path Title and ID added to Gradebook Export.
 
