@@ -8,6 +8,11 @@ Look here for recent updates to the Lessonly platform.
 ### Coming Soon
 - More cool stuff!
 
+## Thursday, June 14, 2018 12:45PM EST
+- Creators can now replace an image within editor instead of having to delete and re-add image.
+- Tooltip added for disabled Submit Grades button in the Grading Station.
+- On the Learn page, when the system is configured with an Expert, Learners currently see "Have a question or feedback? Send us a message" underneath their Search box. If a search returns no results, the also get an option to send a message ("Would a lesson or topic be valuable? Send us a message to request one. ['Send us a message' button]"). Now the page will show the same option to send a message for both successful and unsuccessful search results.
+
 ## Monday, June 11, 2018 11:00AM EST
 - The Submit Grades button will now be disabled on the Grading Station until at least 1 question has been marked Correct/Incorrect.
 
