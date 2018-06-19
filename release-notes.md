@@ -8,6 +8,11 @@ Look here for recent updates to the Lessonly platform.
 ### Coming Soon
 - More cool stuff!
 
+## Tuesday, June 19, 2018 11:00AM EST
+- Insights feature is now available
+     - See more here: https://www.lessonly.com/blog/introducing-insights-see-training-differently/
+     - Insights brings training data into one easy-to-use dashboard to help teams visualize how their training program is doing, find areas for improvement, and make informed decisions on how to move forward.
+
 ## Thursday, June 14, 2018 12:45PM EST
 - Creators can now replace an image within editor instead of having to delete and re-add image.
 - Tooltip added for disabled Submit Grades button in the Grading Station.
