@@ -8,10 +8,21 @@ Look here for recent updates to the Lessonly platform.
 ### Coming Soon
 - More cool stuff!
 
+## Monday, June 25, 2018 2:00PM EST
+- Active Users Module added to Insights for Managers.
+- Standard User Attributes have been added to the Lesson Rating Report.
+- Popout and Finish button options added to Scorm Upload.
+
+## Friday, June 22, 2018 11:00AM EST
+- Lessonly for Chrome Version 2.0.10 published to Chrome web store.
+- Overdue Lessons within a Path added to the Gradebook.
+- Completed Assignments Module added to Insights for Managers.
+
 ## Tuesday, June 19, 2018 11:00AM EST
 - Insights feature is now available
      - See more here: https://www.lessonly.com/blog/introducing-insights-see-training-differently/
      - Insights brings training data into one easy-to-use dashboard to help teams visualize how their training program is doing, find areas for improvement, and make informed decisions on how to move forward.
+- Group Owners can now see assigned paths on the Group Overview page.
 
 ## Thursday, June 14, 2018 12:45PM EST
 - Creators can now replace an image within editor instead of having to delete and re-add image.
