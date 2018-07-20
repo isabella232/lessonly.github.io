@@ -8,6 +8,46 @@ Look here for recent updates to the Lessonly platform.
 ### Coming Soon
 - More cool stuff!
 
+## Thursday, July 19, 2018 3:20PM EST
+- Namely integration will take a list of custom fields in Namely to map to custom user fields in Lessonly.
+- There is now a button next to the Learning Library section of a User overview page that will open the gradebook with Learning Library Progresses enabled
+
+## Thursday, July 19, 2018 9:30AM EST
+- Insights Active Users report now contains the additional columns - Email and Created At
+
+## Monday, July 16, 2018 1:00PM EST
+- A button was added for users to toggle incoming messages for Practice questions under "Practice Performance" on the Lesson Overview Page.
+- Lesson Learner Report now includes standard user fields.
+
+## Friday, July 13, 2018 12:45PM EST
+- Hide `History`, `All Lessons & Paths`, and `My Learning Content` if there is no useful content for them on these pages.
+
+    - For new customers or for customers who only ever deploy a couple lessons to their learners, this is to reduce confusion the learner might have as where to focus.
+
+    - This will hide the History and All Lessons & Paths since they have so few lessons it is just a lot of redundancy.
+
+    - For customers with the new learner experience this will make it less confusing to those customers who don't use the learning library yet and for the learners don't have anything available to them via the library.
+    - This will hide the My Learning Content page since it is redundant with the Assignments page.
+
+## Friday, July 6, 2018 2:45PM EST
+- The Events report for Insights and ActiveAdmin now contains the following additional columns:
+    - Learner Role
+    - Job Title
+    - Business Unit
+    - Department
+    - Location Hire Date
+    - Manager Name
+    - Custom Groups
+    - Smart Groups
+    
+- Remove "Assignments" link if you have 0 assignments:
+     
+    - For customers with the new learner experience this will make it less confusing to those customers who don't use assignments yet and for the learners don't have anything available to them via assignment.
+    - This will hide the /learn/assignments page since it will have nothing on it.
+
+## Thursday, July 5, 2018 10:00AM EST
+- Course API endpoints marked as deprecated on docs.lessonly.com.
+
 ## Monday, June 25, 2018 2:00PM EST
 - Active Users Module added to Insights for Managers.
 - Standard User Attributes have been added to the Lesson Rating Report.
