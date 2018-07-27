@@ -110,6 +110,22 @@ it "is invalid without a description" do
 end
 ```
 
+### Use the `request_setup` helper in your controller specs.
+
+Controller specs won't work without it! Its definition can be found in `spec/support/controller_helper.rb/`. It accepts `request`, `controller`, `current_user`, and `current_company` as arguments, but you can substitute other objects for those as needed.
+
+```ruby
+context "when no user is logged in" do
+  let(:company) { create(:company) }
+
+  before(:each) { request_setup(request, controller, nil, company) }
+
+  it "redirects to the login page" do
+    # some code...
+  end
+end
+```
+
 
 ## RSpec Syntax
 
