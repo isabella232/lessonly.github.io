@@ -113,6 +113,34 @@ end
 
 ## RSpec Syntax
 
+- Use `specify` instead of `it` when it improves readability. This is common in our jobs specs, where `context` is used to refer to subclasses, and our model specs, where we test validations.
+
+Example:
+
+```ruby
+# reads weirdly...
+describe DoStuffJob do
+
+  context DoStuffJob::Subclass do
+
+    it "method does this thing" do
+      # some code
+    end
+  end
+end
+
+# reads so smoothly!
+describe DoStuffJob do
+
+  context DoStuffJob::Subclass do
+
+    specify "method does this thing" do
+      # some code
+    end
+  end
+end
+```
+
 - Include a blank line around `describe`/`feature` blocks, `it`/`scenario` blocks, `before`/`background` blocks, and `context` blocks.
 - Within `it`/`scenario` blocks, separate setup and expectations with a blank line.
 - Do not include a blank line above `let` blocks, in order to visually group them with their appropriate `describe`/`feature` or `context` block.
