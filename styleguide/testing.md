@@ -126,6 +126,18 @@ context "when no user is logged in" do
 end
 ```
 
+### Use `and_call_original` to call the actual implementation of a mocked method
+
+Why might you need this?
+
+- To "unmock" a method that was previously mocked
+- To set a default response that can be overridden with specific arguments
+- To make sure that mocked services called in job specs actually carry out their task
+
+```ruby
+What example should go here?
+```
+
 ### Something about how shared contexts are used and/or helpful
 
 A common example is the `logged in as a #{role}` context, which autocreates a `user` object of the desired role and a `company` that the user is associated with. Shared contexts are defined in `spec/support/shared_contexts.rb`. [Note: this specific example is defined with Capybara and so is only usable with feature specs.]
