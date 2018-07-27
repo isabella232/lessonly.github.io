@@ -126,6 +126,10 @@ context "when no user is logged in" do
 end
 ```
 
+### Something about how shared contexts are used and/or helpful
+
+A common example is the `logged in as a #{role}` context, which autocreates a `user` object of the desired role and a `company` that the user is associated with. Shared contexts are defined in `spec/support/shared_contexts.rb`. [Note: this specific example is defined with Capybara and so is only usable with feature specs.]
+
 
 ## RSpec Syntax
 
