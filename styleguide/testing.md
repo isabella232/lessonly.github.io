@@ -130,10 +130,9 @@ Do these things to minimize contributions to the slowness of our test suite:
 
   Creating a new `user` when the same type of `user` has already been created in the file creates an unnecessary test object to add to memory.
 
-
 ### Use the `request_setup` helper in your controller specs.
 
-Controller specs won't work without it! Its definition can be found in `spec/support/controller_helper.rb/`. It accepts `request`, `controller`, `current_user`, and `current_company` as arguments, but you can substitute other objects for those as needed.
+Controller specs won't work without it! Its definition can be found in `spec/support/controller_helper.rb`. It accepts `request`, `controller`, `current_user`, and `current_company` as arguments, but you can substitute other objects for those as needed.
 
 ```ruby
 context "when no user is logged in" do
@@ -151,8 +150,6 @@ end
 
 In `spec/support/javascript_helper.rb`, there are a number of methods to help with unique JS issues that often come up in feature specs. Many of these methods are titled `wait_and_[do_something]` and address timing issues that come up when a request is made before a JS request has fully processed.
 
-
-
 ## RSpec
 
 ### Use `and_call_original` to call the actual implementation of a mocked method
@@ -164,7 +161,9 @@ Why might you need this?
 - To make sure that mocked services called in job specs actually carry out their task
 
 ```ruby
-What example should go here?
+# Stub getting a value from the session, but make sure calls to get unrelated values from the session remain unstubbed
+allow(controller.session).to receive(:[]).and_call_original
+allow(controller.session).to receive(:[]).with("gradebook_user_ids") { [user.id] }
 ```
 
 ### Something about how shared contexts are used and/or helpful
