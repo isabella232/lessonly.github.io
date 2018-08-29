@@ -57,7 +57,7 @@ scenario "Adding a Tag" do
   visit new_tag_path
   fill_in "Name", with: "My new Tag"
   click_button "Submit"
-  
+
   # Good
   within "ul.all_tags" do
     expect(page).to have_content "My new Tag"
@@ -148,7 +148,11 @@ end
 
 ### JS Helpers
 
-In `spec/support/javascript_helper.rb`, there are a number of methods to help with unique JS issues that often come up in feature specs. Many of these methods are titled `wait_and_[do_something]` and address timing issues that come up when a request is made before a JS request has fully processed.
+In feature specs that use JavaScript to return data or render a component, there is a delay between clicking something and an action taking place. Prefer to use Capybara methods that wait for an element to appear before acting on them with other methods that don't wait. Here's a [handy guide](http://stefan.haflidason.com/testing-with-rails-and-capybara-methods-that-wait-method-that-wont/) on which Capybara methods wait for an element or selector to appear, and which will attempt to run immediately.
+
+However, sometimes that doesn't work well (or can be flaky). If you are running into that kind of issue, check out /spec/support/javascript_helpers.rb.
+
+In that file, there are a number of methods to help with unique JS issues that often come up in feature specs. Many of these methods are titled `wait_and_[do_something]` and address timing issues that come up when a request is made before a JS request has fully processed.
 
 ## RSpec
 
@@ -166,9 +170,11 @@ allow(controller.session).to receive(:[]).and_call_original
 allow(controller.session).to receive(:[]).with("gradebook_user_ids") { [user.id] }
 ```
 
-### Something about how shared contexts are used and/or helpful
+### Use `shared_contexts` and `shared_examples` to keep code DRY
 
-A common example is the `logged in as a #{role}` context, which autocreates a `user` object of the desired role and a `company` that the user is associated with. Shared contexts are defined in `spec/support/shared_contexts.rb`. [Note: this specific example is defined with Capybara and so is only usable with feature specs.]
+Shared examples are tests that test common behavior and are written in such a way that they can be used in several settings. A good example is our `"lesson_content"` example that is used to test the behavior of several models that are included as content in lessons.
+
+Shared contexts are common setup code that can be used to prepare tests in different settings. A common `shared_context` we use is the `logged in as a #{role}` context, which autocreates a `user` object of the desired role and a `company` that the user is associated with. Shared contexts are defined in `spec/support/shared_contexts.rb`. [Note: this specific example is defined with Capybara and is only usable with feature specs.]
 
 ### RSpec Syntax
 
