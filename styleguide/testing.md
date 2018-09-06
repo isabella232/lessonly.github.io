@@ -112,23 +112,23 @@ end
 
 ### Write your specs with performance in mind.
 
-Do these things to minimize contributions to the slowness of our test suite:
+Here's how you can help keep our test suite running fast:
 
 #### Default to using `build_stubbed` instead of `create`
 
-  In general, it works in most places where you just need objects to exist without them interacting with the database (like for creating associations).
+In general, it works in most places where you just need objects to exist without them interacting with the database (like for creating associations).
 
-  From [this post from Factory Bot](https://robots.thoughtbot.com/use-factory-girls-build-stubbed-for-a-faster-test):
+From [this post from Factory Bot](https://robots.thoughtbot.com/use-factory-girls-build-stubbed-for-a-faster-test):
 
-  > build_stubbed ... instantiates and assigns attributes just like build ... It makes objects look like they’ve been persisted, creates associations with the build_stubbed strategy ... and stubs out a handful of methods that interact with the database and raises if you call them. This leads to much faster tests and reduces your test dependency on a database.
+> `build_stubbed` ... instantiates and assigns attributes just like `build` ... It makes objects look like they’ve been persisted, creates associations with the `build_stubbed` strategy ... and stubs out a handful of methods that interact with the database and raises if you call them. This leads to much faster tests and reduces your test dependency on a database.
 
 #### Stub and mock external services and classes.
 
-  This not only speeds up the tests but also enhances separation of concerns. If your code is written in a way that makes writing tests like this difficult, that might be a sign that your code could be refactored.
+This not only speeds up the tests but also enhances separation of concerns. If your code is written in a way that makes writing tests like this difficult, that might be a sign that your code could be refactored.
 
 #### If you are adding tests to an existing file, check for code that can be reused.
 
-  Creating a new `user` when the same type of `user` has already been created in the file creates an unnecessary test object to add to memory.
+Creating a new `user` when the same type of `user` has already been created in the file creates an unnecessary test object to add to memory.
 
 ### Use the `request_setup` helper in your controller specs.
 
@@ -150,7 +150,7 @@ end
 
 In feature specs that use JavaScript to return data or render a component, there is a delay between clicking something and an action taking place. Prefer to use Capybara methods that wait for an element to appear before acting on them with other methods that don't wait. Here's a [handy guide](http://stefan.haflidason.com/testing-with-rails-and-capybara-methods-that-wait-method-that-wont/) on which Capybara methods wait for an element or selector to appear, and which will attempt to run immediately.
 
-However, sometimes that doesn't work well (or can be flaky). If you are running into that kind of issue, check out /spec/support/javascript_helpers.rb.
+However, sometimes that doesn't work well (or can be flaky). If you are running into that kind of issue, check out `spec/support/javascript_helper.rb`.
 
 In that file, there are a number of methods to help with unique JS issues that often come up in feature specs. Many of these methods are titled `wait_and_[do_something]` and address timing issues that come up when a request is made before a JS request has fully processed.
 
