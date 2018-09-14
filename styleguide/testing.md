@@ -178,33 +178,37 @@ Shared contexts are common setup code that can be used to prepare tests in diffe
 
 ### RSpec Syntax
 
-- Use `specify` instead of `it` when it improves readability. This is common in our jobs specs, where `context` is used to refer to subclasses, and our model specs, where we test validations.
 
-Example:
+Prefer the more-concise `it` when declaring test scenarios about specific things (e.g. classes, methods), but consider `specify` when more grammatical flexibility is required.
 
 ```ruby
-# reads weirdly...
-describe DoStuffJob do
-
-  context DoStuffJob::Subclass do
-
-    it "method does this thing" do
-      # some code
-    end
+describe CookiePolicy do
+  # Ehh...
+  it "admins are permitted eat cookies" do
+   # ...
   end
-end
 
-# reads so smoothly!
-describe DoStuffJob do
-
-  context DoStuffJob::Subclass do
-
-    specify "method does this thing" do
-      # some code
-    end
+  # That's better!
+  specify "admins are permitted eat cookies" do
+   # ...
   end
 end
 ```
+
+Though keep in mind that specs using `specify` can typically be written more concisely using `it`, e.g.
+
+```ruby
+describe CookiePolicy do
+  specify "admins are permitted eat cookies" do
+   # ...
+  end
+
+# More consise!
+  it "permits admins to eat cookies" do
+   # ...
+  end
+end
+ ```
 
 - Include a blank line around `describe`/`feature` blocks, `it`/`scenario` blocks, `before`/`background` blocks, and `context` blocks.
 - Within `it`/`scenario` blocks, separate setup and expectations with a blank line.
