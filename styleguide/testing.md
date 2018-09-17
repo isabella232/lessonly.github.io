@@ -57,7 +57,7 @@ scenario "Adding a Tag" do
   visit new_tag_path
   fill_in "Name", with: "My new Tag"
   click_button "Submit"
-  
+
   # Good
   within "ul.all_tags" do
     expect(page).to have_content "My new Tag"
@@ -110,8 +110,105 @@ it "is invalid without a description" do
 end
 ```
 
+### Write your specs with performance in mind.
 
-## RSpec Syntax
+Here's how you can help keep our test suite running fast:
+
+#### Default to using `build_stubbed` instead of `create`
+
+In general, it works in most places where you just need objects to exist without them interacting with the database (like for creating associations).
+
+From [this post from Factory Bot](https://robots.thoughtbot.com/use-factory-girls-build-stubbed-for-a-faster-test):
+
+> `build_stubbed` ... instantiates and assigns attributes just like `build` ... It makes objects look like they’ve been persisted, creates associations with the `build_stubbed` strategy ... and stubs out a handful of methods that interact with the database and raises if you call them. This leads to much faster tests and reduces your test dependency on a database.
+
+#### Stub and mock external services and classes.
+
+This not only speeds up the tests but also enhances separation of concerns. If your code is written in a way that makes writing tests like this difficult, that might be a sign that your code could be refactored.
+
+#### If you are adding tests to an existing file, check for code that can be reused.
+
+Creating a new `user` when the same type of `user` has already been created in the file creates an unnecessary test object to add to memory.
+
+### Use the `request_setup` helper in your controller specs.
+
+Controller specs won't work without it! Its definition can be found in `spec/support/controller_helper.rb`. It accepts `request`, `controller`, `current_user`, and `current_company` as arguments, but you can substitute other objects for those as needed.
+
+```ruby
+context "when no user is logged in" do
+  let(:company) { create(:company) }
+
+  before(:each) { request_setup(request, controller, nil, company) }
+
+  it "redirects to the login page" do
+    # some code...
+  end
+end
+```
+
+### JS Helpers
+
+In feature specs that use JavaScript to return data or render a component, there is a delay between clicking something and an action taking place. Prefer to use Capybara methods that wait for an element to appear before acting on them with other methods that don't wait. Here's a [handy guide](http://stefan.haflidason.com/testing-with-rails-and-capybara-methods-that-wait-method-that-wont/) on which Capybara methods wait for an element or selector to appear, and which will attempt to run immediately.
+
+However, sometimes that doesn't work well (or can be flaky). If you are running into that kind of issue, check out `spec/support/javascript_helper.rb`.
+
+In that file, there are a number of methods to help with unique JS issues that often come up in feature specs. Many of these methods are titled `wait_and_[do_something]` and address timing issues that come up when a request is made before a JS request has fully processed.
+
+## RSpec
+
+### Use `and_call_original` to call the actual implementation of a mocked method
+
+Why might you need this?
+
+- To "unmock" a method that was previously mocked
+- To set a default response that can be overridden with specific arguments
+- To make sure that mocked services called in job specs actually carry out their task
+
+```ruby
+# Stub getting a value from the session, but make sure calls to get unrelated values from the session remain unstubbed
+allow(controller.session).to receive(:[]).and_call_original
+allow(controller.session).to receive(:[]).with("gradebook_user_ids") { [user.id] }
+```
+
+### Use `shared_contexts` and `shared_examples` to keep code DRY
+
+Shared examples are tests that test common behavior and are written in such a way that they can be used in several settings. A good example is our `"lesson_content"` example that is used to test the behavior of several models that are included as content in lessons.
+
+Shared contexts are common setup code that can be used to prepare tests in different settings. A common `shared_context` we use is the `logged in as a #{role}` context, which autocreates a `user` object of the desired role and a `company` that the user is associated with. Shared contexts are defined in `spec/support/shared_contexts.rb`. [Note: this specific example is defined with Capybara and is only usable with feature specs.]
+
+### RSpec Syntax
+
+
+Prefer the more-concise `it` when declaring test scenarios about specific things (e.g. classes, methods), but consider `specify` when more grammatical flexibility is required.
+
+```ruby
+describe CookiePolicy do
+  # Ehh...
+  it "admins are permitted eat cookies" do
+   # ...
+  end
+
+  # That's better!
+  specify "admins are permitted eat cookies" do
+   # ...
+  end
+end
+```
+
+Though keep in mind that specs using `specify` can typically be written more concisely using `it`, e.g.
+
+```ruby
+describe CookiePolicy do
+  specify "admins are permitted eat cookies" do
+   # ...
+  end
+
+# More consise!
+  it "permits admins to eat cookies" do
+   # ...
+  end
+end
+ ```
 
 - Include a blank line around `describe`/`feature` blocks, `it`/`scenario` blocks, `before`/`background` blocks, and `context` blocks.
 - Within `it`/`scenario` blocks, separate setup and expectations with a blank line.
