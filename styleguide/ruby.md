@@ -197,7 +197,9 @@ Currently in the code there are three styles of accessors:
  - Use of `private` with accessors below
  - Just using instance variables for information hiding
 
-Some of the differences are described below. For declaring private accessors, both the PrivateAttr and having the `attr_reader` below `private` are acceptable options. Using instance variables should be avoided.
+`PrivateAttr` is the preferred method for declaring private accessors even though both PrivateAttr and having the `attr_reader` below `private` accomplish the same thing. This is for consistency, so everything is defined in one place within the file (at the top). Using instance variables should be avoided.
+
+Some of the differences are described below:
 
 ### PrivateAttr
 

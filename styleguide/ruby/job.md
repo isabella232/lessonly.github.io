@@ -78,6 +78,10 @@ To kick-off the background job from the command line:
 bundle exec clockwork lib/clock.rb
 ```
 
+Useful links:
+ - [Clockwork gem](https://github.com/adamwiggins/clockwork)
+ - [Gem for testing clockwork](https://github.com/kevin-j-m/clockwork-test)
+
 Note:
- - May need to restart the server before running the command.
+ - May need to restart the server before running the command
  - At some point we may get rid of clockwork and replace with sidekiq scheduled jobs
