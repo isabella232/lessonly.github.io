@@ -79,7 +79,8 @@ bundle exec clockwork lib/clock.rb
 ```
 
 Useful links:
- - [Clockwork gem](https://github.com/adamwiggins/clockwork)
+ - [Clockwork gem](https://rubygems.org/gems/clockwork/versions/1.3.1)
+ - [Clockwork gem documentation](https://www.rubydoc.info/gems/clockwork/1.3.1)
  - [Gem for testing clockwork](https://github.com/kevin-j-m/clockwork-test)
 
 Note:
