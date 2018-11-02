@@ -189,3 +189,53 @@ The latter introduces load order dependencies (`MyModule` must already be loaded
 ## Gemfile
 
 We try to use [pessimistic version constraints](http://guides.rubygems.org/patterns/#pessimistic-version-constraint) for all gems in the Gemfile. These use the `~>` operator followed by at least a major and minor gem version (e.g. `"~> 4.2"`). This prevents a gem from being accidentally upgraded by more than a minor version, and Gems following [Semantic Versioning](http://semver.org/) promise to introduce non-backwards-compatible changes only in major versions.
+
+## PrivateAttr vs private attr_reader vs instance variables
+
+Currently in the code there are three styles of accessors:
+ - Use of `PrivateAttr`
+ - Use of `private` with accessors below
+ - Just using instance variables for information hiding
+
+`PrivateAttr` is the preferred method for declaring private accessors even though both PrivateAttr and having the `attr_reader` below `private` accomplish the same thing. This is for consistency, so everything is defined in one place within the file (at the top). Using instance variables should be avoided.
+
+Some of the differences are described below:
+
+### PrivateAttr
+
+The PrivateAttr functionality was added via [PR #2787](https://github.com/lessonly/lessonly/pull/2787) as a way to limit the public interface and use private methods rather than instance variables. One of the advantages of using PrivateAttr is that all of the instance variables will be listed at the top of the file for clarity.
+```
+class MyClass
+  extend PrivateAttr
+
+  private_attr_reader :foo, :bar, :baz
+
+  initialize(foo, bar, baz) do
+    @foo = foo
+    @bar = bar
+    @baz = baz
+  end
+```
+
+### private attr_reader
+
+The same thing can be accomplished by placing the `attr_reader` below `private`. One of the disadvantages is that in large files it can be easy to overlook the `attr_reader` that is somewhere below `private` in the middle of the code.
+```
+class MyClass
+
+  initialize(foo, bar, baz) do
+    @foo = foo
+    @bar = bar
+    @baz = baz
+  end
+
+  private
+
+  attr_reader :foo, :bar, :baz
+```
+
+### instance variables
+
+Use of instance variables should be avoided.
+
+See the "Writing Code That Embraces Change" section in Chapter 2 of Sandi Metz's [_Practical Object Oriented Design in Ruby_](https://drive.google.com/a/lessonly.com/file/d/0BxpjY5cIh-FFZU84Q3p1VTNMQXM/view), for reasons to use private methods rather than instance variables. Specifically, about wrapping all instance variables in reader and/or writer methods with `attr_reader`, `attr_writer`, or `attr_accessor`, and if these methods don't need to be public then making them private.

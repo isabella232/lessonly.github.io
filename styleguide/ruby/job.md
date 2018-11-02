@@ -68,3 +68,21 @@ end
 ```
 
 In this case, if `OldJob` is already queued, it will still run as it extends `NewJob`.
+
+### Scheduling a job
+
+Lessonly uses clockwork to schedule background jobs. The job will need to be added to `lib/clock.rb`.
+
+To kick-off the background job from the command line:
+```
+bundle exec clockwork lib/clock.rb
+```
+
+Useful links:
+ - [Clockwork gem](https://rubygems.org/gems/clockwork/versions/1.3.1)
+ - [Clockwork gem documentation](https://www.rubydoc.info/gems/clockwork/1.3.1)
+ - [Gem for testing clockwork](https://github.com/kevin-j-m/clockwork-test)
+
+Note:
+ - May need to restart the server before running the command
+ - At some point we may get rid of clockwork and replace with sidekiq scheduled jobs
