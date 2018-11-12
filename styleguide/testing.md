@@ -34,6 +34,26 @@ Unless you have a reason not to, this helps catch bugs where a message is improp
 expect(progress).to receive(:restart!).once
 ```
 
+Use `once` or `twice` instead of `1` or `2` when specifying the number of times it should be received.
+
+```ruby
+# bad
+expect(foo).to receive(:bar).exactly(1).times
+expect(foo).to receive(:bar).exactly(2).times
+expect(foo).to receive(:bar).at_least(1).times
+expect(foo).to receive(:bar).at_least(2).times
+expect(foo).to receive(:bar).at_most(1).times
+expect(foo).to receive(:bar).at_most(2).times
+
+# good
+expect(foo).to receive(:bar).once
+expect(foo).to receive(:bar).twice
+expect(foo).to receive(:bar).at_least(:once)
+expect(foo).to receive(:bar).at_least(:twice)
+expect(foo).to receive(:bar).at_most(:once)
+expect(foo).to receive(:bar).at_most(:twice).times
+```
+
 ### When writing feature specs, the `feature` description is generally the *thing* under test (a noun).
 
 Contexts describe under what circumstances we are testing, and scenarios are individual test cases. Note that scenarios may be testing the whole life-cycle of a request, not just each singular aspect of the feature under test, as feature specs take the longest.
@@ -213,6 +233,7 @@ end
 - Include a blank line around `describe`/`feature` blocks, `it`/`scenario` blocks, `before`/`background` blocks, and `context` blocks.
 - Within `it`/`scenario` blocks, separate setup and expectations with a blank line.
 - Do not include a blank line above `let` blocks, in order to visually group them with their appropriate `describe`/`feature` or `context` block.
+- Include a blank line below the last 'let' in the block.
 - Do not include blank lines between successive `end`s.
 
 For example:
@@ -238,5 +259,69 @@ describe Model do
       expect(model).to be_exploded
     end
   end
+end
+```
+
+### Testing negative expectations
+
+RSpec supports both `to_not` and 'not_to`, but `to_not` is commonly considered ungrammatical as a "split infinitive". In prose one might at times prefer to split an infinitive for stylistic reasons, but in specs consistency and precision are paramount. Therefore, use `not_to` when writing specs that test the negative expectation.
+
+```ruby
+# bad
+it "..." do
+  expect(false).to_not be_true
+end
+
+# good
+it "..." do
+  expect(false).not_to be_true
+end
+```
+
+### Write 'expect(...)' using actual value, not literal value
+
+The `expect(...)` should contain the actual value and not the literal value you are testing.
+
+```ruby
+# bad
+expect(5).to eq(price)
+expect(/foo/).to eq(pattern)
+expect("John").to eq(name)
+
+# good
+expect(price).to eq(5)
+expect(pattern).to eq(/foo/)
+expect(name).to eq("John")
+```
+
+### Use create_list for creating multiple records
+
+```ruby
+# bad
+3.times do
+  create(:lesson_section, lesson: lesson)
+end
+
+# good
+create_list(:lesson_section, 3, lesson: lesson)
+```
+
+### Do not use 'should' when describing your tests.
+
+Also, do not repeat `it` in the description of the test.
+
+```ruby
+# bad
+it "should find nothing" do
+end
+
+it "it creates an answer with the description as the answer" do
+end
+
+# good
+it "finds nothing" do
+end
+
+it "creates an answer with the description as the answer" do
 end
 ```
