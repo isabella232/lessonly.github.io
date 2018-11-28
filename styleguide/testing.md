@@ -150,7 +150,13 @@ This not only speeds up the tests but also enhances separation of concerns. If y
 
 Creating a new `user` when the same type of `user` has already been created in the file creates an unnecessary test object to add to memory.
 
+### Prefer Request or Feature specs over Controller Specs
+
+As of Rails 5, controller specs are [no longer recommended by either RSpec or Rails](http://rspec.info/blog/2016/07/rspec-3-5-has-been-released/#rails-support-for-rails-5). Instead, prefer request specs (see `spec/requests/*` for examples) for testing HTTP endpoints directly, and/or feature specs (see `spec/features/*`) for testing browser interactions end-to-end.
+
 ### Use the `request_setup` helper in your controller specs.
+
+(_Note: [as noted above](#prefer-request-or-feature-specs-over-controller-specs), we want to avoid introducing new controller specs, but this recommendation remains applicable to existing controller specs until we completely migrate away._)
 
 Controller specs won't work without it! Its definition can be found in `spec/support/controller_helper.rb`. It accepts `request`, `controller`, `current_user`, and `current_company` as arguments, but you can substitute other objects for those as needed.
 
