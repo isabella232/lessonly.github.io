@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: styleguide
 title: CSS Style Guide
+icon: css3
 ---
 
 ## Structure CSS Around Components
@@ -55,8 +56,8 @@ and here is how it would be written in a component-based way (using [SuitCSS nam
 ### Pro Tips
 
 - Not everything should be a component:
-  - *Base styles* live within `stylesheets/global.scss` and affect the site as a whole. Avoid changing these unless you really intend to affect All Of The Things.
-  - *Utility classes* live within `stylesheets/utilities.scss` and define single-purpose classes (starting with `u-`, e.g. `u-clearFix`) for simple, reusable things like clearing floats.
+  - _Base styles_ live within `stylesheets/global.scss` and affect the site as a whole. Avoid changing these unless you really intend to affect All Of The Things.
+  - _Utility classes_ live within `stylesheets/utilities.scss` and define single-purpose classes (starting with `u-`, e.g. `u-clearFix`) for simple, reusable things like clearing floats.
 - Components can (and should!) contain other components. Just because a button is with an `.Element` component doesn't mean it must be `.Element-button`. If used elsewhere, make it its own `.Button` component.
 - Components can inherit from other components. For example, if you have an `.Element--question` variation that starts needing its own variations (e.g. for different question types), consider making it its own `.QuestionElement` component so it can have a `.QuestionElement--freeResponse` variation. Just be sure the markup contains the base component as well: `class="Element QuestionElement"`
 
@@ -114,11 +115,11 @@ To utilize these atomic styles, you'll add the class name to the element you're 
 
 ```js
 <div className="ElementLibrary-loading d-f jc-c ai-c ta-c">
-  {this.state.error &&
+  {this.state.error && (
     <div className="ErrorContainer ElementLibrary-errorMessage lh-24">
       {this.state.error}
     </div>
-  }
+  )}
 </div>
 ```
 
@@ -138,13 +139,12 @@ Lessonly brand colors are found in `app/assets/stylesheets/colors.scss`. If you'
 
 Here's an example of what you can find in that file.
 
-
 ```scss
-$brand-gray:           #c4c4c3;
-$brand-gray-dark:      #a3a2a1;
-$brand-gray-darker:    #70706d;
+$brand-gray: #c4c4c3;
+$brand-gray-dark: #a3a2a1;
+$brand-gray-darker: #70706d;
 
-$brand-night:          #2d2d2d;
+$brand-night: #2d2d2d;
 ```
 
 ## Mixins

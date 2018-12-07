@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: styleguide
 title: Policy Pattern
 ---
 

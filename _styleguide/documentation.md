@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: styleguide
 title: Documentation Style Guide
 ---
 
@@ -20,15 +20,15 @@ For ruby, documentation should be added using the [yard](http://www.rubydoc.info
 
 ### General guidelines
 
-* Classes should have a short descriptive comment about the role it plays.
+- Classes should have a short descriptive comment about the role it plays.
 
-* Public and private methods can be documented as needed.
+- Public and private methods can be documented as needed.
 
-* Private methods should be marked with the `@private` tag.
+- Private methods should be marked with the `@private` tag.
 
-* Use meta-data tags when appropriate.
+- Use meta-data tags when appropriate.
 
-* Must use Markdown syntax.
+- Must use Markdown syntax.
 
 ### Example
 
