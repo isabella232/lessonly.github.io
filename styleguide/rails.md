@@ -68,7 +68,7 @@ It's alright for `show.html.erb` to reference the `@lesson` declared in `Lessons
 
 #### Avoid ERB views and server-rendered markup when possible.
 
-Instead, we prefer to mount React components that fetch the data they need to render themselves via JSON endpoints.
+Instead, we prefer to mount React components that fetch the data they need to render themselves via JSON endpoints. This approach reduces [time to first paint](https://developers.google.com/web/tools/lighthouse/audits/first-meaningful-paint), allows pages to be more resilient to errors, and works toward our end goal of separating data (server-side) and presentation (client-side).
 
 Example:
 
