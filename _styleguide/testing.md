@@ -18,12 +18,16 @@ describe Thing do
 end
 ```
 
-### When stubbing methods, use a block instead of `and_return`.
+### When stubbing methods, prefer to use `and_return` instead of block syntax.
 
-Because `expect().and_return()` sounds like you're expecting the method to return something, when in fact you're *forcing* it to. For example:
+`expect().and_return(return_value)` is easier to understand and keeps code reading like documentation compared to `expect() { return_value }`. Additionally, using `.and_return` keeps code consistent for other similar methods like `expect().and_yield()`.
 
 ```ruby
+# Not recommended
 expect(UserUpdate).to receive(:new).with(anything) { user_update }
+
+# Recommended
+expect(UserUpdate).to receive(:new).with(anything).and_return(user_update)
 ```
 
 ### Prefer specifying the number of times an expected message should be received.
@@ -329,5 +333,125 @@ it "finds nothing" do
 end
 
 it "creates an answer with the description as the answer" do
+end
+```
+
+### Include an empty line after an example group
+```ruby
+# bad
+RSpec.describe Foo do
+  describe '#bar' do
+  end
+  describe '#baz' do
+  end
+end
+
+# good
+RSpec.describe Foo do
+  describe '#bar' do
+  end
+
+  describe '#baz' do
+  end
+end
+```
+
+### Include an empty line after hook blocks
+```ruby
+# bad
+before { do_something }
+it { does_something }
+
+# bad
+after { do_something }
+it { does_something }
+
+# bad
+around { |test| test.run }
+it { does_something }
+
+# good
+before { do_something }
+
+it { does_something }
+
+# good
+after { do_something }
+
+it { does_something }
+
+# good
+around { |test| test.run }
+
+it { does_something }
+```
+
+### When using the change matcher, pass in an object and attribute as arguments
+```ruby
+# bad
+expect(run).to change { Foo.bar }
+expect(run).to change { foo.baz }
+
+# good
+expect(run).to change(Foo, :bar)
+expect(run).to change(foo, :baz)
+# also good when there are arguments or chained method calls
+expect(run).to change { Foo.bar(:count) }
+expect(run).to change { user.reload.name }
+```
+
+### Use local variables or 'let' instead of instance variables
+```ruby
+# bad
+describe MyClass do
+  before { @foo = [] }
+  it { expect(@foo).to be_empty }
+end
+
+# good
+describe MyClass do
+  let(:foo) { [] }
+  it { expect(foo).to be_empty }
+end
+```
+
+### Use 'all' matcher instead of iterating over an array
+```ruby
+# bad
+it 'validates users' do
+  [user1, user2, user3].each { |user| expect(user).to be_valid }
+end
+
+# good
+it 'validates users' do
+  expect([user1, user2, user3]).to all(be_valid)
+end
+```
+
+### 'let' statements should come before examples
+```ruby
+# Bad
+let(:foo) { bar }
+
+it 'checks what foo does' do
+  expect(foo).to be
+end
+
+let(:some) { other }
+
+it 'checks what some does' do
+  expect(some).to be
+end
+
+# Good
+let(:foo) { bar }
+let(:some) { other }
+
+it 'checks what foo does' do
+  expect(foo).to be
+end
+
+it 'checks what some does' do
+  expect(some).to be
 end
 ```

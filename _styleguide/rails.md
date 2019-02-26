@@ -58,13 +58,67 @@ User.where(id: lesson.progresses.select(:user_id))
 emails = company.users.pluck(:name, :email)
 ```
 
-Of course, if your *end goal* is an array of simple attributes, that's exactly what `pluck` is for.
+Of course, if your _end goal_ is an array of simple attributes, that's exactly what `pluck` is for.
 
 ### Views
 
 #### Avoid referencing instance variables in partials.
 
 It's alright for `show.html.erb` to reference the `@lesson` declared in `LessonsController#show`, but if it calls out to `render "stats"`, `_stats.html.erb` should not know about `@lesson`. Instead pass it in directly: `render "stats", lesson: @lesson`. Eventually, we'll want to use that partial in another context where `@lesson` isn't defined: being explicit now saves us time later.
+
+#### Avoid ERB views and server-rendered markup when possible.
+
+Instead, we prefer to mount React components that fetch the data they need to render themselves via JSON endpoints. This approach reduces [time to first paint](https://developers.google.com/web/tools/lighthouse/audits/first-meaningful-paint), allows pages to be more resilient to errors, and works toward our end goal of separating data (server-side) and presentation (client-side).
+
+Example:
+
+Instead of:
+
+```ruby
+<%= react_component("TestComponent", props: {
+    data: SomeSerializer.new(@data).as_json,
+  }) %>
+```
+
+```js
+import React, { Component } from "react";
+
+class TestComponent extends Component {
+  render() {
+    const { data } = this.props;
+    return <Something data={data} />;
+  }
+}
+```
+
+Prefer:
+
+```ruby
+<%= react_component("TestComponent") %>
+```
+
+```js
+import React, { Component } from "react";
+
+class TestComponent extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      loading: true,
+      data: {}
+    };
+  }
+  componentDidMount() {
+    request("/someserialized/data.json").then(data => {
+      this.setState({ data, loading: false });
+    });
+  }
+  render() {
+    const { data } = this.state;
+    return <Something data={data} />;
+  }
+}
+```
 
 ### ActiveRecord shortcuts
 
