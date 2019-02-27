@@ -1,6 +1,7 @@
 ---
 layout: styleguide
 title: Decorator Pattern
+main: false
 ---
 
 ## Decorators

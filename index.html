@@ -2,12 +2,28 @@
 layout: default
 ---
 
+<section class="main-section">
+  <div class="wrapper">
+    <h1 class="hero-title">
+      Do <br />
+      Better <span class="hero-span">(Product)</span> <br />
+      Work
+    </h1>
+    <p class="lead">
+      Engineers, designers, and other creatives building a place for everyone to
+      <a class="highlight" href="https://www.lessonly.com/do-better-work/"
+        >do better work</a
+      >.
+    </p>
+  </div>
+</section>
+
 <section class="open-source main-section">
   <div class="wrapper">
     <h1 class="big-title">Open Source</h1>
     <div class="card-stack">
       {% for project in site.open_source %}
-      <a href="{{project.link}}" class="card">
+      <a href="{{ project.link }}" class="card">
         <h2 class="title">{{ project.name }}</h2>
         <p>{{ project.content | markdownify }}</p>
       </a>
@@ -23,7 +39,7 @@ layout: default
     <div class="card-stack">
       {% for post in paginator.posts %}
       <article class="card post-card">
-        <div class="feat-img"><img src="{{post.header-img}}" /></div>
+        <div class="feat-img"><img src="{{ post.header - img }}" /></div>
         <h2 class="title">
           <a href="{{ post.url }}">{{ post.title }}</a>
         </h2>

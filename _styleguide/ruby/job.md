@@ -1,6 +1,7 @@
 ---
 layout: styleguide
 title: Job Pattern
+main: false
 ---
 
 ## Jobs

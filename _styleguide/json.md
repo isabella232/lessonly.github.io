@@ -1,6 +1,7 @@
 ---
 layout: styleguide
 title: JSON API Style Guide
+main: true
 ---
 
 Unless otherwise noted, these rules apply only to internal JSON endpoints, not necessarily [our public API](https://docs.lessonly.com).

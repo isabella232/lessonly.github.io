@@ -2,6 +2,8 @@
  * Reset some basic elements
  */
 
+$text-width: 55em;
+
 *,
 *:before,
 *:after {
@@ -88,6 +90,7 @@ figcaption {
 ul,
 ol {
   margin-left: $spacing-unit;
+  max-width: $text-width;
 }
 
 li {
@@ -110,6 +113,22 @@ h6 {
   font-size: 1rem;
 }
 
+.hero-title {
+  position: relative;
+  font-size: 5em;
+  line-height: 1.2;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.hero-span {
+  position: absolute;
+  font-size: 20px;
+  transform: rotateZ(20deg) translate(-50%, 10px);
+  background: $brand-color;
+  padding: 2px;
+}
+
 .big-title {
   font-size: 2.5em;
   font-weight: bold;
@@ -127,7 +146,12 @@ a {
   color: $text-color;
   text-decoration: none;
   line-height: 1;
+}
+
+a.highlight {
+  color: $brand-color;
   font-weight: bold;
+  text-decoration: underline;
 }
 
 /**
@@ -154,7 +178,8 @@ code {
   font-size: 15px;
   border: 1px solid $grey-color-light;
   border-radius: 3px;
-  background-color: #292e46;
+  background-color: #191b2a;
+  max-width: $text-width;
 }
 
 code {
@@ -239,5 +264,10 @@ pre {
  * Paragraph
  */
 p {
-  max-width: 60em;
+  max-width: $text-width;
+}
+
+.lead {
+  font-size: 1.5em;
+  line-height: 1.2;
 }

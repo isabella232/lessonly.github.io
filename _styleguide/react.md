@@ -1,6 +1,7 @@
 ---
 layout: styleguide
 title: React Style Guide
+main: true
 ---
 
 ## General Guidelines

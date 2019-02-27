@@ -1,6 +1,7 @@
 ---
 layout: styleguide
 title: Documentation Style Guide
+main: true
 ---
 
 # Documentation

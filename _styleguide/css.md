@@ -2,6 +2,7 @@
 layout: styleguide
 title: CSS Style Guide
 icon: css3
+main: true
 ---
 
 ## Structure CSS Around Components

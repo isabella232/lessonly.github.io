@@ -1,6 +1,7 @@
 ---
 layout: styleguide
 title: Ruby Style Guide
+main: true
 ---
 
 ## Patterns / Concepts

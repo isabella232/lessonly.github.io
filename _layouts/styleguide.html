@@ -8,12 +8,13 @@
     <section class="styleguide-wrapper">
       <aside class="styleguide-sidebar">
         {% for guide in site.styleguide %}
-        <div class="language">
-          <i class="devicon-{{guide.icon}} language-icon"></i>
-          <a href="{{ guide.url | prepend: site.baseurl }}">
-            {{ guide.title }}
-          </a>
-        </div>
+          {% if guide.main %}
+          <div class="language {% if page.url contains guide.url %}active{% endif %}">
+            <a href="{{ guide.url | prepend: site.baseurl }}">
+              {{ guide.title }}
+            </a>
+          </div>
+          {% endif %}
         {% endfor %}
       </aside>
 

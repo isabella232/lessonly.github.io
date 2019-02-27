@@ -1,6 +1,7 @@
 ---
 layout: styleguide
 title: Policy Pattern
+main: false
 ---
 
 We use the policy pattern implemented by the [Pundit gem][1] to create a flexible authorization system.

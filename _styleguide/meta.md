@@ -1,6 +1,7 @@
 ---
 layout: styleguide
 title: Meta Style Guide
+main: true
 ---
 
 This is the style guide page about the style guide. Deep, right?

@@ -1,6 +1,7 @@
 ---
 layout: styleguide
 title: Testing Style Guide
+main: true
 ---
 
 ### Rule #1
