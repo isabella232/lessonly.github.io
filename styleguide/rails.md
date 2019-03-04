@@ -3,7 +3,29 @@ layout: page
 title: Rails Style Guide
 ---
 
-While we don’t follow it explicitly, the [community Rails Style Guide](https://github.com/bbatsov/rails-style-guide) (also edited by Bozhidar Batsov) is a solid refrence when in doubt.
+While we don’t follow it explicitly, the [community Rails Style Guide](https://github.com/bbatsov/rails-style-guide) (also edited by Bozhidar Batsov) is a solid reference when in doubt.
+
+### Translations
+
+#### Avoid using I18n within constants
+
+Using I18n within a constant prevents translations from properly loading
+multilingual results since they are loaded once on application load. Instead, we
+prefer to evaluate translations on demand.
+
+```ruby
+# Avoid
+class SomeClass
+  UNAUTHORIZED_JSON_RESPONSE = { error: I18n.t("common.unauthorized") }.freeze
+end
+
+# Recommended
+class SomeClass
+  def unauthorized_json_response
+    { error: I18n.t("common.unauthorized") }
+  end
+end
+```
 
 ### Dealing with SQL
 
