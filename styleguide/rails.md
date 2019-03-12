@@ -60,6 +60,32 @@ emails = company.users.pluck(:name, :email)
 
 Of course, if your _end goal_ is an array of simple attributes, that's exactly what `pluck` is for.
 
+### Models
+
+#### Prefer explicit mapping between attribute and database integer for Enums
+
+Without specifying an enum key's database integer, the order of the enum determines
+its mapping to the database. If the order changes in the future, existing records
+could point to a different enum value. By using explicit mapping, enum attributes
+always point to the same mapped value.
+
+```ruby
+# Prefer explicit mapping to integer value
+enum scenario_type: {
+  webcam_recording: 0,
+  screen_recording: 1,
+  audio_recording: 2,
+  written_response: 3,
+  email_composition: 4,
+  email_reply: 5,
+  chat: 6,
+  ticket_handling: 7
+}
+
+# Avoid order dependent mapping
+enum scenario_type: %i(webcam_record screen_recording audio_recording written_response email_composition email_reply chat ticket_handling)
+```
+
 ### Views
 
 #### Avoid referencing instance variables in partials.
