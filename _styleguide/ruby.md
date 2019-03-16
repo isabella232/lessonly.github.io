@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: styleguide
 title: Ruby Style Guide
+main: true
 ---
 
 ## Patterns / Concepts
@@ -19,7 +20,7 @@ Regarding coding style, we follow [Github's Ruby Style Guide](https://github.com
 
 These override either Github’s or Batsov’s styleguide where applicable:
 
-###  Use double-quotes whenever possible.
+### Use double-quotes whenever possible.
 
 ```ruby
 # bad
@@ -125,7 +126,7 @@ DEFAULT_TITLE << "foo" # => RuntimeError: can't modify frozen string
 
 ### Use `floor` instead of `to_i` when coercing a float to an integer without rounding.
 
-This makes it clear that the intention is specifically to round the number *down*.
+This makes it clear that the intention is specifically to round the number _down_.
 
 ```ruby
 # Unclear: uses to_i to truncate the float
@@ -137,7 +138,7 @@ This makes it clear that the intention is specifically to round the number *down
 
 ### Use leading periods when chaining methods on multiple lines.
 
-Too much method chaining is often a bad code smell that something is responsible for too much at once, but if do you happen to find yourself on the multi-line choo choo method chain train please chain responsibly with *leading* periods. e.g.
+Too much method chaining is often a bad code smell that something is responsible for too much at once, but if do you happen to find yourself on the multi-line choo choo method chain train please chain responsibly with _leading_ periods. e.g.
 
 ```ruby
 # bad
@@ -193,9 +194,10 @@ We try to use [pessimistic version constraints](http://guides.rubygems.org/patte
 ## PrivateAttr vs private attr_reader vs instance variables
 
 Currently in the code there are three styles of accessors:
- - Use of `PrivateAttr`
- - Use of `private` with accessors below
- - Just using instance variables for information hiding
+
+- Use of `PrivateAttr`
+- Use of `private` with accessors below
+- Just using instance variables for information hiding
 
 `PrivateAttr` is the preferred method for declaring private accessors even though both PrivateAttr and having the `attr_reader` below `private` accomplish the same thing. This is for consistency, so everything is defined in one place within the file (at the top). Using instance variables should be avoided.
 
@@ -204,7 +206,8 @@ Some of the differences are described below:
 ### PrivateAttr
 
 The PrivateAttr functionality was added via [PR #2787](https://github.com/lessonly/lessonly/pull/2787) as a way to limit the public interface and use private methods rather than instance variables. One of the advantages of using PrivateAttr is that all of the instance variables will be listed at the top of the file for clarity.
-```
+
+```ruby
 class MyClass
   extend PrivateAttr
 
@@ -220,7 +223,8 @@ class MyClass
 ### private attr_reader
 
 The same thing can be accomplished by placing the `attr_reader` below `private`. One of the disadvantages is that in large files it can be easy to overlook the `attr_reader` that is somewhere below `private` in the middle of the code.
-```
+
+```ruby
 class MyClass
 
   initialize(foo, bar, baz) do

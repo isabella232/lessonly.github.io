@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: styleguide
 title: Service Pattern
+main: false
 ---
 
 ## Service Objects
