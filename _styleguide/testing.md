@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: styleguide
 title: Testing Style Guide
+main: true
 ---
 
 ### Rule #1
@@ -18,12 +19,16 @@ describe Thing do
 end
 ```
 
-### When stubbing methods, use a block instead of `and_return`.
+### When stubbing methods, prefer to use `and_return` instead of block syntax.
 
-Because `expect().and_return()` sounds like you're expecting the method to return something, when in fact you're *forcing* it to. For example:
+`expect().and_return(return_value)` is easier to understand and keeps code reading like documentation compared to `expect() { return_value }`. Additionally, using `.and_return` keeps code consistent for other similar methods like `expect().and_yield()`.
 
 ```ruby
+# Not recommended
 expect(UserUpdate).to receive(:new).with(anything) { user_update }
+
+# Recommended
+expect(UserUpdate).to receive(:new).with(anything).and_return(user_update)
 ```
 
 ### Prefer specifying the number of times an expected message should be received.

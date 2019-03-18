@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+
+  <body>
+    {% include header.html %}
+
+    <section class="styleguide-wrapper">
+      <aside class="styleguide-sidebar">
+        {% for guide in site.styleguide %}
+          {% if guide.main %}
+          <div class="language {% if page.url contains guide.url %}active{% endif %}">
+            <a href="{{ guide.url | prepend: site.baseurl }}">
+              {{ guide.title }}
+            </a>
+          </div>
+          {% endif %}
+        {% endfor %}
+      </aside>
+
+      <main class="styleguide-page">
+        <h1 class="styleguide-header big-title">{{ page.title }}</h1>
+        <article class="styleguide-content">{{ content }}</article>
+      </main>
+    </section>
+  </body>
+
+  <script src="/js/main.js"></script>
+</html>
