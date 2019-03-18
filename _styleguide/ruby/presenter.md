@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: styleguide
 title: Presenter Pattern
+main: false
 ---
 
 ## Presenter Objects

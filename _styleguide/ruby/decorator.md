@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: styleguide
 title: Decorator Pattern
+main: false
 ---
 
 ## Decorators
@@ -63,7 +64,7 @@ used like:
 <p><%= decorated_user.greeting %></p>
 ```
 
-When deciding whether to use a Decorator or a Presenter, consider whether you're adding behavior to *a single object*. If so use a Decorator, otherwise choose a Presenter.
+When deciding whether to use a Decorator or a Presenter, consider whether you're adding behavior to _a single object_. If so use a Decorator, otherwise choose a Presenter.
 
 ### Avoid HTML in Decorators
 

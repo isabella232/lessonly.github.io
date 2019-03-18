@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: styleguide
 title: JavaScript Style Guide
+main: true
 ---
 
 ## General Guidelines

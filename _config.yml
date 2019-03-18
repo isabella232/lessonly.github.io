@@ -2,11 +2,17 @@
 title: Lessonly Technology Blog
 email: your-email@domain.com
 description: >
-  A blog about ruby on rails, elixir, testing, and patterns
+  Product and engineering at Lessonly
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://lessonly.github.io" # the base hostname & protocol for your site
 twitter_username: lessonly
-github_username:  lessonly
+github_username: lessonly
+collections:
+  open_source:
+    output: false
+  styleguide:
+    output: true
+    permalink: /styleguide/:path/
 
 # Build settings
 kramdown:
@@ -16,6 +22,6 @@ paginate: 5
 permalink: /:title/
 
 gems:
-- jekyll-paginate
-- jekyll-seo-tag
-- jekyll-feed
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-feed
