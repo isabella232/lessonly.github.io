@@ -4,7 +4,7 @@ title: Rails Style Guide
 main: true
 ---
 
-While we don’t follow it explicitly, the [community Rails Style Guide](https://github.com/bbatsov/rails-style-guide) (also edited by Bozhidar Batsov) is a solid refrence when in doubt.
+While we don’t follow it explicitly, the [community Rails Style Guide](https://github.com/bbatsov/rails-style-guide) (also edited by Bozhidar Batsov) is a solid reference when in doubt.
 
 ### Dealing with SQL
 
