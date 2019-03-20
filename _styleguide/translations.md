@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: styleguide
 title: Translations Style Guide
+main: true
 ---
 
 ### Translations
