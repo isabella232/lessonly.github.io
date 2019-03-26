@@ -8,8 +8,6 @@ main: true
 
 #### Avoid using I18n within constants
 
-**Ruby context**
-
 ```ruby
 # Avoid
 # This is evaluated once at load time and will always be in the default language (English).
