@@ -6,6 +6,30 @@ main: true
 
 Unless otherwise noted, these rules apply only to internal JSON endpoints, not necessarily [our public API](https://docs.lessonly.com).
 
-## Use JSON for request bodies.
+## Always return JSON for request bodies
 
-Rails controllers handle JSON `params` as easily as form data, and JSON is more concise and flexible (especially when handling arrays and objects). Also, our endpoints always return JSON, so it’s more consistent also always to send it.
+Rails controllers handle JSON `params` like form data. JSON is more concise and flexible (especially when handling arrays and objects) which means it is a more consistent standard for returning via endpoints.
+
+```js
+// Avoid returning arrays
+[
+  {
+    id: 1
+  },
+  {
+    id: 2
+  }
+]
+
+// Recommend returning JSON
+{
+  attempts: [
+    {
+      id: 1
+    },
+    {
+      id: 2
+    }
+  ]
+}
+```
