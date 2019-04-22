@@ -8,6 +8,10 @@ main: true
 
 Write tests for your code, please.
 
+### Avoid using Faker
+
+We've decided to stop using Faker because in many cases it can cause non-determinate failures. You'll notice there may be instances of Faker used in the code (we haven't retroactively removed all uses of Faker yet), but please avoid using it moving forward.
+
 ### In RSpec tests, denote instance methods with "#" and class methods with "::"
 
 For example:
@@ -59,7 +63,7 @@ expect(foo).to receive(:bar).at_most(:once)
 expect(foo).to receive(:bar).at_most(:twice).times
 ```
 
-### When writing feature specs, the `feature` description is generally the *thing* under test (a noun).
+### When writing feature specs, the `feature` description is generally the _thing_ under test (a noun).
 
 Contexts describe under what circumstances we are testing, and scenarios are individual test cases. Note that scenarios may be testing the whole life-cycle of a request, not just each singular aspect of the feature under test, as feature specs take the longest.
 
@@ -121,7 +125,7 @@ end
 
 If a spec depends on something being `nil` and it's `nil` by default, it should still specify that fact both for obviousness and so if someone changes the default value, the spec will continue testing what it means to.
 
-``` ruby
+```ruby
 # Not so good: breaks unnecessarily if we add a default description
 it "is invalid without a description" do
   lesson = build(:lesson)
@@ -209,7 +213,6 @@ Shared contexts are common setup code that can be used to prepare tests in diffe
 
 ### RSpec Syntax
 
-
 Prefer the more-concise `it` when declaring test scenarios about specific things (e.g. classes, methods), but consider `specify` when more grammatical flexibility is required.
 
 ```ruby
@@ -239,7 +242,7 @@ describe CookiePolicy do
    # ...
   end
 end
- ```
+```
 
 - Include a blank line around `describe`/`feature` blocks, `it`/`scenario` blocks, `before`/`background` blocks, and `context` blocks.
 - Within `it`/`scenario` blocks, separate setup and expectations with a blank line.
@@ -275,7 +278,7 @@ end
 
 ### Testing negative expectations
 
-RSpec supports both `to_not` and 'not_to`, but `to_not` is commonly considered ungrammatical as a "split infinitive". In prose one might at times prefer to split an infinitive for stylistic reasons, but in specs consistency and precision are paramount. Therefore, use `not_to` when writing specs that test the negative expectation.
+RSpec supports both `to_not` and 'not_to`, but`to_not`is commonly considered ungrammatical as a "split infinitive". In prose one might at times prefer to split an infinitive for stylistic reasons, but in specs consistency and precision are paramount. Therefore, use`not_to` when writing specs that test the negative expectation.
 
 ```ruby
 # bad
@@ -338,6 +341,7 @@ end
 ```
 
 ### Include an empty line after an example group
+
 ```ruby
 # bad
 RSpec.describe Foo do
@@ -358,6 +362,7 @@ end
 ```
 
 ### Include an empty line after hook blocks
+
 ```ruby
 # bad
 before { do_something }
@@ -388,6 +393,7 @@ it { does_something }
 ```
 
 ### When using the change matcher, pass in an object and attribute as arguments
+
 ```ruby
 # bad
 expect(run).to change { Foo.bar }
@@ -402,6 +408,7 @@ expect(run).to change { user.reload.name }
 ```
 
 ### Use local variables or 'let' instead of instance variables
+
 ```ruby
 # bad
 describe MyClass do
@@ -417,6 +424,7 @@ end
 ```
 
 ### Use 'all' matcher instead of iterating over an array
+
 ```ruby
 # bad
 it 'validates users' do
@@ -430,6 +438,7 @@ end
 ```
 
 ### 'let' statements should come before examples
+
 ```ruby
 # Bad
 let(:foo) { bar }
