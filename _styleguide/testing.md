@@ -278,7 +278,7 @@ end
 
 ### Testing negative expectations
 
-RSpec supports both `to_not` and 'not_to`, but`to_not`is commonly considered ungrammatical as a "split infinitive". In prose one might at times prefer to split an infinitive for stylistic reasons, but in specs consistency and precision are paramount. Therefore, use`not_to` when writing specs that test the negative expectation.
+RSpec supports both `to_not` and `not_to`, but `to_not` is commonly considered ungrammatical as a "split infinitive". In prose one might at times prefer to split an infinitive for stylistic reasons, but in specs consistency and precision are paramount. Therefore, use `not_to` when writing specs that test the negative expectation.
 
 ```ruby
 # bad
