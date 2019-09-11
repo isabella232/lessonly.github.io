@@ -23,7 +23,8 @@ end
 
 A more complex job would define private methods to keep `perform` simple and easy to read.
 
-The job will be called via `perform_async`, which will eventually call `perform`. Please note that any arguments passed to `perform_async` will be serialized and, as such, should be simple. Keyword arguments are not available to the `perform` method due to this constraint.
+The job will be called via `perform_async`, which will eventually call `perform`. Please note that any arguments passed to `perform_async` [will be serialized to JSON](https://github.com/mperham/sidekiq/wiki/Best-Practices#1-make-your-job-parameters-small-and-simple) and, as such, should be simple. Keyword arguments are not available to the `perform` method due to this constraint.
+
 ### Jobs should be idempotent
 
 Per Sidekiq’s [Best Practices](https://github.com/mperham/sidekiq/wiki/Best-Practices#2-make-your-job-idempotent-and-transactional), assume that every job can be retried at any point in its execution. If a job raises an error at any point, it will be retried by default. Besides that, when Sidekiq is restarted (which [Heroku does every 24 hours](https://devcenter.heroku.com/articles/dynos#restarting)) all active jobs that do not finish in time are stopped and re-enqueued.
