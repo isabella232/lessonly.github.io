@@ -77,6 +77,10 @@
   align-items: center;
   .page-link {
     margin-right: 16px;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
   @include media-query($phone) {
     display: none;
@@ -284,6 +288,9 @@
   .language {
     border-bottom: 1px solid $grey-color-light;
 
+    &:hover {
+      background-color: $brand-color-lightest;
+    }
     &.active {
       background: $brand-color-lightest;
     }
@@ -321,6 +328,17 @@
   }
   h6 {
     font-size: 1.1em;
+  }
+  i {
+    transition: color 225ms ease;
+  }
+  a {
+    text-decoration: underline;
+    transition: color 225ms ease;
+
+    &:hover, &:hover i {
+      color: $brand-color;
+    }
   }
 }
 
