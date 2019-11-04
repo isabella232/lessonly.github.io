@@ -143,6 +143,27 @@ class TestComponent extends Component {
 }
 ```
 
+### Controllers
+
+#### Avoid `except` in `_action` callbacks (or avoid such callbacks entirely)
+
+Applying an `_action` callback to all controller actions `except` some will automatically (and perhaps unexpectedly) opt us into this behavior in all future controller actions. This violates the [Principle of Least Astonishment](https://en.wikipedia.org/wiki/Principle_of_least_astonishment) and has led to bugs in the past.
+
+```ruby
+# Not good: actions added later will make this query even when unnecessary
+before_action :find_the_thing, except: :index
+
+# Better: only the action that needs this behavior will get it
+before_action :find_the_thing, only: :show
+
+# Even better: only the action that needs this behavior will get it,
+# AND it’s obvious where the behavior is coming from
+def show
+  find_the_thing
+  # ...
+end
+```
+
 ### ActiveRecord shortcuts
 
 #### Use `?` methods only for boolean values to avoid unexpected behavior.
