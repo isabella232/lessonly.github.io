@@ -6,6 +6,28 @@ main: true
 
 Unless otherwise noted, these rules apply only to internal JSON endpoints, not necessarily [our public API](https://docs.lessonly.com).
 
+## Use camelCase 
+
+We should use camel case in JSON sent to or received from our API. 
+
+```js
+{ 
+  superheroNames: [
+    "Carol Danvers", "Tony Stark", "Bruce Banner"
+  ]
+}
+```
+
+Avoid sending the frontend this: 
+
+```js
+{ 
+  superhero_names: [
+    "Carol Danvers", "Tony Stark", "Bruce Banner"
+  ]
+}
+```
+
 ## Use JSON for request bodies
 
 Rails controllers handle JSON `params` as easily as form data. JSON is a more concise and flexible format for our endpoints to remain consistent. Because of this we prefer to send Content-Type `application/json` in requests.
@@ -31,7 +53,7 @@ For example, if an endpoint returns `[...]` and we later decide to paginate it, 
 5
 
 // Avoid returning strings
-"some_return_value"
+"someReturnValue"
 
 // Recommend returning JSON objects
 // Now we understand there is an Attempts key with an array within it
@@ -70,7 +92,7 @@ JSON objects that use integer keys which also depend on sorting are automaticall
 // Preferred
 // Instead we prefer to use an Array of objects for sorting
 {
-  my_list: [
+  myList: [
     {
       id: 2,
       name: "First"
