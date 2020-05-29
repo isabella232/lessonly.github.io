@@ -37,7 +37,7 @@ When choosing names for new components, try to be as descriptive as possible. Id
 
 What happens if there's more than one component defined in a file? First, leave a comment at the top of the file so that others reading the code will easily know that this file does not follow the standard convention. Second, before settling on a name for your file, talk to the team to ensure you've choosen the most descriptive name.
 
-**Note:** Not previous files are named according to what the component is named. If you're searching for something, you may want to do a global search rather than just search file names.
+**Note:** Not all previous files are named according to what the component is named. If you're searching for something, you may want to do a global search rather than just search file names.
 
 ### Component Name and File Name
 Going forward, we prefer that all component names must match the file name. Additionally, imported name must match filename unless import collision. 
