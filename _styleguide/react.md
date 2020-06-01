@@ -14,7 +14,7 @@ We primarly follow Airbnb's style guide when writing [React](https://github.com/
 We prefer the use of function components and hooks over class components. Hooks were added to React in v16.8 and they let you use state and other React functionality without having to use a class. [doc link](https://reactjs.org/docs/hooks-intro.html). This means that we can get all of the functionality we need without needing to deal with complex lifecycle methods, and classes in general, and we can almost always use function components!
 
 ### Custom Hooks
-In the `/shared/hooks` folder
+In the `/components/shared/hooks` folder
 
 ## Naming Conventions
 
@@ -40,7 +40,7 @@ What happens if there's more than one component defined in a file? First, leave 
 **Note:** Not previous files are named according to what the component is named. If you're searching for something, you may want to do a global search rather than just search file names.
 
 ### Component Name and File Name
-Going forward, we prefer that all component names must match the file name. Additionally, imported name must match filename unless import collision. 
+We prefer that all component names match the file name. Additionally, imported name must match filename unless there is an import collision. 
 
 ### File Name Casing
 No snake case anywhere in React. React components should use capital case. All other javascript filenames should use lower kebab case.
