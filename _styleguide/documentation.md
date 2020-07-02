@@ -19,6 +19,8 @@ As we work on existing features or add new functionality, those should be docume
 
 For ruby, documentation should be added using the [yard](http://www.rubydoc.info/gems/yard/file/docs/GettingStarted.md) format. While Yard is built ontop of RDoc, we prefer to use the Markdown syntax. In some cases additional meta-data can be useful which is supported through the usage of [Tags](http://www.rubydoc.info/gems/yard/file/docs/Tags.md#taglist).
 
+Here is a [helpful parser](https://yardoc.org/types.html) that you can use when trying to figure out the correct "type" notation for tags. For example, when specifying the what you can pass for a @param or @return tag.
+
 ### General guidelines
 
 - Classes should have a short descriptive comment about the role it plays.
