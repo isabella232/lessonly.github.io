@@ -108,3 +108,12 @@ JSON objects that use integer keys which also depend on sorting are automaticall
   ]
 }
 ```
+
+## Use the most appropriate HTTP status code in your response
+
+Utilize successful `200 Ok` codes **only** to indiciate success. 
+
+Avoid returning a `200` with a body of `{success: false}` - this is confusing and requires our client-side code has to go out of its way to handle this mixed message from the server.
+
+
+
