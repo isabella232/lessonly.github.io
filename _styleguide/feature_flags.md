@@ -6,6 +6,14 @@ main: true
 
 ### Feature Flags
 
+#### Create Uniquely-Named Feature Flags
+
+Even when features live in different policies, they must all have unique names.
+
+#### Add Feature Policy Mapping to `AccessControl::Features::FeaturePolicies`
+
+The `FEATURE_POLICY_MAPPINGS` object maps feature names to the policies in which they can be found, which is needed in some areas of the application. Features are added to this mapping alphabetically.
+
 #### Add Translation Key for New Features
 
 ```ruby
@@ -33,3 +41,9 @@ AccessControl::Features::ExamplePolicy.new(company).feature_name?
 AccessControl::Features::ExamplePolicy.new(company).grant!(:feature_name)
 AccessControl::Features::ExamplePolicy.new(company).revoke!(:feature_name)
 ```
+
+#### Front End Implementation
+
+There is documentation in the React Style Guide which outlines how the `FeatureFlag` component can be used to do feature checks on React pages.
+
+[For more information, please visit that section of the Style Guide.](https://about.lessonly.engineering/styleguide/react/#featureflag-interface--in-transition---frontend-experiment)
