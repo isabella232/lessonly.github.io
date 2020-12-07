@@ -42,7 +42,10 @@ AccessControl::Features::ExamplePolicy.new(company).grant!(:feature_name)
 AccessControl::Features::ExamplePolicy.new(company).revoke!(:feature_name)
 ```
 
-#### When writing tests, prefer stubbing feature flag checks
+#### When writing unit tests, prefer stubbing feature flag checks
+
+This does not apply to integration tests!
+[See Testing Style Guide](https://about.lessonly.engineering/styleguide/testing/#avoid-stubbing-and-mocking-in-integration-tests) for more information on why.
 
 ```ruby
 # Not Ideal
