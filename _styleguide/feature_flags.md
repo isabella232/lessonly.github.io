@@ -42,6 +42,22 @@ AccessControl::Features::ExamplePolicy.new(company).grant!(:feature_name)
 AccessControl::Features::ExamplePolicy.new(company).revoke!(:feature_name)
 ```
 
+#### When writing tests, prefer stubbing feature flag checks
+
+```ruby
+# Not Ideal
+# Actually enabling the feature flag might cause issues in other tests!
+before do
+  AccessControl::Features::ExamplePolicy.new(company).grant!(:feature_name)
+end
+
+# Recommended
+before do
+  allow(AccessControl::Features::ExamplePolicy).to receive(:new).with(company)
+    .and_return(double(feature_flag_name?: true))
+end
+```
+
 #### Front End Implementation
 
 There is documentation in the React Style Guide which outlines how the `FeatureFlag` component can be used to do feature checks on React pages.
