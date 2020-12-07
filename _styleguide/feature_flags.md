@@ -37,27 +37,40 @@ company.disable_feature!(:feature_name)
 # New Way, Recommended
 # This way is favored because we can perform feature checks on more types of objects.
 # The "old way" only allowed for company, now we can also pass in users & groups.
-AccessControl::Features::ExamplePolicy.new(company).feature_name?
+AccessControl::Features::ExamplePolicy.new(user).feature_name?
 AccessControl::Features::ExamplePolicy.new(company).grant!(:feature_name)
 AccessControl::Features::ExamplePolicy.new(company).revoke!(:feature_name)
 ```
 
-#### When writing unit tests, prefer stubbing feature flag checks
+#### Favor Checking Features on the Most-Specific Level
+
+```ruby
+# Not recommended, very broad
+AccessControl::Features::ExamplePolicy.new(company).feature_name?
+
+# Recommended!
+# This goes for Policies & Permissions as a whole.
+AccessControl::Features::ExamplePolicy.new(user).feature_name?
+```
+
+#### When Writing Unit Tests, Prefer Stubbing Feature Flag Checks
 
 This does not apply to integration tests!
 [See Testing Style Guide](https://about.lessonly.engineering/styleguide/testing/#avoid-stubbing-and-mocking-in-integration-tests) for more information on why.
 
 ```ruby
-# Not Ideal
-# Actually enabling the feature flag might cause issues in other tests!
+# Fine, But Not Ideal
 before do
   AccessControl::Features::ExamplePolicy.new(company).grant!(:feature_name)
 end
 
 # Recommended
+# This can improve performance and reduce potential issues.
 before do
-  allow(AccessControl::Features::ExamplePolicy).to receive(:new).with(company)
-    .and_return(double(feature_flag_name?: true))
+  example_policy_double = instance_double(AccessControl::Features::ExamplePolicy)
+  expect(example_policy_double).to receive(:feature_flag_name).and_return(true)
+
+  expect(AccessControl::Features::ExamplePolicy).to receive(:new).with(company).and_return(example_policy_double)
 end
 ```
 
