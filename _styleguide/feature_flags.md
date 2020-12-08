@@ -42,7 +42,7 @@ AccessControl::Features::ExamplePolicy.new(company).grant!(:feature_name)
 AccessControl::Features::ExamplePolicy.new(company).revoke!(:feature_name)
 ```
 
-#### Favor Checking Features on the Most-Specific Level
+#### Favor Checking Features on the Most Specific Level
 
 ```ruby
 # Not recommended, very broad
