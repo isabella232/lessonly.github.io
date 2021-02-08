@@ -1,0 +1,65 @@
+---
+---
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Search</title>
+    <style>
+      html, body {
+        height: 100%;
+      }
+      body {
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .wiki_search_query {
+        font-size: 100%;
+        padding: 1rem;
+        border-radius: .25rem 0 0 .25rem;
+        border: 2px solid #666;
+        border-width: 2px 0 2px 2px;
+        flex-grow: 1;
+      }
+      .wiki_search_submit {
+        border-radius: 0 .25rem .25rem 0;
+        border: 2px solid #666;
+        color: #fff;
+        padding: .75rem 1rem;
+        font-size: 18px;
+        background-color: #f9cf36;
+        color: #666;
+      }
+      .llamapedia {
+        max-width: 540px;
+      }
+      .wiki_search_form {
+        display: flex;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1><img class="llamapedia" src="/images/llamapedia.svg" alt="Search Lessonly Technical Documentation" /></h1>
+      <form class="wiki_search_form" id="wiki_search" method="GET" action="https://github.com/search">
+        <noscript>
+          <input id="wiki_search_query" placeholder="Search Lessonly technical documentation..." class="wiki_search_query" type="search" name="q" value="org:lessonly " />
+        </noscript>
+        <input id="wiki_search_input" placeholder="Search Lessonly technical documentation..." class="wiki_search_query" type="search" />
+        <input id="wiki_search_query" type="hidden" name="q" />
+        <input type="hidden" name="type" value="wikis" />
+        <input class="wiki_search_submit" type="submit" value="Search" />
+      </form>
+      <script>
+        var searchForm = document.getElementById('wiki_search');
+        searchForm.onsubmit = function() {
+          var query = document.getElementById('wiki_search_input').value;
+          document.getElementById('wiki_search_query').value = 'org:lessonly ' + query;
+          searchForm.submit();
+        };
+      </script>
+    </div>
+  </body>
+</html>
