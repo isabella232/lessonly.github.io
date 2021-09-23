@@ -25,3 +25,16 @@ We expect boolean values typically to be either `true` or `false`. Make them `NO
 ## Use transactions only when necessary.
 
 Transactions are sometimes essential for ensuring data integrity, but when we include operations within the transaction that don't need to be atomic, it makes transactions take longer and increases the likelihood of locks, deadlocks, and other performance issues resulting from slow queries ([example](https://app.clubhouse.io/lessonly/story/27117/postgres-is-spending-too-much-time-waiting-for-transactions-to-complete)).
+
+## Identify all rows with a required `company_uuid` column on all tables
+
+In code and reporting, we often need to know the company/tenant to whom data belongs. This can be difficult (and slow) when we need to join on a series of tables to find it. And it can be ambiguous when there are multiple pathways to a company which should in theory agree but might not. [Denormalizing](https://en.wikipedia.org/wiki/Denormalization) a reference to the company’s UUID on to all tables will help in both cases. Do not add a forign-key constraint, however, as too many of those will slow down writes to the `companies` table. The supporting Rails associations will require two extra options:
+
+```ruby
+# app/models/widget.rb
+belongs_to :company, primary_key: :uuid, foreign_key: :company_uuid
+
+
+# app/models/company.rb
+has_many :widgets, primary_key: :uuid, foreign_key: :company_uuid
+```
