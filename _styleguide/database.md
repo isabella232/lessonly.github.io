@@ -10,13 +10,11 @@ The PostgreSQL Wiki has a handy [“Don’t Do This”](https://wiki.postgresql.
 
 ## Enforce data integrity with unique indexes and not-null constraints
 
-PostgreSQL gives us a range of tools to ensure invalid data isn’t just unlikely but impossible:
+Bugs resulting from invalid data can be tricky to detect and it can be time-consuming to clean up—best to prevent the possibility of it in the first place. PostgreSQL gives us a range of tools to ensure invalid data isn’t just unlikely but impossible:
 
 - Use `UNIQUE` `CONSTRAINT`s/`INDEX`es (`unique: true` in migrations) to prohibit “duplicate” data. For instance, if it doesn’t make sense for a Lesson to be tagged with “Sales” _twice_, we want a unique composite index on the `tag` and `taggable`.
 - Use `NOT NULL` (`null: false` in migrations) to guarantee necessary relationships (e.g. make `company_id` non-nullable on tables that must be associated with a company) or attributes (if a `title` is required, make it `NOT NULL`).
-- **Update:** we no longer recommend adding `FOREIGN KEY` constraints, as we’ve run into performance issues on tables like `users` that have very many of them. So avoid adding foreign-key constraints unless there is an overriding concern about data fidelity to justify them. (If so, be mindful of performance when adding foreign key constraints: see [this migration](https://github.com/lessonly/lessonly/pull/5390/files#diff-bf0c0f95fbacafc133567b5e36e2f289R20) for an illustration of the challenges and a way around them.)
-
-Bugs resulting from invalid data can be tricky to detect and it can be time-consuming to clean up—best to prevent the possibility of it in the first place.
+- However, avoid using `FOREIGN KEY` constraints, as we’ve run into performance issues deleting from large tables like `users` that have very many of them. If there is an overriding concern about data fidelity to justify them, be mindful of performance when adding foreign key constraints: see [this migration](https://github.com/lessonly/lessonly/pull/5390/files#diff-bf0c0f95fbacafc133567b5e36e2f289R20) for an illustration of the challenges and a way around them. Rails’ `dependent: :destroy` and `dependent: :nullify` callbacks do not contribute to database-level slowness with deleting records, so prefer them to foreign-key constraints for maintaining data fidelity.
 
 ## Avoid nullable booleans.
 
