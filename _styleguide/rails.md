@@ -8,15 +8,27 @@ While we don’t follow it explicitly, the [community Rails Style Guide](https:/
 
 ### Dealing with SQL
 
-#### Prefer ActiveRecord methods to raw SQL
+#### Never use string interpolation with raw SQL
+
+While it _can_ be done safely, string interpolation in raw SQL opens the door to SQL injection attacks. Consider the following code to get users with progress on a Lesson:
 
 ```ruby
-# not so good
-Model.where("published_at = ? AND title IS NOT NULL", Date.yesterday)
-
-# so good!
-Model.where(published_at: Date.yesterday).where.not(title: nil)
+User.joins("INNER JOIN progresses ON progresses.user_id = users.id AND progresses.lesson_id = #{some_lesson_id}")
 ```
+
+while we might be sure _today_ that `some_lesson_id` is a value we control, tomorrow someone could call a method containing this code but pass in `params[:lesson_id]`, at which point a malicious user could send `params[:lesson_id]` like `1; DROP TABLE users;` and [delete all our user data](https://xkcd.com/327/). So it’s best to avoid string interpolation in SQL entirely.
+
+The best way to do this is to use ActiveRecord or Arel instead of raw SQL, which will prevent SQL injection through quoting or prepared statements. For example, instead of the above, we can make this query safer with any of the following:
+
+```ruby
+# Sanitizes some_lesson_id
+User.joins(:progresses).where(progresses: { lesson_id: some_lesson_id })
+User.joins(:progresses).merge(Progress.where(lesson_id: some_lesson_id))
+# Quotes some_lesson_id
+User.joins(:progresses).where("progresses.lesson_id = ?", some_lesson_id)
+```
+
+We should prefer the sanitizing approaches above, which turns malicious input like `1; DROP TABLE users` into `1` and the app will continue to work, whereas the quoting approach will turn it into `'1; DROP TABLE users'` which will raise a server error because of a type mismatch (string and not integer).
 
 #### Use the symbol syntax (rather than question marks) when interpolating SQL.
 
