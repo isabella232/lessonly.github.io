@@ -21,7 +21,7 @@ kramdown:
 paginate: 5
 permalink: /:title/
 
-gems:
+plugins:
   - jekyll-paginate
   - jekyll-seo-tag
   - jekyll-feed
