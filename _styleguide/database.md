@@ -36,3 +36,9 @@ belongs_to :company, primary_key: :uuid, foreign_key: :company_uuid
 # app/models/company.rb
 has_many :widgets, primary_key: :uuid, foreign_key: :company_uuid
 ```
+
+## The timestamps at the bottom of the structure.sql file are in chronological order
+
+Rails generates structure.sql automatically based on the state of the database when it runs migrations, adding new migration timestamps in chronological order. However, if we hand edit the file due to merge conflicts the timestamps can get out of order.
+
+Keeping the timestamps in chronological order makes it easier to see what migration is included without searching for it (ie. if we know the date we can easily see if the migration is there if it is chronological order).
