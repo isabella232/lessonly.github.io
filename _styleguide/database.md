@@ -42,3 +42,7 @@ has_many :widgets, primary_key: :uuid, foreign_key: :company_uuid
 Rails generates structure.sql automatically based on the state of the database when it runs migrations, adding new migration timestamps in chronological order. However, if we hand edit the file due to merge conflicts the timestamps can get out of order.
 
 Keeping the timestamps in chronological order makes it easier to see what migration is included without searching for it (ie. if we know the date we can easily see if the migration is there if it is chronological order).
+
+## Use `UUID` or `BIGINT` for new primary and foreign keys.
+
+`INTEGER`-type columns support a maximum value of approximately 2 billion, which is plausible for us to exhaust. For this reason, `BIGINT` (which maxes out at 9 quintillion) has been the default for primary keys [since Rails 5.1](https://github.com/rails/rails/pull/26266) and should be used instead of `INTEGER`. While foreign key columns (e.g. `foos.bar_id`) are typically required to match the type of the primary keys they reference (e.g. `bars.id`), a `BIGINT` foreign key can reference an `INTEGER` primary key, so always use `BIGINT` for numeric foreign keys. While we've also begun using `UUID`-type primary keys, we don't currently have a recommendation for `UUID` vs. `BIGINT`.
