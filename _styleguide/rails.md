@@ -6,6 +6,28 @@ main: true
 
 While we don’t follow it explicitly, the [community Rails Style Guide](https://github.com/bbatsov/rails-style-guide) (also edited by Bozhidar Batsov) is a solid reference when in doubt.
 
+### Data Migrations
+
+#### New Columns
+
+Ideally, new columns on an existing table should be added in separate migrations for each of the following steps:
+
+_PR #1_
+
+Migration #1: Create column; nullable without default value
+
+- Tag as `predeploy`
+
+Migration #2: Backfill data, with integration test(s)
+
+- Tag as `postdeploy`
+- Synchronous (ex: via a Rake task) only if the table is empty in Production or contains very few rows with an expectation of infrequent reads and writes
+- Asynchronous (via Sidekiq) in all other scenarios
+
+_PR #2, to stage only after PR #1 has **released** to all Production environments_
+
+- (Optional) Set column as non-nullable if appropriate, with model validations to ensure presence of a value.
+
 ### Dealing with SQL
 
 #### Never use string interpolation with raw SQL
@@ -140,11 +162,11 @@ class TestComponent extends Component {
     super(props);
     this.state = {
       loading: true,
-      data: {}
+      data: {},
     };
   }
   componentDidMount() {
-    request("/someserialized/data.json").then(data => {
+    request("/someserialized/data.json").then((data) => {
       this.setState({ data, loading: false });
     });
   }
