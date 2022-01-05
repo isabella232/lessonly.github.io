@@ -10,9 +10,6 @@ github_username: lessonly
 collections:
   open_source:
     output: false
-  styleguide:
-    output: true
-    permalink: /styleguide/:path/
 
 # Build settings
 kramdown:

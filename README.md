@@ -1,4 +1,4 @@
-# Lessonly Coding Style Guide
+# about.lessonly.engineering
 
 Powered by [Jekyll](https://github.com/jekyll/jekyll) and hosted by [Github Pages](https://pages.github.com/).
 
@@ -22,14 +22,6 @@ See your changes reflected at <http://localhost:4000>
 ## Links
 
 When using links be sure to use the liquid variable {{ site.github.url }} since we host the site on Github pages. [Why?](https://jekyllrb.com/docs/github-pages/#project-page-url-structure)
-
-### Styleguides
-
-When adding new content to our styleguide first create a new file within the _styleguide directory. The title of the page from the front-matter (e.g. "Ruby Style Guide") becomes the link text on the http://lessonly.github.io/styleguide listing.
-
-Things to consider when adding content:
-* Use examples! Examples help the rest of the team understand concepts and more clearly implement them.
-* Sometimes the justification or link to the reasoning behind a standard is helpful to know. These help illustrate why we made the decision we did.
 
 ### Blog Posts
 
